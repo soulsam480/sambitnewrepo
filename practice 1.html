@@ -1,15 +1,41 @@
 <html>
     <head>
         <title>
-            sambi's first page
+            sambit's first page
             </title>>   
              </head>
              <body>
+                 
                  <script>
-                     document.write("sambit sahoo")   
+                     alert("welcome to sambit's page");
+                     var input=prompt("please enter your email adress!!");
+                     alert( "your email "+input+" has been sucessfully received");
+                     var result=confirm("do you want to leave this page?")
+                     
+                         if(result==true)
+                         {
+                             alert("do visit again (: !!")
+                         }
+                         else{
+                             alert("thanks for stayingwith us!! (:")
+                         }
+                     
+                     
+                  
+                     document.write("sambit sahoo <br/>")   
                      function write(text)
-                     {document.write("sambit is coding again");}
-                     write("liku is awesome") 
+                     {
+                         document.write("hii <br/>"+text);
+                         }
+                     write("liku is awesome");
+                    
+                     function add(x,y)
+                     {
+                         var c=x+y;
+                         return c;
+                     }
+                     document.write("<br/>")
+                     document.write(add(100,3));
                                   </script>
-             </body>
+                                     </body>
 </html>
