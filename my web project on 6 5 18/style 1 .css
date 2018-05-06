@@ -15,16 +15,13 @@ footer {
     text-align: center;
 }
 
-nav {
-    float: left;
-    max-width: 160px;
-    margin: 0;
-    padding: 1em;
+.topnav {
+    overflow: hidden;
+    background-color:rgb(39, 186, 231);
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.topnav a {
+    
 }
    
 nav ul a {
