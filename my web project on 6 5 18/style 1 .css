@@ -1,9 +1,10 @@
 
 div#header {
     padding: 1em;
-    color: rgb(39, 186, 231);
-    background-color: rgb(236, 122, 122);
+    color: rgb(10, 30, 214);
+    background-color: rgb(235, 121, 121);
     clear: left;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
     text-align: center;
 }
 
@@ -20,17 +21,18 @@ footer {
 
 }
 
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color:rgb(37, 219, 143);
 }
 
 li {
     float: left;
-    border: 1px 1px;
+
     width : 1px 1px;
 }
 
@@ -38,15 +40,90 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    border: 2px 2px;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover:not(.active) {
-    background-color: rgb(29, 10, 202);
+    background-color: rgb(29, 71, 185);
 }
 
 .active {
-    background-color: rgb(91, 235, 72);
+    background-color: rgb(42, 168, 25);
 }
+
+
+
+
+
+/*the code of slider sarts here*/
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/*code slider ends here*/
