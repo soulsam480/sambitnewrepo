@@ -2,6 +2,7 @@ alert("welcome to sambit's page");
 
 
 
+
 var slideIndex = 0;
 showSlides();
 
