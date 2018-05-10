@@ -4,7 +4,7 @@ div#header {
     color: rgb(10, 30, 214);
     background-color: rgb(235, 121, 121);
     clear: left;
-    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: 'Advent Pro';font-size: 22px;
     text-align: center;
 }
 
