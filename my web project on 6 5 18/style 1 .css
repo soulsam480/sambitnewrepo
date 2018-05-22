@@ -5,9 +5,15 @@ div#header {
     clear: left;
     font-family:'ABeeZee';
     text-align: left;
-    text-shadow: 2px 2px 0 rgba(61, 247, 237, 0.568);
     font-size:50px;
 }
+
+h2.text_1{
+   
+  font-family:'Acme';
+
+}
+
 div#header>h1{
   display:inline;
 }
