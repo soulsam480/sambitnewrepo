@@ -8,12 +8,27 @@ div#header {
     font-size:50px;
 }
 
+#inline{
+  width:100%;
+  height:auto;
+  display:flex;
+}
+
+.one,.two{
+  width:50%;
+  height:auto;
+  margin:10px;
+}
+
 h2.text_1{
    
   font-family:'Acme';
 
 }
 
+h4.text_2{
+  font-family:'Allerta';
+}
 div#header>h1{
   display:inline;
 }
