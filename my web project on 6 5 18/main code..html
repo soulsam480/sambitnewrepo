@@ -2,6 +2,7 @@
     <head >
         <meta/ charset="utf-8" >
         <meta name="viewport" content="width=device-width,initial-scalscalable=noe=1 maximum-scale=1 ,user-"  >
+        <meta name="description" content="OpenDev is a Tech Start-Up by some engineering students."/>
         <title style="text-decoration:none;">
           OpenDev.Inc
          
@@ -30,8 +31,19 @@
                     <a href="#" class="w3-bar-item w3-button w3-ripple w3-blue w3-hover-red">HOME</a>
                     <a href="https://bit.ly/2LgXsdK" target="_blank" class="w3-bar-item w3-button w3-hover-red">BLOG</a>
                     <a href="#" class="w3-bar-item w3-button w3-hover-red">ABOUT US</a>
-                    <input type="text" class="w3-bar-item w3-input" placeholder="Search..">
-                    <a href="https://www.google.co.in" target="_blank" class="w3-bar-item w3-button w3-cyan w3-hover-red">Go></a>
+                    <div>
+                      <script type="text/javascript">
+                        function google()
+                        {
+                        var str=document.getElementById('googlebox').value;
+                        str="http://www.google.com/search?hl=en&source=hp&q=" + str + "&aq=f&oq=&aqi=";
+                        var replaced=str.replace(" ","+");
+                        window.location.replace(replaced)
+                        }
+                        </script>
+                        <input type="text" placeholder="google" id="googlebox" class="w3-container w3-bar-item w3-border"/>
+                        <input type="button" value="Go" onclick="google()" class="w3-bar-item w3-light-green"/>
+                    </div>
                   </div>
 
     <br/>
