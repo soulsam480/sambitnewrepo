@@ -1,0 +1,72 @@
+.snake-board {
+    position: relative;
+    display: inline-block;
+
+}
+
+.snake-board .preview {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+    background-color: gray;
+}
+
+.snake-board .score {
+    font-size: 150%;
+    color: blue;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+
+.snake-board button {
+    display: block;
+    position: absolute;
+    left: 55%;
+    top: 65%;
+    width: 20%;
+    height: 10%;
+    margin-left: -15%;
+    margin-top: -5%;
+    font-size: 100%;
+    background-color: lightgreen;
+    border: 1px solid darkgreen;
+    border-radius: 10px;
+}
+
+.snake-board button:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+.snake-board table {
+    border-collapse: collapse;
+}
+
+.snake-board td {
+    width: 20px;
+    height: 20px;
+    border: 0;
+}
+
+.snake-board .col {
+    background-color:lightgray;
+    
+}
+
+.snake-board .snake {
+    background-color: rgb(134, 85, 21);
+    
+}
+
+.snake-board .fruit {
+    background-color: rgb(113, 238, 55);
+    
+}
+

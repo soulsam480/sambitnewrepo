@@ -14,6 +14,9 @@ div#header {
   display:flex;
 }
 
+a#hamburg{
+  size: 30px;
+}
 .one,.two{
   width:50%;
   height:auto;
