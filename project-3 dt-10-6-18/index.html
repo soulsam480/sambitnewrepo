@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>
@@ -10,18 +11,107 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-    body{font-family: "Montserrat", sans-serif;}
+    body,html{font-family: "Montserrat", sans-serif;}
+
+    body,html{
+        height: 100%;
+    
+    line-height: 1.8;
+    }
+/*parallax effect*/
+    .bgimg-1 {
+    background-attachment:scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('3.jpg');
+    min-height: 100%;
+}
+
+.w3-wide {letter-spacing: 8px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
     </style>
     </head>
-    <body style="background-color:rgba(211, 211, 211, 0.644)" >
-        <div class="w3-top">
-            <div class="w3-bar w3-large">
-                <a class="w3-bar-item w3-button w3-hide w3-hide-small  " href=""><i class="fa fa-home"></i></a>
+    <body >
 
+        <!--nav bar start ,sits on top ,mobile first design so no code for separate mobile page its only moble page -->
+        <div class="w3-top">
+            <div class="w3-bar w3-large " >
+                    <a class="w3-bar-item   w3-hide-medium w3-hide-large w3-left" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                <a class="w3-bar-item w3-button w3-hide-small w3-right " href=""><i class="fa fa-phone"></i> CONTACT US</a>
+                <a class="w3-bar-item w3-button w3-hide-small w3-right " href=""><i class="fa fa-briefcase"></i> SERVICES</a>
+                <a class="w3-bar-item w3-button w3-hide-small w3-right " href=""><i class="fa fa-th"></i> PORTFOLIO</a>
+                <a class="w3-bar-item w3-button w3-hide-small w3-right " href=""><i class="fa fa-user"></i> ABOUT</a>
+                <a class="w3-bar-item w3-button w3-hide-small w3-right " href=""><i class="fa fa-home"></i>HOME</a>
+                <!--social panel start-->
+                
             </div>
-        
+
+            <!--mobile nav bar start -->
+            <div id="navDemo" class="w3-bar-block w3-large w3-white w3-hide w3-hide-large w3-hide-medium">
+                    <a class="w3-bar-item w3-button  " href="" onclick="toggleFunction"><i class="fa fa-home"></i>HOME</a>
+                    <a class="w3-bar-item w3-button  " href="" onclick="toggleFunction"><i class="fa fa-user"></i> ABOUT</a>
+                    <a class="w3-bar-item w3-button  " href="" onclick="toggleFunction"><i class="fa fa-th"></i> PORTFOLIO</a>
+                    <a class="w3-bar-item w3-button  " href="" onclick="toggleFunction"><i class="fa fa-briefcase"></i> SERVICES</a>
+                    <a class="w3-bar-item w3-button"   href="" onclick="toggleFunction"><i class="fa fa-phone"></i> CONTACT US</a>
+                </div>
 
         </div>
-    
+<!--nav bar end and  also the top social panel -->
+
+<!--intro image with logo and page title-->
+<div class="bgimg-1 w3-display-container " id="home">
+        <div class="w3-display-left" style="white-space:nowrap;padding: 44px;">
+              <span class=" w3-wide w3-jumbo w3-hide-small"><b>Phantom Solutions</b></span>
+              <span class=" w3-wide w3-xxlarge w3-hide-large w3-hide-medium"><b>Phantom Solutions</b></span><br>
+              <span class=" w3-xlarge">Trust is our Wepon</span>
+        </div>
+        <div class="w3-bar w3-xlarge w3-display-bottomleft">
+                <a href="https://www.facebook.com/sahoo.sambit.7" target="_blank" class="w3-bar-item   w3-hide-small"> <i class="fa fa-facebook-official "></i></a>
+                <a href="https://www.instagram.com/soul_sam_480/" target="_blank"  class="w3-bar-item    w3-hide-small"> <i class="fa fa-instagram "></i></a>
+                <a href="https://twitter.com/blazerhcsam" target="_blank"  class="w3-bar-item    w3-hide-small"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/sambit-sahoo-5b75b3163/" target="_blank"  class="w3-bar-item   w3-hide-small"> <i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/soulsam480" target="_blank"  class="w3-bar-item     w3-hide-small"><i class="fa fa-github "></i></a>
+            </div>
+      </div>
+      
+
+      <div class="w3-container">
+
+      </div>
+    <script>
+    function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+    </script>
     </body>
 </html>
