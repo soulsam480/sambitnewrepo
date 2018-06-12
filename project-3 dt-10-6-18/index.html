@@ -4,6 +4,7 @@
         <title>
           Home-Phantom Solutions
         </title>
+        <link rel=" shortcut icon" type="image/png" href="icon.png"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -54,6 +55,9 @@
 
 .w3-wide {letter-spacing: 5px;}
 .w3-hover-opacity {cursor:pointer;}
+.w3-jumbo{
+    font-size: ;
+}
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
@@ -77,8 +81,8 @@
                     <a class="w3-bar-item w3-hide-medium  w3-button w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
                             <i class="fa fa-bars"></i>
                           </a>
-                <a class="w3-bar-item w3-buton w3-large w3-left w3-padding-small w3-hide-small " href="#home"><i class="fa fa-home"></i></a>
-                <a class="w3-bar-item w3-button w3-left w3-hide-large w3-hide-medium  " href="#home" onclick="toggleFunction"><i class="fa fa-home"></i></a>       
+                
+               <a  href="#home"> <img src="10.png" class="w3-image w3-bar-item w3-left w3-padding-small"></a>       
                 <a class="w3-bar-item w3-button w3-hide-small w3-large w3-right " href="#contact"><i class="fa fa-phone"></i> CONTACT US</a>
                 <a class="w3-bar-item w3-button w3-hide-small w3-large w3-right " href="#services"><i class="fa fa-briefcase"></i> SERVICES</a>
                 <a class="w3-bar-item w3-button w3-hide-small w3-large w3-right " href="#portfolio"><i class="fa fa-th"></i> PORTFOLIO</a>
@@ -355,7 +359,7 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-zoom" + " w3-white " +"w3-topbar w3-border-cyan";
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-zoom" + " w3-white " +"w3-rightbar w3-leftbar w3-border-cyan";
     } else {
         navbar.className = navbar.className.replace(" w3-card w3-animate-zoom w3-white ", "");
     }
