@@ -61,6 +61,12 @@
         background-attachment: scroll;
     }
 }
+
+@media only screen and (max-device-width: 1024px) {
+    .a,.b,.c,.d {
+        display:none;
+    }
+}
     </style>
     </head>
     <body >
@@ -83,12 +89,11 @@
             <!--mobile nav bar start -->
             <div id="navDemo" style="border:2px" class="w3-bar-block w3-card w3-leftbar w3-border-blue w3-large w3-white w3-hide w3-hide-large w3-hide-medium">
                    
-                    <a class="w3-bar-item w3-button  " href="#about" onclick="toggleFunction()"><i class="fa fa-user"></i> ABOUT</a>
-                    <a class="w3-bar-item w3-button  " href="#portfolio" onclick="toggleFunction()"><i class="fa fa-th"></i> PORTFOLIO</a>
-                    <a class="w3-bar-item w3-button  " href="#services" onclick="toggleFunction()"><i class="fa fa-briefcase"></i> SERVICES</a>
+                    <a class="w3-bar-item w3-button" href="#about" onclick="toggleFunction()"><i class="fa fa-user"></i> ABOUT</a>
+                    <a class="w3-bar-item w3-button" href="#portfolio" onclick="toggleFunction()"><i class="fa fa-th"></i> PORTFOLIO</a>
+                    <a class="w3-bar-item w3-button" href="#services" onclick="toggleFunction()"><i class="fa fa-briefcase"></i> SERVICES</a>
                     <a class="w3-bar-item w3-button"   href="#contact" onclick="toggleFunction()"><i class="fa fa-phone"></i> CONTACT US</a>
                 </div>
-
         </div>
         <!--nav bar end and  also the top social panel -->
 
@@ -226,15 +231,16 @@
       </div>
 
 <!--services section start-->
-      <div class="w3-container w3-display-container" id="services ">
+      <div class="w3-container w3-display-container" id="services">
         <h2 class="w3-center ">SERVICES</h2>
           <p class="w3-xlarge w3-center">Choose The Best One For You</p>
+          <p class="w3-large w3-center">Click Below For More Information</p>
           <div class=" w3-row-padding ">
             <div class="w3-quarter">
-                <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-                        <li class="w3-theme">
-                        <h3>Photography</h3>
-                        </li>
+                    <ul class="w3-ul w3-border w3-center w3-hover-shadow"  onclick="myFunc1()" >
+                            <li class="w3-theme"><h3>Photography</h3></li>
+                            </ul>
+                            <ul class="w3-ul w3-border w3-center w3-hover-shadow a" id="photo">
                         <li class="w3-padding-16 w3-large w3-theme-l1"><i class="fa fa-check-circle" style="padding:13px"></i><b>20+ </b>Photographers</li>
                         <li class="w3-padding-16 w3-large w3-theme-l2"><i class="fa fa-check-circle" style="padding:13px"></i><b>15+ </b>Own Cameras</li>
                         <li class="w3-padding-16 w3-large w3-theme-l3"><i class="fa fa-check-circle" style="padding:13px"></i><b>FREE </b>Photo Edit</li>
@@ -245,8 +251,10 @@
                         </ul>
                 </div>
             <div class="w3-quarter">
-                <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+                <ul class="w3-ul w3-border w3-center w3-hover-shadow"  onclick="myFunc2()" >
                         <li class="w3-theme"><h3>Webdesign</h3></li>
+                        </ul>
+                        <ul class="w3-ul w3-border w3-center w3-hover-shadow b" id="web">
                         <li class="w3-padding-16 w3-large w3-theme-l1"><i class="fa fa-check-circle" style="padding:13px"></i><b>10+ </b>Web-Developers</li>
                         <li class="w3-padding-16 w3-large w3-theme-l2"><i class="fa fa-check-circle" style="padding:13px"></i><b>2 yrs. + </b>Experience</li>
                         <li class="w3-padding-16 w3-large w3-theme-l3"><i class="fa fa-check-circle" style="padding:13px"></i><b>CMS </b>Implementation</li>
@@ -257,8 +265,10 @@
                         </ul>
                         </div>
             <div class="w3-quarter">
-                <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-                        <li class="w3-theme"><h3>Photoshop</h3></li>
+                    <ul class="w3-ul w3-border w3-center w3-hover-shadow"  onclick="myFunc3()" >
+                            <li class="w3-theme"><h3>Photoshop</h3></li>
+                            </ul>
+                            <ul class="w3-ul w3-border w3-center w3-hover-shadow c" id="ps">
                         <li class="w3-padding-16 w3-large w3-theme-l1"><i class="fa fa-check-circle" style="padding:13px"></i><b>10+ </b>Designers</li>
                         <li class="w3-padding-16 w3-large w3-theme-l2"><i class="fa fa-check-circle" style="padding:13px"></i><b>Wide </b>Range Of Designs</li>
                         <li class="w3-padding-16 w3-large w3-theme-l3"><i class="fa fa-check-circle" style="padding:13px"></i><b>FREE</b> Lifetime Support</li>
@@ -269,12 +279,14 @@
                         </ul>
                         </div>
             <div class="w3-quarter">
-                <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-                        <li class="w3-theme"><h3>AutoCAD</h3></li>
+                    <ul class="w3-ul w3-border w3-center w3-hover-shadow"  onclick="myFunc4()" >
+                            <li class="w3-theme"><h3>AutoCAD</h3></li>
+                            </ul>
+                            <ul class="w3-ul w3-border w3-center w3-hover-shadow d" id="cad">
                         <li class="w3-padding-16 w3-large w3-theme-l1"><i class="fa fa-check-circle" style="padding:13px"></i><b>12 </b>CAD Engineers</li>
                         <li class="w3-padding-16 w3-large w3-theme-l2"><i class="fa fa-check-circle" style="padding:13px"></i><b>3 yrs. + </b>Experience</li>
                         <li class="w3-padding-16 w3-large w3-theme-l3"><i class="fa fa-check-circle" style="padding:13px"></i><b>FREE </b>Lifetime Support</li>
-                        <li class="w3-padding-16 w3-large w3-theme-l4"><i class="fa fa-check-circle" style="padding:13px"></i> Upto <b>30 </b>3D and 2D Designs Offered</li>
+                        <li class="w3-padding-16 w3-large w3-theme-l4"><i class="fa fa-check-circle" style="padding:13px"></i> Upto <b>30 </b>3D and 2D Designs Offered </li>
                         <li class="w3-theme-l5 w3-padding-24">
                         <a href="#contact"><button class="w3-button w3-teal w3-padding-large  w3-large"><i class="fa fa-shopping-cart"></i> Learn More</button></a>
                         </li>
@@ -300,6 +312,43 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
+
+ function myFunc1() {
+    var x = document.getElementById('photo');
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function myFunc2() {
+    var x = document.getElementById('web');
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function myFunc3() {
+    var x = document.getElementById('ps');
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function myFunc4() {
+    var x = document.getElementById('cad');
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
 
     // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
