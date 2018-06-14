@@ -55,9 +55,7 @@
 
 .w3-wide {letter-spacing: 5px;}
 .w3-hover-opacity {cursor:pointer;}
-.w3-jumbo{
-    font-size: ;
-}
+
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
@@ -237,6 +235,7 @@
 <!--services section start-->
       <div class="w3-container w3-display-container" id="services">
         <h2 class="w3-center ">SERVICES</h2>
+       
           <p class="w3-xlarge w3-center">Choose The Best One For You</p>
           <p class="w3-large w3-center">Click Below For More Information</p>
           <div class=" w3-row-padding ">
@@ -298,7 +297,55 @@
                         </div>
           </div>
       </div>
+<!--contact section start-->
 
+      <div class="w3-display-container w3-container " style="padding: 80px 16px" id="contact">
+          <h2 class="w3-center">CONTACT</h2>
+          <h5 class="w3-center">Get In Touch With Us</h5>
+        <div class="w3-row-padding w3-theme-l4 ">
+            <div class="w3-quarter w3-center" style="padding:20px">
+                <div class="w3-half w3-padding-large ">
+                    <img src="10.png" alt="logo" class="w3-hover-opacity " title="ps">
+                </div>
+                
+                <section class="w3-half">
+
+                    <a class="w3-hover-text-cyan w3-large" style="text-decoration:none;" href="#about">About</a><br>
+                    <a class="w3-hover-text-cyan w3-large" style="text-decoration:none;" href="#services">Services</a><br>
+                    <a class="w3-hover-text-cyan w3-large" style="text-decoration:none;" href="#portfolio">Portfolio</a>
+    
+                </section>
+            </div>
+          
+            <section class="w3-quarter" style="padding:20px">
+              <div class="w3-large w3-hover-text-cyan"><i class="fa fa-envelope"></i> samtestingbeta@gmail.com</div>
+              <div class="w3-large w3-hover-text-cyan"><i class="fa fa-phone"></i>+91-8917300318</div>
+              
+              <div class=" w3-xlarge" style="display: inline;">
+                    <a href="https://www.facebook.com/sahoo.sambit.7" target="_blank" class="w3-bar-item  w3-hover-text-cyan"> <i class="fa fa-facebook-official "></i></a>
+                    <a href="https://www.instagram.com/soul_sam_480/" target="_blank"  class="w3-bar-item w3-padding-small  w3-hover-text-cyan "> <i class="fa fa-instagram "></i></a>
+                    <a href="https://twitter.com/blazerhcsam" target="_blank"  class="w3-bar-item  w3-hover-text-cyan w3-hover-opacity "><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/sambit-sahoo-5b75b3163/" target="_blank"  class="w3-bar-item  w3-padding-small w3-hover-text-cyan "> <i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/soulsam480" target="_blank"  class="w3-bar-item   w3-hover-text-cyan "><i class="fa fa-github "></i></a>
+                </div>
+            </section>
+           
+          <div class="w3-quarter" style="padding:20px">
+                <div class="w3-large"><b class="w3-xlarge">Phantom Solutions</b><br>
+                    Bhubaneswar<br>
+                    Odisha<br>
+                    Pin-759146
+                </div>
+          </div>
+          <div class="w3-quarter" style="padding:20px">
+              <div class="w3-center w3-large"><i class="fa fa-map-marker  w3-xlarge "></i>    Find Me At</div>
+                <div id="map" class="w3-round-large " style="width:100%;height:250px;"></div>
+            </div>
+          </div>
+          <p class="w3-center w3-text-grey w3-text-opacity">Copyright &copy Phantom Solns. 2018<br/>
+            ~Handcrafted In India~</p>
+            </div>
+    
     <script>
     //nav bar on small devices
     function toggleFunction() {
@@ -316,7 +363,7 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
-
+//click to open services in sevice section 4 functions for each service
  function myFunc1() {
     var x = document.getElementById('photo');
     if (x.style.display === "none") {
@@ -352,7 +399,16 @@ function myFunc4() {
         x.style.display = "none";
     }
 }
-
+//map function google map API
+ function myMap() {
+          var myCenter = new google.maps.LatLng(20.934176,85.260515);
+          var mapCanvas = document.getElementById("map");
+          var mapOptions = {center: myCenter, zoom: 14};
+          var map = new google.maps.Map(mapCanvas, mapOptions);
+          var marker = new google.maps.Marker({position:myCenter});
+          marker.setMap(map);
+        }
+       
 
     // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
@@ -366,5 +422,6 @@ function myFunction() {
 }
     </script>
     <script src="https://unpkg.com/vivid-icons@1.0.2/dist/vivid-icons.min.js" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCChvOgtQrEH_KVYg7Pg9YbNDzugmaTA6o&amp;callback=myMap"></script>
     </body>
 </html>
