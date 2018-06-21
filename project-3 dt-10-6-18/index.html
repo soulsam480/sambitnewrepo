@@ -53,6 +53,18 @@
     min-height: 400px;
 }
 
+.bgimg-3 {
+    background-attachment:scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-3 {
+    background-image: url("5.jpg");
+    min-height: 400px;
+}
+
 .w3-wide {letter-spacing: 5px;}
 .w3-hover-opacity {cursor:pointer;}
 
@@ -345,7 +357,8 @@
           <p class="w3-center w3-text-grey w3-text-opacity">Copyright &copy Phantom Solns. 2018<br/>
             ~Handcrafted In India~</p>
             </div>
-    
+
+            
     <script>
     //nav bar on small devices
     function toggleFunction() {
@@ -363,7 +376,7 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
-//click to open services in sevice section 4 functions for each service
+    //click to open services in sevice section 4 functions for each service
  function myFunc1() {
     var x = document.getElementById('photo');
     if (x.style.display === "none") {
@@ -399,7 +412,7 @@ function myFunc4() {
         x.style.display = "none";
     }
 }
-//map function google map API
+    //map function google map API
  function myMap() {
           var myCenter = new google.maps.LatLng(20.934176,85.260515);
           var mapCanvas = document.getElementById("map");
