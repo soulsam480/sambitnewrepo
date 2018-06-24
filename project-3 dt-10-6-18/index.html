@@ -1,440 +1,585 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-          Home-Phantom Solutions
-        </title>
-        <link rel=" shortcut icon" type="image/png" href="icon.png"/>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-cyan.css">
+
+<head>
+    <title>
+        Home-Phantom Solutions
+    </title>
+    <link rel=" shortcut icon" type="image/png" href="icon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-cyan.css">
     <style>
-    
-   body,html,h1,h2,h3,h4,h5,h6{
-       font-family: "Raleway",sans-serif;
-   }
-    body,html{
-        height: 100%;
-    
-    line-height: 1.8;
-    }
+        body,
+        html,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Raleway", sans-serif;
+        }
 
-    body{
-        background-color: rgba(245, 241, 241, 0.986);
-    }
-/*parallax effect*/
-    .bgimg-1 {
-    background-attachment:fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+        body,
+        html {
+            height: 100%;
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url('3.jpg');
-    min-height: 100%;
-}
+            line-height: 1.8;
+        }
 
-.bgimg-2 {
-    background-attachment:scroll;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+        body {
+            background-color: rgba(245, 241, 241, 0.986);
+        }
 
-.bgimg-2 {
-    background-image: url("7.jpg");
-    min-height: 400px;
-}
+        /*parallax effect*/
 
-.bgimg-3 {
-    background-attachment:scroll;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+        .bgimg-1 {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
 
-.bgimg-3 {
-    background-image: url("5.jpg");
-    min-height: 400px;
-}
+        /* First image (Logo. Full height) */
 
-.w3-wide {letter-spacing: 5px;}
-.w3-hover-opacity {cursor:pointer;}
+        .bgimg-1 {
+            background-image: url('3.jpg');
+            min-height: 100%;
+        }
+
+        .bgimg-2 {
+            background-attachment: scroll;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bgimg-2 {
+            background-image: url("7.jpg");
+            min-height: 400px;
+        }
+
+        .bgimg-3 {
+            background-attachment: scroll;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bgimg-3 {
+            background-image: url("5.jpg");
+            min-height: 400px;
+        }
+
+        .w3-wide {
+            letter-spacing: 5px;
+        }
+
+        .w3-hover-opacity {
+            cursor: pointer;
+        }
 
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
-}
+        /* Turn off parallax scrolling for tablets and phones */
 
-@media only screen and (max-device-width: 1024px) {
-    .a,.b,.c,.d {
-        display:none;
-    }
-}
+        @media only screen and (max-device-width: 1024px) {
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+
+        @media only screen and (max-device-width: 1024px) {
+            .a,
+            .b,
+            .c,
+            .d {
+                display: none;
+            }
+        }
     </style>
-    </head>
-    <body >
+</head>
 
-        <!--nav bar start ,sits on top ,mobile first design so no code for separate mobile page its only moble page -->
-        <div class="w3-top " >
-            <div class="w3-bar w3-large " id="myNavbar" >
-                    <a class="w3-bar-item w3-hide-medium  w3-button w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-                            <i class="fa fa-bars"></i>
-                          </a>
-                
-               <a  href="#home"> <img src="10.png" class="w3-image w3-bar-item w3-left w3-padding-small"></a>       
-                <a class="w3-bar-item w3-button w3-hide-small w3-large w3-right " href="#contact"><i class="fa fa-phone"></i> CONTACT US</a>
-                <a class="w3-bar-item w3-button w3-hide-small w3-large w3-right " href="#services"><i class="fa fa-briefcase"></i> SERVICES</a>
-                <a class="w3-bar-item w3-button w3-hide-small w3-large w3-right " href="#portfolio"><i class="fa fa-th"></i> PORTFOLIO</a>
-                <a class="w3-bar-item w3-button w3-hide-small w3-large w3-right " href="#about"><i class="fa fa-user"></i> ABOUT</a>
+<body>
 
-            </div>
+    <!--nav bar start ,sits on top ,mobile first design so no code for separate mobile page its only moble page -->
+    <div class="w3-top ">
+        <div class="w3-bar w3-large " id="myNavbar">
+            <a class="w3-bar-item w3-hide-medium  w3-button w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()"
+                title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
 
-            <!--mobile nav bar start -->
-            <div id="navDemo" style="border:2px" class="w3-bar-block w3-card w3-leftbar w3-border-cyan w3-large w3-white w3-hide w3-hide-large w3-hide-medium">
-                   
-                    <a class="w3-bar-item w3-button" href="#about" onclick="toggleFunction()"><i class="fa fa-user"></i> ABOUT</a>
-                    <a class="w3-bar-item w3-button" href="#portfolio" onclick="toggleFunction()"><i class="fa fa-th"></i> PORTFOLIO</a>
-                    <a class="w3-bar-item w3-button" href="#services" onclick="toggleFunction()"><i class="fa fa-briefcase"></i> SERVICES</a>
-                    <a class="w3-bar-item w3-button"   href="#contact" onclick="toggleFunction()"><i class="fa fa-phone"></i> CONTACT US</a>
-                </div>
+            <a href="#home">
+                <img src="10.png" class="w3-image w3-bar-item w3-left w3-padding-small">
+            </a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-large w3-right " href="#contact">
+                <i class="fa fa-phone"></i> CONTACT US</a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-large w3-right " href="#services">
+                <i class="fa fa-briefcase"></i> SERVICES</a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-large w3-right " href="#portfolio">
+                <i class="fa fa-th"></i> PORTFOLIO</a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-large w3-right " href="#about">
+                <i class="fa fa-user"></i> ABOUT</a>
+
         </div>
-        <!--nav bar end and  also the top social panel -->
 
-        <!--intro image with logo and page title-->
-<div class="bgimg-1 w3-display-container w3-opacity-min " id="home">
-    <!--title for mobile phone-->
-    <div class="w3-display-middle">
-    <span class=" w3-wide  w3-xxlarge w3-hide-large w3-hide-medium"><b>Phantom Solutions</b></span>
-    <span class=" w3-xlarge  w3-hide-medium w3-hide-large"><b>Trust is our Weapon</b></span>
-    <i class="fa fa-fighter-jet w3-hide-large w3-hide-medium w3-xlarge w3-padding-small"></i>
+        <!--mobile nav bar start -->
+        <div id="navDemo" style="border:2px" class="w3-bar-block w3-card w3-leftbar w3-border-cyan w3-large w3-white w3-hide w3-hide-large w3-hide-medium">
+
+            <a class="w3-bar-item w3-button" href="#about" onclick="toggleFunction()">
+                <i class="fa fa-user"></i> ABOUT</a>
+            <a class="w3-bar-item w3-button" href="#portfolio" onclick="toggleFunction()">
+                <i class="fa fa-th"></i> PORTFOLIO</a>
+            <a class="w3-bar-item w3-button" href="#services" onclick="toggleFunction()">
+                <i class="fa fa-briefcase"></i> SERVICES</a>
+            <a class="w3-bar-item w3-button" href="#contact" onclick="toggleFunction()">
+                <i class="fa fa-phone"></i> CONTACT US</a>
+        </div>
     </div>
-    <!--title for desktop-->
+    <!--nav bar end and  also the top social panel -->
+
+    <!--intro image with logo and page title-->
+    <div class="bgimg-1 w3-display-container w3-opacity-min " id="home">
+        <!--title for mobile phone-->
+        <div class="w3-display-middle">
+            <span class=" w3-wide  w3-xxlarge w3-hide-large w3-hide-medium">
+                <b>Phantom Solutions</b>
+            </span>
+            <span class=" w3-xlarge  w3-hide-medium w3-hide-large">
+                <b>Trust is our Weapon</b>
+            </span>
+            <i class="fa fa-fighter-jet w3-hide-large w3-hide-medium w3-xlarge w3-padding-small"></i>
+        </div>
+        <!--title for desktop-->
         <div class="w3-display-left" style="white-space:nowrap; padding:50px ">
-             <a href="#home" style="text-decoration:none;"><span class=" w3-wide w3-jumbo w3-hide-small w3-hover-opacity w3-ripple"><b>Phantom Solutions</b></span><br></a>
-              <span class=" w3-xlarge w3-hide-small" ><b>Trust is our Weapon</b>  <i class="fa fa-fighter-jet w3-xlarge w3-padding-small"></i></span>
-             
-            
-              
+            <a href="#home" style="text-decoration:none;">
+                <span class=" w3-wide w3-jumbo w3-hide-small w3-hover-opacity w3-ripple">
+                    <b>Phantom Solutions</b>
+                </span>
+                <br>
+            </a>
+            <span class=" w3-xlarge w3-hide-small">
+                <b>Trust is our Weapon</b>
+                <i class="fa fa-fighter-jet w3-xlarge w3-padding-small"></i>
+            </span>
+
+
+
         </div>
         <!--social panel start-->
         <div class="w3-bar w3-xlarge w3-display-bottomleft">
-                <a href="https://www.facebook.com/sahoo.sambit.7" target="_blank" class="w3-bar-item  w3-text-blue w3-hover-opacity"> <i class="fa fa-facebook-official "></i></a>
-                <a href="https://www.instagram.com/soul_sam_480/" target="_blank"  class="w3-bar-item  w3-text-blue w3-hover-opacity "> <i class="fa fa-instagram "></i></a>
-                <a href="https://twitter.com/blazerhcsam" target="_blank"  class="w3-bar-item  w3-text-blue w3-hover-opacity "><i class="fa fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/sambit-sahoo-5b75b3163/" target="_blank"  class="w3-bar-item  w3-text-blue w3-hover-opacity "> <i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/soulsam480" target="_blank"  class="w3-bar-item  w3-text-blue w3-hover-opacity "><i class="fa fa-github "></i></a>
-            </div>
-      </div>
-      
+            <a href="https://www.facebook.com/sahoo.sambit.7" target="_blank" class="w3-bar-item  w3-text-blue w3-hover-opacity">
+                <i class="fa fa-facebook-official "></i>
+            </a>
+            <a href="https://www.instagram.com/soul_sam_480/" target="_blank" class="w3-bar-item  w3-text-blue w3-hover-opacity ">
+                <i class="fa fa-instagram "></i>
+            </a>
+            <a href="https://twitter.com/blazerhcsam" target="_blank" class="w3-bar-item  w3-text-blue w3-hover-opacity ">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sambit-sahoo-5b75b3163/" target="_blank" class="w3-bar-item  w3-text-blue w3-hover-opacity ">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/soulsam480" target="_blank" class="w3-bar-item  w3-text-blue w3-hover-opacity ">
+                <i class="fa fa-github "></i>
+            </a>
+        </div>
+    </div>
+
 
     <!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
+    <div class="w3-container" style="padding:128px 16px" id="about">
         <h3 class="w3-center">ABOUT THE COMPANY</h3>
         <p class="w3-center w3-large">Key features of our company</p>
         <div class="w3-row-padding w3-center" style="margin-top:64px">
-          <div class="w3-quarter">
-            <i class="fa fa-desktop w3-margin-bottom w3-jumbo  w3-text-cyan w3-center w3-hover-opacity"></i>
-            <p class="w3-large">Responsive</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-          </div>
-          <div class="w3-quarter">
-            <i class="fa fa-heart w3-margin-bottom w3-jumbo  w3-text-cyan w3-hover-opacity "></i>
-            <p class="w3-large">Passion</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-          </div>
-          <div class="w3-quarter">
-            <i class="fa fa-diamond w3-margin-bottom w3-jumbo  w3-text-cyan w3-hover-opacity"></i>
-            <p class="w3-large">Design</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-          </div>
-          <div class="w3-quarter">
-            <i class="fa fa-cog w3-margin-bottom w3-jumbo  w3-text-cyan w3-hover-opacity"></i>
-            <p class="w3-large">Support</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-          </div>
+            <div class="w3-quarter">
+                <i class="fa fa-desktop w3-margin-bottom w3-jumbo  w3-text-cyan w3-center w3-hover-opacity"></i>
+                <p class="w3-large">Responsive</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-heart w3-margin-bottom w3-jumbo  w3-text-cyan w3-hover-opacity "></i>
+                <p class="w3-large">Passion</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-diamond w3-margin-bottom w3-jumbo  w3-text-cyan w3-hover-opacity"></i>
+                <p class="w3-large">Design</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-cog w3-margin-bottom w3-jumbo  w3-text-cyan w3-hover-opacity"></i>
+                <p class="w3-large">Support</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
         </div>
-      </div>
-
-      <!--skills section-->
-<div class="bgimg-2 w3-display-container w3-opacity-min ">
-    <div class="w3-container" style="padding:40px 16px"  >
-        <div class="w3-row-padding w3-center">
-            <div class="w3-half w3-text-white">
-                <h2>~ Our Skills ~</h2>
-                <p class="w3-large"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-                    tempor incididunt ut labore et dolore.</b></p>
-                    <p class="w3-large"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-                    tempor incididunt ut labore et dolore.</b></p>
-      </div>
-      <div class="w3-half">
-            <p class="w3-wide w3-text-white"><i class="fa fa-camera w3-margin-right w3-text-white"></i>Photography</p>
-            <div class="w3-theme-l3 w3-border  w3-hover-opacity">
-              <div class="w3-container w3-theme  w3-center " style="width:90%">90%</div>
-            </div>
-            <p class="w3-wide w3-text-white"><i class="fa fa-desktop w3-margin-right w3-text-white"></i>Web Design</p>
-            <div class="w3-theme-l3 w3-border w3-hover-opacity ">
-              <div class="w3-container w3-theme w3-center " style="width:85%">85%</div>
-            </div>
-            <p class="w3-wide w3-text-white"><i class="fa fa-photo w3-margin-right w3-text-white"></i>Photoshop</p>
-            <div class="w3-theme-l3 w3-border w3-hover-opacity ">
-              <div class="w3-container w3-theme w3-center" style="width:75%">75%</div>
-            </div>
-            <p class="w3-wide w3-text-white"><i class="fa fa-cubes w3-margin-right w3-text-white"></i>AutoCAD</p>
-            <div class="w3-theme-l3 w3-border w3-hover-opacity ">
-              <div class="w3-container w3-theme w3-center" style="width:30%">30%</div>
-            </div>
-           
-  </div>
-</div>
-</div>
-</div>
-
-<!-- portfolio section-->
-<div class="w3-container" id="portfolio" style="padding:120px 16px">
-    <h2 class="w3-center">PORTFOLIO</h2>
-    <p class="w3-center w3-large">Some of our Works</p>
-        <div class="w3-row-padding w3-section ">
-            <div class="w3-col  m3 " style="border:5px solid rgba(245, 241, 241, 0.986) ">
-                <img src="3.jpg" style="width:100%" class="w3-hover-opacity "  onclick="onClick(this)"  title="x">
-            </div>
-            <div class="w3-col   m3" style="border:5px solid rgba(245, 241, 241, 0.986)">
-                    <img src="5.jpg" style="width:100%" class="w3-hover-opacity" onclick="onClick(this)" title="x">
-                </div>
-            <div class="w3-col  m3" style="border:5px solid rgba(245, 241, 241, 0.986)">
-                <img src="3.jpg" style="width:100%" class="w3-hover-opacity" onclick="onClick(this)" title="x">
-                    </div>
-            <div class="w3-col  m3" style="border:5px solid rgba(245, 241, 241, 0.986)">
-                <img src="4.jpg" style="width:100%" class="w3-hover-opacity" onclick="onClick(this)" title="x">
-                        </div>
-                        </div>
-    
-                        <div class="w3-row-padding w3-section">
-            <div class="w3-col  m3" style="border:5px solid rgba(245, 241, 241, 0.986)">
-                <img src="5.jpg" style="width:100%" class="w3-hover-opacity" onclick="onClick(this)" title="x">
-                            </div>            
-             <div class="w3-col  m3" style="border:5px solid rgba(245, 241, 241, 0.986)">
-                <img src="6.jpg" style="width:100%" class="w3-hover-opacity" onclick="onClick(this)" title="x">
-                                </div>
-            <div class="w3-col  m3" style="border:5px solid rgba(245, 241, 241, 0.986)">
-                <img src="7.jpg" style="width:100%" class="w3-hover-opacity"  onclick="onClick(this)"title="x">
-            </div> 
-            <div class="w3-col  m3" style="border:5px solid rgba(245, 241, 241, 0.986)">
-                <img src="7.jpg" style="width:100%" class="w3-hover-opacity" onclick="onClick(this)" title="x">
-                    </div>
-            </div>
     </div>
 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-          <img id="img01" class="w3-image">
-          <p id="caption" class="w3-opacity w3-large"></p>
-        </div>
-      </div>
-
-<!--services section start-->
-      <div class="w3-container w3-display-container" id="services">
-        <h2 class="w3-center ">SERVICES</h2>
-       
-          <p class="w3-xlarge w3-center">Choose The Best One For You</p>
-          <p class="w3-large w3-center">Click Below For More Information</p>
-          <div class=" w3-row-padding ">
-            <div class="w3-quarter">
-                    <ul class="w3-ul w3-border w3-center w3-hover-shadow"  onclick="myFunc1()" >
-                            <li class="w3-theme"><h3>Photography</h3></li>
-                            </ul>
-                            <ul class="w3-ul w3-border w3-center w3-hover-shadow a" id="photo">
-                        <li class="w3-padding-16 w3-large w3-theme-l1"><i class="fa fa-check-circle" style="padding:13px"></i><b>20+ </b>Photographers</li>
-                        <li class="w3-padding-16 w3-large w3-theme-l2"><i class="fa fa-check-circle" style="padding:13px"></i><b>15+ </b>Own Cameras</li>
-                        <li class="w3-padding-16 w3-large w3-theme-l3"><i class="fa fa-check-circle" style="padding:13px"></i><b>FREE </b>Photo Edit</li>
-                        <li class="w3-padding-16 w3-large w3-theme-l4"><i class="fa fa-check-circle" style="padding:13px"></i> Upto <b>50 </b>Photo Clicks Offered</li>
-                        <li class="w3-theme-l5 w3-padding-24">
-                        <a href="#contact"><button class="w3-button w3-teal w3-padding-large w3-large"><i class="fa fa-shopping-cart"></i> Learn More</button></a>
-                        </li>
-                        </ul>
+    <!--skills section-->
+    <div class="bgimg-2 w3-display-container w3-opacity-min ">
+        <div class="w3-container" style="padding:40px 16px">
+            <div class="w3-row-padding w3-center">
+                <div class="w3-half w3-text-white">
+                    <h2>~ Our Skills ~</h2>
+                    <p class="w3-large">
+                        <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            <br> tempor incididunt ut labore et dolore.</b>
+                    </p>
+                    <p class="w3-large">
+                        <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            <br> tempor incididunt ut labore et dolore.</b>
+                    </p>
                 </div>
-            <div class="w3-quarter">
-                <ul class="w3-ul w3-border w3-center w3-hover-shadow"  onclick="myFunc2()" >
-                        <li class="w3-theme"><h3>Webdesign</h3></li>
-                        </ul>
-                        <ul class="w3-ul w3-border w3-center w3-hover-shadow b" id="web">
-                        <li class="w3-padding-16 w3-large w3-theme-l1"><i class="fa fa-check-circle" style="padding:13px"></i><b>10+ </b>Web-Developers</li>
-                        <li class="w3-padding-16 w3-large w3-theme-l2"><i class="fa fa-check-circle" style="padding:13px"></i><b>2 yrs. + </b>Experience</li>
-                        <li class="w3-padding-16 w3-large w3-theme-l3"><i class="fa fa-check-circle" style="padding:13px"></i><b>CMS </b>Implementation</li>
-                        <li class="w3-padding-16 w3-large w3-theme-l4"><i class="fa fa-check-circle" style="padding:13px"></i><b>FREE</b> Lifetime Support Access</li>
-                        <li class="w3-theme-l5 w3-padding-24">
-                        <a href="#contact"><button class="w3-button w3-teal w3-padding-large w3-large"><i class="fa fa-shopping-cart"></i> Learn More</button></a>
-                        </li>
-                        </ul>
-                        </div>
-            <div class="w3-quarter">
-                    <ul class="w3-ul w3-border w3-center w3-hover-shadow"  onclick="myFunc3()" >
-                            <li class="w3-theme"><h3>Photoshop</h3></li>
-                            </ul>
-                            <ul class="w3-ul w3-border w3-center w3-hover-shadow c" id="ps">
-                        <li class="w3-padding-16 w3-large w3-theme-l1"><i class="fa fa-check-circle" style="padding:13px"></i><b>10+ </b>Designers</li>
-                        <li class="w3-padding-16 w3-large w3-theme-l2"><i class="fa fa-check-circle" style="padding:13px"></i><b>Wide </b>Range Of Designs</li>
-                        <li class="w3-padding-16 w3-large w3-theme-l3"><i class="fa fa-check-circle" style="padding:13px"></i><b>FREE</b> Lifetime Support</li>
-                        <li class="w3-padding-16 w3-large w3-theme-l4"><i class="fa fa-check-circle" style="padding:13px"></i><b>Free Access </b>To All Design Libraries</li>
-                        <li class="w3-theme-l5 w3-padding-24">
-                        <a href="#contact"><button class="w3-button w3-teal w3-padding-large w3-large"><i class="fa fa-shopping-cart"></i> Learn More</button></a>
-                        </li>
-                        </ul>
-                        </div>
-            <div class="w3-quarter">
-                    <ul class="w3-ul w3-border w3-center w3-hover-shadow"  onclick="myFunc4()" >
-                            <li class="w3-theme"><h3>AutoCAD</h3></li>
-                            </ul>
-                            <ul class="w3-ul w3-border w3-center w3-hover-shadow d" id="cad">
-                        <li class="w3-padding-16 w3-large w3-theme-l1"><i class="fa fa-check-circle" style="padding:13px"></i><b>12 </b>CAD Engineers</li>
-                        <li class="w3-padding-16 w3-large w3-theme-l2"><i class="fa fa-check-circle" style="padding:13px"></i><b>3 yrs. + </b>Experience</li>
-                        <li class="w3-padding-16 w3-large w3-theme-l3"><i class="fa fa-check-circle" style="padding:13px"></i><b>FREE </b>Lifetime Support</li>
-                        <li class="w3-padding-16 w3-large w3-theme-l4"><i class="fa fa-check-circle" style="padding:13px"></i> Upto <b>30 </b>3D and 2D Designs Offered </li>
-                        <li class="w3-theme-l5 w3-padding-24">
-                        <a href="#contact"><button class="w3-button w3-teal w3-padding-large  w3-large"><i class="fa fa-shopping-cart"></i> Learn More</button></a>
-                        </li>
-                        </ul>
-                        </div>
-          </div>
-      </div>
-<!--contact section start-->
+                <div class="w3-half">
+                    <p class="w3-wide w3-text-white">
+                        <i class="fa fa-camera w3-margin-right w3-text-white"></i>Photography</p>
+                    <div class="w3-theme-l3 w3-border  w3-hover-opacity">
+                        <div class="w3-container w3-theme  w3-center " style="width:90%">90%</div>
+                    </div>
+                    <p class="w3-wide w3-text-white">
+                        <i class="fa fa-desktop w3-margin-right w3-text-white"></i>Web Design</p>
+                    <div class="w3-theme-l3 w3-border w3-hover-opacity ">
+                        <div class="w3-container w3-theme w3-center " style="width:85%">85%</div>
+                    </div>
+                    <p class="w3-wide w3-text-white">
+                        <i class="fa fa-photo w3-margin-right w3-text-white"></i>Photoshop</p>
+                    <div class="w3-theme-l3 w3-border w3-hover-opacity ">
+                        <div class="w3-container w3-theme w3-center" style="width:75%">75%</div>
+                    </div>
+                    <p class="w3-wide w3-text-white">
+                        <i class="fa fa-cubes w3-margin-right w3-text-white"></i>AutoCAD</p>
+                    <div class="w3-theme-l3 w3-border w3-hover-opacity ">
+                        <div class="w3-container w3-theme w3-center" style="width:30%">30%</div>
+                    </div>
 
-      <div class="w3-display-container w3-container " style="padding: 80px 16px" id="contact">
-          <h2 class="w3-center">CONTACT</h2>
-          <h5 class="w3-center">Get In Touch With Us</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio section-->
+    <div class="w3-container" id="portfolio" style="padding:120px 16px">
+        <h2 class="w3-center">PORTFOLIO</h2>
+        <p class="w3-center w3-large">Some of our Works</p>
+        <div class="w3-row-padding w3-section ">
+            <div class="w3-col  m3 " style="border:5px solid rgba(245, 241, 241, 0.986) ">
+                <img src="3.jpg" style="width:100%" class="w3-hover-opacity " onclick="onClick(this)" title="x">
+            </div>
+            <div class="w3-col   m3" style="border:5px solid rgba(245, 241, 241, 0.986)">
+                <img src="5.jpg" style="width:100%" class="w3-hover-opacity" onclick="onClick(this)" title="x">
+            </div>
+            <div class="w3-col  m3" style="border:5px solid rgba(245, 241, 241, 0.986)">
+                <img src="3.jpg" style="width:100%" class="w3-hover-opacity" onclick="onClick(this)" title="x">
+            </div>
+            <div class="w3-col  m3" style="border:5px solid rgba(245, 241, 241, 0.986)">
+                <img src="4.jpg" style="width:100%" class="w3-hover-opacity" onclick="onClick(this)" title="x">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-section">
+            <div class="w3-col  m3" style="border:5px solid rgba(245, 241, 241, 0.986)">
+                <img src="5.jpg" style="width:100%" class="w3-hover-opacity" onclick="onClick(this)" title="x">
+            </div>
+            <div class="w3-col  m3" style="border:5px solid rgba(245, 241, 241, 0.986)">
+                <img src="6.jpg" style="width:100%" class="w3-hover-opacity" onclick="onClick(this)" title="x">
+            </div>
+            <div class="w3-col  m3" style="border:5px solid rgba(245, 241, 241, 0.986)">
+                <img src="7.jpg" style="width:100%" class="w3-hover-opacity" onclick="onClick(this)" title="x">
+            </div>
+            <div class="w3-col  m3" style="border:5px solid rgba(245, 241, 241, 0.986)">
+                <img src="7.jpg" style="width:100%" class="w3-hover-opacity" onclick="onClick(this)" title="x">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image">
+            <i class="fa fa-remove"></i>
+        </span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    <!--services section start-->
+    <div class="w3-container w3-display-container" id="services">
+        <h2 class="w3-center ">SERVICES</h2>
+
+        <p class="w3-xlarge w3-center">Choose The Best One For You</p>
+        <p class="w3-large w3-center">Click Below For More Information</p>
+        <div class=" w3-row-padding ">
+            <div class="w3-quarter">
+                <ul class="w3-ul w3-border w3-center w3-hover-shadow" onclick="myFunc1()">
+                    <li class="w3-theme">
+                        <h3>Photography</h3>
+                    </li>
+                </ul>
+                <ul class="w3-ul w3-border w3-center w3-hover-shadow a" id="photo">
+                    <li class="w3-padding-16 w3-large w3-theme-l1">
+                        <i class="fa fa-check-circle" style="padding:13px"></i>
+                        <b>20+ </b>Photographers</li>
+                    <li class="w3-padding-16 w3-large w3-theme-l2">
+                        <i class="fa fa-check-circle" style="padding:13px"></i>
+                        <b>15+ </b>Own Cameras</li>
+                    <li class="w3-padding-16 w3-large w3-theme-l3">
+                        <i class="fa fa-check-circle" style="padding:13px"></i>
+                        <b>FREE </b>Photo Edit</li>
+                    <li class="w3-padding-16 w3-large w3-theme-l4">
+                        <i class="fa fa-check-circle" style="padding:13px"></i> Upto
+                        <b>50 </b>Photo Clicks Offered</li>
+                    <li class="w3-theme-l5 w3-padding-24">
+                        <a href="#contact">
+                            <button class="w3-button w3-teal w3-padding-large w3-large">
+                                <i class="fa fa-shopping-cart"></i> Learn More</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-quarter">
+                <ul class="w3-ul w3-border w3-center w3-hover-shadow" onclick="myFunc2()">
+                    <li class="w3-theme">
+                        <h3>Webdesign</h3>
+                    </li>
+                </ul>
+                <ul class="w3-ul w3-border w3-center w3-hover-shadow b" id="web">
+                    <li class="w3-padding-16 w3-large w3-theme-l1">
+                        <i class="fa fa-check-circle" style="padding:13px"></i>
+                        <b>10+ </b>Web-Developers</li>
+                    <li class="w3-padding-16 w3-large w3-theme-l2">
+                        <i class="fa fa-check-circle" style="padding:13px"></i>
+                        <b>2 yrs. + </b>Experience</li>
+                    <li class="w3-padding-16 w3-large w3-theme-l3">
+                        <i class="fa fa-check-circle" style="padding:13px"></i>
+                        <b>CMS </b>Implementation</li>
+                    <li class="w3-padding-16 w3-large w3-theme-l4">
+                        <i class="fa fa-check-circle" style="padding:13px"></i>
+                        <b>FREE</b> Lifetime Support Access</li>
+                    <li class="w3-theme-l5 w3-padding-24">
+                        <a href="#contact">
+                            <button class="w3-button w3-teal w3-padding-large w3-large">
+                                <i class="fa fa-shopping-cart"></i> Learn More</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-quarter">
+                <ul class="w3-ul w3-border w3-center w3-hover-shadow" onclick="myFunc3()">
+                    <li class="w3-theme">
+                        <h3>Photoshop</h3>
+                    </li>
+                </ul>
+                <ul class="w3-ul w3-border w3-center w3-hover-shadow c" id="ps">
+                    <li class="w3-padding-16 w3-large w3-theme-l1">
+                        <i class="fa fa-check-circle" style="padding:13px"></i>
+                        <b>10+ </b>Designers</li>
+                    <li class="w3-padding-16 w3-large w3-theme-l2">
+                        <i class="fa fa-check-circle" style="padding:13px"></i>
+                        <b>Wide </b>Range Of Designs</li>
+                    <li class="w3-padding-16 w3-large w3-theme-l3">
+                        <i class="fa fa-check-circle" style="padding:13px"></i>
+                        <b>FREE</b> Lifetime Support</li>
+                    <li class="w3-padding-16 w3-large w3-theme-l4">
+                        <i class="fa fa-check-circle" style="padding:13px"></i>
+                        <b>Free Access </b>To All Design Libraries</li>
+                    <li class="w3-theme-l5 w3-padding-24">
+                        <a href="#contact">
+                            <button class="w3-button w3-teal w3-padding-large w3-large">
+                                <i class="fa fa-shopping-cart"></i> Learn More</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-quarter">
+                <ul class="w3-ul w3-border w3-center w3-hover-shadow" onclick="myFunc4()">
+                    <li class="w3-theme">
+                        <h3>AutoCAD</h3>
+                    </li>
+                </ul>
+                <ul class="w3-ul w3-border w3-center w3-hover-shadow d" id="cad">
+                    <li class="w3-padding-16 w3-large w3-theme-l1">
+                        <i class="fa fa-check-circle" style="padding:13px"></i>
+                        <b>12 </b>CAD Engineers</li>
+                    <li class="w3-padding-16 w3-large w3-theme-l2">
+                        <i class="fa fa-check-circle" style="padding:13px"></i>
+                        <b>3 yrs. + </b>Experience</li>
+                    <li class="w3-padding-16 w3-large w3-theme-l3">
+                        <i class="fa fa-check-circle" style="padding:13px"></i>
+                        <b>FREE </b>Lifetime Support</li>
+                    <li class="w3-padding-16 w3-large w3-theme-l4">
+                        <i class="fa fa-check-circle" style="padding:13px"></i> Upto
+                        <b>30 </b>3D and 2D Designs Offered </li>
+                    <li class="w3-theme-l5 w3-padding-24">
+                        <a href="#contact">
+                            <button class="w3-button w3-teal w3-padding-large  w3-large">
+                                <i class="fa fa-shopping-cart"></i> Learn More</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--contact section start-->
+
+    <div class="w3-display-container w3-container " style="padding: 80px 16px" id="contact">
+        <h2 class="w3-center">CONTACT</h2>
+        <h5 class="w3-center">Get In Touch With Us</h5>
         <div class="w3-row-padding w3-theme-l4 ">
             <div class="w3-quarter w3-center" style="padding:20px">
                 <div class="w3-half w3-padding-large ">
                     <img src="10.png" alt="logo" class="w3-hover-opacity " title="ps">
                 </div>
-                
+
                 <section class="w3-half">
 
-                    <a class="w3-hover-text-cyan w3-large" style="text-decoration:none;" href="#about">About</a><br>
-                    <a class="w3-hover-text-cyan w3-large" style="text-decoration:none;" href="#services">Services</a><br>
+                    <a class="w3-hover-text-cyan w3-large" style="text-decoration:none;" href="#about">About</a>
+                    <br>
+                    <a class="w3-hover-text-cyan w3-large" style="text-decoration:none;" href="#services">Services</a>
+                    <br>
                     <a class="w3-hover-text-cyan w3-large" style="text-decoration:none;" href="#portfolio">Portfolio</a>
-    
+
                 </section>
             </div>
-          
+
             <section class="w3-quarter" style="padding:20px">
-              <div class="w3-large w3-hover-text-cyan"><i class="fa fa-envelope"></i> samtestingbeta@gmail.com</div>
-              <div class="w3-large w3-hover-text-cyan"><i class="fa fa-phone"></i>+91-8917300318</div>
-              
-              <div class=" w3-xlarge" style="display: inline;">
-                    <a href="https://www.facebook.com/sahoo.sambit.7" target="_blank" class="w3-bar-item  w3-hover-text-cyan"> <i class="fa fa-facebook-official "></i></a>
-                    <a href="https://www.instagram.com/soul_sam_480/" target="_blank"  class="w3-bar-item w3-padding-small  w3-hover-text-cyan "> <i class="fa fa-instagram "></i></a>
-                    <a href="https://twitter.com/blazerhcsam" target="_blank"  class="w3-bar-item  w3-hover-text-cyan w3-hover-opacity "><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/sambit-sahoo-5b75b3163/" target="_blank"  class="w3-bar-item  w3-padding-small w3-hover-text-cyan "> <i class="fa fa-linkedin"></i></a>
-                    <a href="https://github.com/soulsam480" target="_blank"  class="w3-bar-item   w3-hover-text-cyan "><i class="fa fa-github "></i></a>
+                <div class="w3-large w3-hover-text-cyan">
+                    <i class="fa fa-envelope"></i> samtestingbeta@gmail.com</div>
+                <div class="w3-large w3-hover-text-cyan">
+                    <i class="fa fa-phone"></i>+91-8917300318</div>
+
+                <div class=" w3-xlarge" style="display: inline;">
+                    <a href="https://www.facebook.com/sahoo.sambit.7" target="_blank" class="w3-bar-item  w3-hover-text-cyan">
+                        <i class="fa fa-facebook-official "></i>
+                    </a>
+                    <a href="https://www.instagram.com/soul_sam_480/" target="_blank" class="w3-bar-item w3-padding-small  w3-hover-text-cyan ">
+                        <i class="fa fa-instagram "></i>
+                    </a>
+                    <a href="https://twitter.com/blazerhcsam" target="_blank" class="w3-bar-item  w3-hover-text-cyan w3-hover-opacity ">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sambit-sahoo-5b75b3163/" target="_blank" class="w3-bar-item  w3-padding-small w3-hover-text-cyan ">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/soulsam480" target="_blank" class="w3-bar-item   w3-hover-text-cyan ">
+                        <i class="fa fa-github "></i>
+                    </a>
                 </div>
             </section>
-           
-          <div class="w3-quarter" style="padding:20px">
-                <div class="w3-large"><b class="w3-xlarge">Phantom Solutions</b><br>
-                    Bhubaneswar<br>
-                    Odisha<br>
-                    Pin-759146
+
+            <div class="w3-quarter" style="padding:20px">
+                <div class="w3-large">
+                    <b class="w3-xlarge">Phantom Solutions</b>
+                    <br> Bhubaneswar
+                    <br> Odisha
+                    <br> Pin-759146
                 </div>
-          </div>
-          <div class="w3-quarter" style="padding:20px">
-              <div class="w3-center w3-large"><i class="fa fa-map-marker  w3-xlarge "></i>    Find Me At</div>
+            </div>
+            <div class="w3-quarter" style="padding:20px">
+                <div class="w3-center w3-large">
+                    <i class="fa fa-map-marker  w3-xlarge "></i> Find Me At</div>
                 <div id="map" class="w3-round-large " style="width:100%;height:250px;"></div>
             </div>
-          </div>
-          <p class="w3-center w3-text-grey w3-text-opacity">Copyright &copy Phantom Solns. 2018<br/>
-            ~Handcrafted In India~</p>
-            </div>
+        </div>
+        <p class="w3-center w3-text-grey w3-text-opacity">Copyright &copy Phantom Solns. 2018
+            <br/> ~Handcrafted In India~</p>
+    </div>
 
-            
+
     <script>
-    //nav bar on small devices
-    function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-    // Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-    //click to open services in sevice section 4 functions for each service
- function myFunc1() {
-    var x = document.getElementById('photo');
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-function myFunc2() {
-    var x = document.getElementById('web');
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-function myFunc3() {
-    var x = document.getElementById('ps');
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-function myFunc4() {
-    var x = document.getElementById('cad');
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-    //map function google map API
- function myMap() {
-          var myCenter = new google.maps.LatLng(20.934176,85.260515);
-          var mapCanvas = document.getElementById("map");
-          var mapOptions = {center: myCenter, zoom: 14};
-          var map = new google.maps.Map(mapCanvas, mapOptions);
-          var marker = new google.maps.Marker({position:myCenter});
-          marker.setMap(map);
+        //nav bar on small devices
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
         }
-       
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+        //click to open services in sevice section 4 functions for each service
+        function myFunc1() {
+            var x = document.getElementById('photo');
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
 
-    // Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-zoom" + " w3-white " +"w3-rightbar w3-leftbar w3-border-cyan";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-zoom w3-white ", "");
-    }
-}
+        function myFunc2() {
+            var x = document.getElementById('web');
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function myFunc3() {
+            var x = document.getElementById('ps');
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function myFunc4() {
+            var x = document.getElementById('cad');
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        //map function google map API
+        function myMap() {
+            var myCenter = new google.maps.LatLng(20.934176, 85.260515);
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+                center: myCenter,
+                zoom: 14
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({
+                position: myCenter
+            });
+            marker.setMap(map);
+        }
+
+
+        // Change style of navbar on scroll
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-zoom" + " w3-white " +
+                    "w3-rightbar w3-leftbar w3-border-cyan";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-zoom w3-white ", "");
+            }
+        }
     </script>
     <script src="https://unpkg.com/vivid-icons@1.0.2/dist/vivid-icons.min.js" type="text/javascript"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCChvOgtQrEH_KVYg7Pg9YbNDzugmaTA6o&amp;callback=myMap"></script>
-    </body>
+</body>
+
 </html>
