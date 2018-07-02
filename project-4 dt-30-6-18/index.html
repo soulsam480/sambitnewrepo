@@ -16,9 +16,9 @@
 <body>
 
 		
-
+<!--intro image with nav and title-->
 	 <div class="w3-display-container bgimg-1  ">
-	 	<span  style="float: left; padding-left:10px; font-size: 35px; color:#e68a00; cursor: pointer; text-shadow: 0.5px 0.5px black;"
+	 	<span  style="float: left; padding-left:10px; font-size: 35px; color:#e68a00; cursor: pointer; text-shadow: 0.5px 0.5px black; position: fixed;"
 	 	onclick="openNav()" id="myNavbar">
 	 		&#9776</span>
 	 	
@@ -47,16 +47,25 @@
 		
 		<div class="row">
 			<!--the left div starts here-->
-			<div class="col-4">
-				<div class="pop1">
-					<h3>Most Popular Posts</h3>
+			<div class="col-8">
+				
 					
-				</div>
 				
 			</div>
 			<!--the right div starts here-->
-			<div class="col-8" style="padding-bottom: 2000px;">
-				
+			<div class="col-4" style="padding-bottom: 2000px;">
+				<!--fixed should not be changed. this is for thye head of the most popular section. dont change this.-->
+				<div class="pop1">
+					<h3>Most Popular Posts</h3>
+				</div>
+				<!--copy and paste this code below and again and again to show down the blog posts. this should be copied and pasted again and again. there should be no change in style-->
+				<div class="pop2">
+					<img src="4.jpg" class="mimage">
+					<div style="display: inline-block;">
+					<h6 >How We Started Our Own Company.</h6>
+					<p style="font-size:10px;">BY <b>Sambit Sahoo</b> June 3 <sup>th</sup> 2018</p>
+					</div>
+				</div>
 
 			</div>
 
@@ -75,22 +84,14 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
-// Get the header
-var header = document.getElementById("myNavbar");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myNavbar").style.display = "block";
+    } else {
+    }
 }
 
 </script>
