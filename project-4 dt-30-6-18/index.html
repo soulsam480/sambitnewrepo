@@ -1,0 +1,100 @@
+<html>
+	<head>
+		<title>Phantom Blogs</title>
+	</head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style1.css">
+	 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-cyan.css">
+
+<body>
+
+		
+
+	 <div class="w3-display-container bgimg-1  ">
+	 	<span  style="float: left; padding-left:10px; font-size: 35px; color:#e68a00; cursor: pointer; text-shadow: 0.5px 0.5px black;"
+	 	onclick="openNav()" id="myNavbar">
+	 		&#9776</span>
+	 	
+        <div class=" head"> 
+            <!--desktop header-->
+            <h1 class="w3-wide a">
+                <b>Phantom Blog</b>
+            </h1>
+            <!--mobile header-->
+            <h1 class="w3-wide  b">
+                <b>Phantom<br> Blog</b>
+            </h1>
+            <h4 class="w3-hide-large w3-wide w3-hide-medium "style=" float: left; color:#e68a00;padding-left: 60px;   font-family: 'Dosis', sans-serif ; text-shadow: 0.5px 0.5px black;" >
+               <b> How's your day going?</b>
+            </h4>
+        </div>
+    </div>
+
+	     <div id="mySidenav" class="sidenav">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       <a href="#">Topics</a>
+       <a href="#">Post</a>
+       <a href="#">Gallery</a>
+       <a href="#">Forum</a>
+     </div>
+		
+		<div class="row">
+			<!--the left div starts here-->
+			<div class="col-4">
+				<div class="pop1">
+					<h3>Most Popular Posts</h3>
+					
+				</div>
+				
+			</div>
+			<!--the right div starts here-->
+			<div class="col-8" style="padding-bottom: 2000px;">
+				
+
+			</div>
+
+			
+		</div>
+
+
+		
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myNavbar");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+</script>
+
+</body>
+
+</html>
