@@ -240,13 +240,12 @@
 
 
 .categories{
-    height: 500px;
-    display: none;
+    height: 230px;
 }
 
 .blog{
    
-   margin-left:20px;
+   margin-left:12px;
    border:2px #bfbfbf;
    background-color:white;
    padding-left:5px;
@@ -318,9 +317,28 @@
 
             }
 
-             .blogsocio a:hover{
-                color: #f2f2f2;
-             }
+            .blogsocio1{
+            list-style-type: none;
+            padding-right: 10px;
+            }
+
+            .blogsocio1 li{
+                display: inline-block;
+                padding: 5px;
+                font-size:20px;
+                
+
+            }
+
+            .blogsocio1 li>a{
+                text-decoration: none;
+
+            }
+
+            .blogsocio1 li>a>i{
+                color:#e68a00;
+
+            }
 
              .fimage{
                 display: block;
@@ -346,13 +364,14 @@
              }
 
             #fback{
-                background-color: white;
-                border:1px white ;
-                border-radius:10px;
-                padding-bottom:230px;
+                padding-bottom:10px;
+                padding-top:10px;
+
             }
 
             .ty{
                 padding-top:30px;
                 text-align:center;
+                color:#e68a00;
+                text-shadow:0.7px 0.7px black;
             }
