@@ -1,5 +1,5 @@
         .main{
-            background-color:#e6e6e6;
+            background-color:#f2f2f2;
         }
 
   * {
@@ -164,13 +164,14 @@
 }
 
 .row{
-    padding-top: 60px;
+    padding-top: 40px;
+
 }
 
 [class*="col-"] {
     float: left;
-    padding: 10px;
-    border: 1px solid red;
+    padding-right:10px;
+   
 }
 
 .pop1{
@@ -246,19 +247,112 @@
 .blog{
    
    margin-left:20px;
+   border:2px #bfbfbf;
+   background-color:white;
+   padding-left:5px;
+   border-radius:20px;
+   padding-bottom:20px;
+
+
     
 }
 
 .blog h1{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
 
 }
 .blog h4{
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Lato', sans-serif;
 
 }
 .blog p{
     font-family: 'Lato', sans-serif;
-    font-size: 12px;
+   
+    
 
 }
+
+.blogimage{
+    padding-right:10px;
+    border-radius:2%;
+   
+}
+
+.author{
+
+    border:1px solid #a6a6a6;
+     margin-right:10px;
+         padding-left:20px
+
+
+
+}
+@media only screen and ( max-width:600px){
+    .author{
+        margin-right:10px;
+         padding-left:20px
+    }
+}
+
+.blogsocio{
+            list-style-type: none;
+
+
+
+            }
+
+            .blogsocio li{
+                display: inline-block;
+                padding: 5px;
+                font-size:20px;
+
+            }
+
+            .blogsocio li>a{
+                text-decoration: none;
+
+            }
+
+            .blogsocio li>a>i{
+                color: #666666;
+
+            }
+
+             .blogsocio a:hover{
+                color: #f2f2f2;
+             }
+
+             .fimage{
+                display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 40px;
+              padding-top:10px;
+          
+             }
+
+             .row1{
+                padding-top:30px;
+                padding-bottom: 30px;
+                
+
+             }
+
+
+             @media only screen and (max-width:600px){
+                .adress{
+                    text-align: center;
+                }
+             }
+
+            #fback{
+                background-color: white;
+                border:1px white ;
+                border-radius:10px;
+                padding-bottom:230px;
+            }
+
+            .ty{
+                padding-top:30px;
+                text-align:center;
+            }
