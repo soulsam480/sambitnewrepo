@@ -9,7 +9,7 @@
         <div class="w3-center"  >
             <p style="font-size:100px; color: gray;" > Thank You!!!</p>
             <br>
-            <p style="font-size:25px; color:rgb(18, 150, 194)"> A Conformation E-mail Has Been Sent To Your E-mail Adress
+            <p style="font-size:25px; color:rgb(18, 150, 194)"> Your request has beenn successfully registered. You will receive a call regarding the service shortly.
                 <br>
                 <br>
                If You Run Into Any Problem Please Contact Us 

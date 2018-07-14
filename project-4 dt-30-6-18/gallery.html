@@ -1,0 +1,113 @@
+<html>
+
+<head>
+	<title>Image Gallery</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel=" shortcut icon" type="image/png" href="logo1.png" />
+<link rel="stylesheet" href="gallery.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-cyan.css">
+</head>
+<body class="main">
+    	<!--intro image with nav and title-->
+	<div class="w3-display-container bgimg-1  ">
+		<span style="float: left; padding-left:10px; font-size: 35px; color:#e68a00; cursor: pointer; text-shadow: 0.5px 0.5px black; position: fixed;"
+		    onclick="openNav()" id="myNavbar">
+			&#9776</span>
+
+		<div class=" head">
+			<!--desktop header-->
+			<h1 class="w3-wide a">
+				<b>Image Gallery</b>
+			</h1>
+			<!--mobile header-->
+			<h1 class="w3-wide  b">
+				<b>Image
+					<br> Gallery</b>
+			</h1>
+			<h4 class="w3-hide-large w3-wide w3-hide-medium " style=" float: left; color:#e68a00;padding-left: 60px;   font-family: 'Raleway', sans-serif ; text-shadow: 0.5px 0.5px black; font-size:22px;">
+				<b> How's your day going?</b>
+			</h4>
+		</div>
+
+		<ul class="blogsocio1 w3-display-topright">
+			<li>
+				<a href=" https://www.facebook.com/sahoo.sambit.7" target="_blank">
+					<i class="fa fa-facebook"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://twitter.com/blazerhcsam" target="_blank">
+					<i class="fa fa-twitter"></i>
+				</a>
+			</li>
+			<li>
+				<a href=" https://github.com/soulsam480" target="_blank">
+					<i class="fa fa-github"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/soul_sam_480/" target="_blank">
+					<i class="fa fa-instagram"></i>
+				</a>
+			</li>
+			<li>
+				<a href=" https://www.linkedin.com/in/sambit-sahoo-5b75b3163/" target="_blank">
+					<i class="fa fa-linkedin"></i>
+				</a>
+			</li>
+			<li>
+				<a href=" https://blog.phantomspeaks.cf" target="_blank">
+					<i class="fa fa-wordpress"></i>
+				</a>
+			</li>
+		</ul>
+
+	</div>
+
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#">Gallery</a>
+		<a href="#">Forum</a>
+		<div class="dropdown">
+			<button class="dropbtn">Categories</button>
+			<div class="dropdown-content">
+				<a href="#">Programming</a>
+				<a href="#">International</a>
+				<a href="#">Technology</a>
+				<a href="#">Tutorials</a>
+				<a href="#">AI</a>
+			</div>
+		</div>
+
+	</div>
+<script>
+    	function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () {
+			scrollFunction()
+		};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("myNavbar").style.display = "block";
+			} else {}
+		}
+</script>
+</body>
+</html>

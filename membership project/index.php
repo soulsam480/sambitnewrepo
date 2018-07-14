@@ -175,13 +175,13 @@
             <a href="index.html/#home">
                 <img src="10.png" class="w3-image w3-bar-item w3-left w3-padding-small">
             </a>
-            <a class="w3-bar-item w3-button w3-hide-small w3-large w3-right " href="index.html/#contact">
+            <a class="w3-bar-item w3-button w3-hide-small w3-large w3-right " href="#contact">
                 <i class="fa fa-phone"></i> CONTACT US</a>
             <a class="w3-bar-item w3-button w3-hide-small w3-large w3-right " href="index.html/#services">
                 <i class="fa fa-briefcase"></i> SERVICES</a>
-            <a class="w3-bar-item w3-button w3-hide-small w3-large w3-right " href="#index.html/#portfolio">
+            <a class="w3-bar-item w3-button w3-hide-small w3-large w3-right " href="index.html/#portfolio">
                 <i class="fa fa-th"></i> PORTFOLIO</a>
-            <a class="w3-bar-item w3-button w3-hide-small w3-large w3-right " href="index.html/#about">
+            <a class="w3-bar-item w3-button w3-hide-small w3-large w3-right " href="#about">
                 <i class="fa fa-user"></i> ABOUT</a>
 
         </div>
@@ -284,28 +284,32 @@
             <form action="/action_page.php">
                 <div class="row">
                     <div class="col-25">
-                        <label for="fname">First Name</label>
+                        <label for="fname">Full Name</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <input type="text" id="fname" name="name" placeholder="Your name..">
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-25">
-                        <label for="lname">Last Name</label>
+                        <label for="email">E-mail</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <input type="text" id="email" name="email" placeholder="Your Email">
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-25">
-                        <label for="country">Country</label>
+                        <label for="number">Mobile No</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="country" name="country" placeholder="Your Country">
+                        <input type="text" id="number" name="number" placeholder="Your Mobile No">
                     </div>
                 </div>
+
+
                 <div class="row">
                     <div class="col-25">
                         <label for="subject">Subject</label>

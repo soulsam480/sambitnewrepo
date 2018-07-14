@@ -1,0 +1,182 @@
+.main {
+    background-color: #f2f2f2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1.a {
+    float: left;
+    font-family: 'Dosis', sans-serif;
+    font-size: 80px;
+    white-space: nowrap;
+    padding-left: 150px;
+    color: #e68a00;
+    text-shadow: 1.5px 1.5px black;
+}
+
+h1.b {
+    float: left;
+    font-family: 'Dosis', sans-serif;
+    font-size: 49px;
+    white-space: nowrap;
+    color: #00ccff;
+    padding-left: 60px;
+    text-shadow: 1.5px 1.5px black;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .a {
+        display: none;
+    }
+}
+
+.about {
+    padding: 110px 20px 0px 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    .b {
+        display: none;
+    }
+}
+
+@media only screen and ( min-width:1024px) {
+    .atext {
+        padding: 0px 60px;
+    }
+}
+
+.atext {
+    text-align: center;
+}
+
+/*top padding for both desktop and mobile*/
+
+.head {
+    padding: 150px 0px 120px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    .head {
+        padding: 100px 0px 120px 0px;
+    }
+}
+
+.w3-wide {
+    letter-spacing: 8px;
+}
+
+ul {
+    font-size: 20px;
+}
+
+/*parallax effect*/
+
+.bgimg-1 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+/* First image (Logo. Full height) */
+
+.bgimg-1 {
+    background-image: url('8.jpg');
+    min-height: 65%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #b3ffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 80px;
+}
+
+.sidenav a {
+    padding: 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    margin-left: 50px;
+}
+
+.sidenav a:hover {
+    color: #ffb84d;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 60px;
+    margin-left: 50px;
+    color: red;
+    padding-left: 200px;
+}
+.blogsocio1 li {
+    display: inline-block;
+    padding: 5px;
+    font-size: 20px;
+    display: top;
+}
+
+.blogsocio1 li>a {
+    text-decoration: none;
+}
+
+.blogsocio1 li>a>i {
+    color: #e68a00;
+}
+
+.dropbtn {
+    background-color: #B3FFFF;
+    padding: 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 50px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    display: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #B3FFFF;
+    width:100%;
+    
+    z-index: 1;
+    
+}
+.dropdown-content a{
+    font-size:16px;
+}
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {color: #E79519;}
