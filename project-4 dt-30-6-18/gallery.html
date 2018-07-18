@@ -3,21 +3,22 @@
 <head>
 	<title>Image Gallery</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel=" shortcut icon" type="image/png" href="logo1.png" />
-<link rel="stylesheet" href="gallery.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-cyan.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel=" shortcut icon" type="image/png" href="logo1.png" />
+	<link rel="stylesheet" href="gallery.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-cyan.css">
 </head>
+
 <body class="main">
-    	<!--intro image with nav and title-->
+	<!--intro image with nav and title-->
 	<div class="w3-display-container bgimg-1  ">
 		<span style="float: left; padding-left:10px; font-size: 35px; color:#e68a00; cursor: pointer; text-shadow: 0.5px 0.5px black; position: fixed;"
 		    onclick="openNav()" id="myNavbar">
@@ -75,6 +76,7 @@
 
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">Home</a>
 		<a href="#">Gallery</a>
 		<a href="#">Forum</a>
 		<div class="dropdown">
@@ -89,8 +91,154 @@
 		</div>
 
 	</div>
-<script>
-    	function openNav() {
+
+<div class="gallery-start">
+
+	<h2 class="g-head">Moments Captured </h2>
+
+</div>
+
+<!--the gallery section starts here-->
+	<div class="row">
+		<div class="column">
+			<img src="8.jpg" style="width:100%" onclick="onClick(this)" >
+			<img src="8.jpg" style="width:100%" onclick="onClick(this)" >
+			<img src="8.jpg" style="width:100%" onclick="onClick(this)" >
+
+
+		</div>
+		<div class="column">
+			<img src="8.jpg" style="width:100%" onclick="onClick(this)" >
+			<img src="8.jpg" style="width:100%" onclick="onClick(this)" >
+			<img src="8.jpg" style="width:100%" onclick="onClick(this)" >
+
+		</div>
+		<div class="column">
+			<img src="8.jpg" style="width:100%" onclick="onClick(this)" >
+			<img src="8.jpg" style="width:100%" onclick="onClick(this)" >
+			<img src="8.jpg" style="width:100%" onclick="onClick(this)" >
+
+
+		</div>
+		<div class="column">
+			<img src="8.jpg" style="width:100%" onclick="onClick(this)" >
+			<img src="8.jpg" style="width:100%" onclick="onClick(this)" >
+			<img src="8.jpg" style="width:100%" onclick="onClick(this)" >
+
+		</div>
+	</div>
+
+	<!-- Modal for full size images on click-->
+	<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+		<span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image">
+			<i class="fa fa-remove"></i>
+		</span>
+		<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+			<img id="img01" class="w3-image">
+			<p id="caption" class="w3-opacity w3-large"></p>
+		</div>
+	</div>
+
+
+<!--footer secton starts-->
+	<div class="row1">
+		<!--1-->
+		<div class="col-3" id="fback">
+			<img src="logo1.png" alt="Phantom Blogs" class="fimage">
+			<p style="text-align: center; font-size:14px; padding-left:5px;">Phantom Blogs is an community of fellow programmers and tech savy people . We aim to provide latest news and tips on everyday
+				technology.
+			</p>
+		</div>
+		<!--maps api-->
+		<div class="col-3" id="fback">
+
+			<h4 class="w3-wide" style="font-family:Raleway;  color:#e68a00; text-shadow: 0.5px 0.5px black; text-align: center;">
+				<b>Find us at </b>
+				<i class="fa fa-map-marker"></i>
+			</h4>
+			<div id="map" style="height:200px; width:100%;">
+
+			</div>
+		</div>
+
+	</div>
+	<!--adress-->
+	<div class="col-3">
+		<div style="margin-left: 20px;" class="adress">
+			<h4 style="font-family:Raleway;  color:#e68a00;  text-shadow: 0.5px 0.5px black;" class="w3-wide">
+				<b>Phantom Blog</b>
+			</h4>
+			<p>Indira Gandhi Institute Of Technology
+				<br> Sarang,Odisha,India
+				<br> Pin-759146
+			</p>
+		</div>
+		<br>
+	</div>
+	<!--contact us-->
+	<div class="col-3">
+		<h5 style="text-align:center; font-family: Raleway;  color:#e68a00;  text-shadow: 0.5px 0.5px black; " class="w3-wide">
+			<b>Contact US</b>
+		</h5>
+		<div style="text-align: center; font-family:lato; font-size: 16px;">
+			<p>phantomblog480@gmail.com</p>
+			<p>samtestingbeta@gmail.com</p>
+			<p>+91-8917300318</p>
+		</div>
+
+		<ul class="blogsocio">
+			<li>
+				<a href=" https://www.facebook.com/sahoo.sambit.7" target="_blank">
+					<i class="fa fa-facebook"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://twitter.com/blazerhcsam" target="_blank">
+					<i class="fa fa-twitter"></i>
+				</a>
+			</li>
+			<li>
+				<a href=" https://github.com/soulsam480" target="_blank">
+					<i class="fa fa-github"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/sambit.codes/" target="_blank">
+					<i class="fa fa-instagram"></i>
+				</a>
+			</li>
+			<li>
+				<a href=" https://www.linkedin.com/in/sambit-sahoo-5b75b3163/" target="_blank">
+					<i class="fa fa-linkedin"></i>
+				</a>
+			</li>
+			<li>
+				<a href=" https://www.sambitsahoo.tk" target="_blank">
+					<i class="fa fa-globe"></i>
+				</a>
+			</li>
+			<li>
+				<a href=" https://lilstories480.wordpress.com/" target="_blank">
+					<i class="fa fa-wordpress"></i>
+				</a>
+			</li>
+		</ul>
+		<br>
+	</div>
+
+	<br>
+
+	<!--signature and copyright-->
+	<div style="padding-top: 30px; text-align: center; color:#999999; padding-bottom: 10px;"> © Phantom Blogs 2018
+		<br> Handcrafted in India
+
+	</div>
+
+
+
+
+	<script>
+		function openNav() {
 			document.getElementById("mySidenav").style.width = "250px";
 		}
 
@@ -108,6 +256,37 @@
 				document.getElementById("myNavbar").style.display = "block";
 			} else {}
 		}
-</script>
+		// Modal Image Gallery
+		function onClick(element) {
+			document.getElementById("img01").src = element.src;
+			document.getElementById("modal01").style.display = "block";
+			var captionText = document.getElementById("caption");
+			captionText.innerHTML = element.alt;
+		}
+
+	// Initialize and add the map
+	function initMap() {
+			// The location of Uluru
+			var igit = {
+				lat: 20.934176,
+				lng: 85.260515
+			};
+			// The map, centered at Uluru
+			var map = new google.maps.Map(
+				document.getElementById('map'), {
+					zoom: 13,
+					center: igit
+				});
+			// The marker, positioned at Uluru
+			var marker = new google.maps.Marker({
+				position: igit,
+				map: map
+			});
+		}
+
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCChvOgtQrEH_KVYg7Pg9YbNDzugmaTA6o&callback=initMap">
+	</script>
 </body>
+
 </html>
