@@ -125,6 +125,7 @@ ul {
     color: red;
     padding-left: 200px;
 }
+
 .blogsocio1 li {
     display: inline-block;
     padding: 5px;
@@ -154,7 +155,7 @@ ul {
 .dropdown {
     position: relative;
     display: inline-block;
-    display: none;
+    
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -163,13 +164,12 @@ ul {
     display: none;
     position: absolute;
     background-color: #B3FFFF;
-    width:100%;
-    
+    width: 100%;
     z-index: 1;
-    
 }
-.dropdown-content a{
-    font-size:16px;
+
+.dropdown-content a {
+    font-size: 16px;
 }
 
 /* Show the dropdown menu on hover */
@@ -179,22 +179,28 @@ ul {
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {color: #E79519;}
 
+.dropdown:hover .dropbtn {
+    color: #E79519;
+}
 
 /*the gallery starts here*/
 
 .row {
-    display: -ms-flexbox; /* IE10 */
+    display: -ms-flexbox;
+    /* IE10 */
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
+    -ms-flex-wrap: wrap;
+    /* IE10 */
     flex-wrap: wrap;
     padding: 0 6px;
 }
 
 /* Create four equal columns that sits next to each other */
+
 .column {
-    -ms-flex: 25%; /* IE10 */
+    -ms-flex: 25%;
+    /* IE10 */
     flex: 25%;
     max-width: 25%;
     padding: 0 6px;
@@ -206,6 +212,7 @@ ul {
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
+
 @media screen and (max-width: 800px) {
     .column {
         -ms-flex: 50%;
@@ -215,6 +222,7 @@ ul {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
     .column {
         -ms-flex: 100%;
@@ -222,7 +230,6 @@ ul {
         max-width: 100%;
     }
 }
-
 
 [class*="col-"] {
     width: 100%;
@@ -277,15 +284,14 @@ ul {
 
 .row {
     padding-top: 40px;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     background-color: white;
-    border-radius:10px;
+    border-radius: 10px;
 }
 
 [class*="col-"] {
     float: left;
 }
-
 
 .row1 {
     padding-top: 30px;
@@ -302,7 +308,6 @@ ul {
     padding-bottom: 10px;
     padding-top: 10px;
 }
-
 
 .blogsocio {
     list-style-type: none;
@@ -334,20 +339,16 @@ ul {
     padding-top: 10px;
 }
 
-.g-head{
+.g-head {
     text-align: center;
-    color:#E79519;
-    text-shadow:0.5px 1px  black;
-
+    color: #E79519;
+    text-shadow: 0.5px 1px black;
 }
 
-.gallery-start{
-    padding-top:20px;
-
-   
+.gallery-start {
+    padding-top: 20px;
 }
 
-
-#map{
-    border-radius:5px;
+#map {
+    border-radius: 5px;
 }

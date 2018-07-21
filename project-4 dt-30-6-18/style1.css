@@ -255,7 +255,7 @@
         }
 
         .categories {
-            display: none;
+           
         }
 
         .blog {
@@ -380,7 +380,7 @@
         .dropdown {
             position: relative;
             display: inline-block;
-            display:none;
+           
         }
 
         /* Dropdown Content (Hidden by Default) */
