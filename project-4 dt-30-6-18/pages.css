@@ -1,0 +1,412 @@
+.main {
+    background-color: #f2f2f2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1.a {
+    float: left;
+    font-family: 'Dosis', sans-serif;
+    font-size: 80px;
+    white-space: nowrap;
+    padding-left: 150px;
+    color: #e68a00;
+    text-shadow: 1.5px 1.5px black;
+}
+
+h1.b {
+    float: left;
+    font-family: 'Dosis', sans-serif;
+    font-size: 49px;
+    white-space: nowrap;
+    color: #00ccff;
+    padding-left: 60px;
+    text-shadow: 1.5px 1.5px black;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .a {
+        display: none;
+    }
+}
+
+.about {
+    padding: 110px 20px 0px 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    .b {
+        display: none;
+    }
+}
+
+@media only screen and ( min-width:1024px) {
+    .atext {
+        padding: 0px 60px;
+    }
+}
+
+.atext {
+    text-align: center;
+}
+
+/*top padding for both desktop and mobile*/
+
+.head {
+    padding: 150px 0px 120px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    .head {
+        padding: 100px 0px 120px 0px;
+    }
+}
+
+.w3-wide {
+    letter-spacing: 8px;
+}
+
+ul {
+    font-size: 20px;
+}
+
+/*parallax effect*/
+
+.bgimg-1 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+/* First image (Logo. Full height) */
+
+.bgimg-1 {
+    background-image: url('8.jpg');
+    min-height: 78%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #b3ffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 80px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sidenav a {
+    padding: 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    margin-left: 50px;
+}
+
+.sidenav a:hover {
+    color: #ffb84d;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 60px;
+    margin-left: 50px;
+    color: red;
+    padding-left: 200px;
+}
+
+[class*="col-"] {
+    width: 100%;
+    padding-right: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row {
+    padding-top: 30px;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+.pop1 {
+    display: block;
+    background-color: #e68a00;
+    width: 100%;
+    border: 1px white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.pop1:hover {
+    box-shadow: 2px 2px #b3b3b3;
+}
+
+.pop1 h3 {
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+}
+
+.mimage {
+    width: 90px;
+    height: 80px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.pop2:hover {
+    background-color: #f2f2f2;
+    box-shadow: 2px 2px #b3b3b3;
+    border-radius: 5px;
+}
+
+.pop2 {
+    width: 100%;
+    display: block;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cat1 {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.mobt:hover {
+    color: #cc6600;
+}
+
+.mobt {
+    display: inline-block;
+}
+
+.mobt h6 {
+    font-size: 15px;
+}
+
+.pop {
+    height: 500px;
+}
+
+.latest {
+    height: 500px;
+}
+
+.categories {}
+
+.blog {
+    margin-left: 20px;
+    border: 2px #bfbfbf;
+    background-color: white;
+    padding-left: 5px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.blog h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.blog h4 {
+    font-family: 'Lato', sans-serif;
+}
+
+.blog p {
+    font-family: 'Lato', sans-serif;
+}
+
+.blogimage {
+    padding-right: 10px;
+    border-radius: 2%;
+}
+
+.author {
+    border: 1px solid #a6a6a6;
+    margin-right: 10px;
+    padding-left: 20px
+}
+
+@media only screen and ( max-width:600px) {
+    .author {
+        padding-left: 20px
+    }
+}
+
+.blogsocio {
+    list-style-type: none;
+}
+
+.blogsocio li {
+    display: inline-block;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.blogsocio li>a {
+    text-decoration: none;
+}
+
+.blogsocio li>a>i {
+    color: #666666;
+}
+
+.blogsocio {
+    list-style-type: none;
+}
+
+.blogsocio1 li {
+    display: inline-block;
+    padding: 5px;
+    font-size: 20px;
+    display: top;
+}
+
+.blogsocio1 li>a {
+    text-decoration: none;
+}
+
+.blogsocio1 li>a>i {
+    color: #e68a00;
+}
+
+.fimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40px;
+    padding-top: 10px;
+}
+
+.row1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width:600px) {
+    .adress {
+        text-align: center;
+    }
+}
+
+#fback {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.ty {
+    padding-top: 30px;
+    text-align: center;
+    color: #e68a00;
+    text-shadow: 0.7px 0.7px black;
+}
+
+/* Dropdown Button */
+
+#map {
+    border-radius: 5px;
+}
+
+.row2 {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family:'Roboto',sans-serif;
+   
+}
+
+.row2::after {
+    content: "";
+    clear: both;
+    display: grid;
+}
+
+.mimagex {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.col-4 a{
+    text-decoration: none;
+}
+
+.mimagex:hover {
+    opacity: 0.8;
+    box-shadow: 0.5px 0.5px black;
+}
+
+.progg-intro {
+    padding-top: 10px;
+    font-size: 20px;
+    color: #e68a00;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+    text-shadow: 0.5px 0.5px black;
+}
+
+.progg-intro a {
+    text-decoration: none;
+    display: inline-block;
+}
