@@ -372,7 +372,8 @@ ul {
 .row2 {
     padding-left: 10px;
     padding-top: 10px;
-    font-family:'Roboto',sans-serif;
+    font-family:'Open Sans',sans-serif;
+    letter-spacing:1px;
    
 }
 
@@ -392,9 +393,8 @@ ul {
     text-decoration: none;
 }
 
-.mimagex:hover {
-    opacity: 0.8;
-    box-shadow: 0.5px 0.5px black;
+.row2 .col-4:hover{
+    opacity:0.8;
 }
 
 .progg-intro {
