@@ -1,0 +1,134 @@
+<html>
+
+<head>
+    <!--seo meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Rockwell|Montserrat">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--title bar-->
+    <title>Sambit Sahoo</title>
+</head>
+<!--body starts-->
+
+<body class="conehead ">
+    <!--pc nav-->
+    <nav class="nav w3-hide-small">
+        <ul class="navul">
+            <li class="navli">
+                <a style="text-decoration: none;" href="index.html">
+                    <b>HOME</b>
+                </a>
+            </li>
+            <li class="navli">
+                <a style="text-decoration: none;" href="about.html">
+                    <b>WHO AM I ?</b>
+                </a>
+            </li>
+            <li class="navli">
+                <a style="text-decoration: none;" href="portfolio.html">
+                    <b>PORTFOLIO</b>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--mobile nav-->
+    <div>
+        <div id="mnavcontent">
+            <ul class="mnavul">
+                <!--content of mobile nav menu-->
+                <li onclick="myFunction1()">
+                    <i class="fa fa-close" style="float: right; font-size:30px; color:#c91d12"></i>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <b>HOME</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <b>WHO AM I ?</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="portfolio.html">
+                        <b>PORTFOLIO</b>
+                    </a>
+                </li>
+                <br>
+            </ul>
+
+        </div>
+        <!--hamburger menu-->
+        <a onclick="myFunction()">
+            <i class="fa fa-bars bars w3-xlarge w3-hide-large w3-hide-medium" style="position: sticky;"></i>
+        </a>
+    </div>
+
+
+    <!--social media links-->
+    <footer class="w3-bottom">
+        <ul class="blogsocio">
+            <li>
+                <a href=" https://www.facebook.com/sahoo.sambit.7" target="_blank">
+                    <i class="fa fa-facebook b"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/blazerhcsam" target="_blank">
+                    <i class="fa fa-twitter b"></i>
+                </a>
+            </li>
+            <li>
+                <a href=" https://github.com/soulsam480" target="_blank">
+                    <i class="fa fa-github b"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/sambit.  codes/" target="_blank">
+                    <i class="fa fa-instagram b"></i>
+                </a>
+            </li>
+            <li>
+                <a href=" https://www.linkedin.com/in/sambit-sahoo-5b75b3163/" target="_blank">
+                    <i class="fa fa-linkedin b"></i>
+                </a>
+            </li>
+            <li>
+                <a href=" https://www.sambitsahoo.tk" target="_blank">
+                    <i class="fa fa-globe b"></i>
+                </a>
+            </li>
+
+        </ul>
+
+    </footer>
+</body>
+
+
+<script>
+    //js for navigation toggle
+    function myFunction() {
+        document.getElementById('mnavcontent').style.cssText = 'height:250px; '
+
+    }
+
+    function myFunction1() {
+        document.getElementById('mnavcontent').style.cssText = 'height:0px; '
+
+    }
+</script>
+
+</html>
+<script>
+    $(document).ready(function () {
+        $('body').find(
+            'img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]'
+        ).remove();
+    });
+</script>

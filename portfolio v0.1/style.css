@@ -1,0 +1,311 @@
+.a {
+    padding-top: 50px;
+    padding-left: 20px;
+    font-size: 100px;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(253, 152, 0);
+    text-shadow: 2px 1px black;
+    letter-spacing: 8px;
+}
+
+.conehead {
+    background: radial-gradient(circle, transparent 20%, #5CDB95 20%, #5CDB95 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #5CDB95 20%, #5CDB95 80%, transparent 80%, transparent) 50px 50px, linear-gradient(#379683 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #379683 8px, transparent 8px) -4px 0;
+    background-color: #5CDB95;
+    background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
+}
+
+.nav {
+    margin-right: 10px;
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    top: -19px;
+    position: relative;
+}
+
+.navul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.navul>li {
+    display: block;
+    display: inline-block;
+    padding: 5px;
+    color: rgb(253, 152, 0);
+    font-size: 21px;
+    text-shadow: 1px 0.5px 1px black;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.navli:hover {
+    border: 2px solid #ff471a;
+    border-radius: 4px;
+    box-shadow: 1px 1px 6px black;
+    letter-spacing: 3px;
+    transition: 0.4s;
+}
+
+.description {
+    list-style-type: none;
+    font-family: 'Dosis', sans-serif;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: rgb(253, 152, 0);
+    text-shadow: 1px 0.5px 3px black;
+}
+
+@media only screen and (max-width: 600px) {
+    .description {
+        font-size: 21px;
+        padding-left: 21px;
+    }
+    .description>li {
+        padding-top: 5px;
+    }
+}
+
+.des-li:hover {
+    letter-spacing: 9px;
+    transition: 0.4s;
+}
+
+
+
+.blogsocio {
+    list-style-type: none;
+    position: relative;
+    bottom:-130px;
+    text-align: center;
+    
+}
+.blogsocio li {
+    display: inline-block;
+    padding: 5px;
+    font-size: 25px;
+}
+
+.blogsocio li>a {
+    text-decoration: none;
+}
+
+.blogsocio li>a>i {
+    color: rgb(253, 152, 0);
+    text-shadow: 0.5px 0.5px black;
+}
+
+.b:hover {
+    transition: 0.2s;
+    transition-property: all;
+    font-size: 40px;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+.c {
+    padding-top: 80px;
+    padding-left: 20px;
+    font-size: 60px;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(253, 152, 0);
+    text-shadow: 2px 1px black;
+    letter-spacing: 8px;
+}
+
+.bars {
+    float: right;
+    margin-right: 10px;
+    width: 20px;
+    color: rgb(253, 152, 0);
+    text-shadow: 2px 0.9px 1px black;
+    padding-top: 10px;
+}
+
+#mnavcontent {
+    height: 0;
+    position: fixed;
+    z-index: 1;
+    top: -19;
+    overflow-x: hidden;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.mnavul {
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    background-color: #379683;
+    box-shadow: 2px 2px 9px black;
+    border-radius: 8px;
+    border-bottom: 0.6px solid #ff471a;
+    font-size: 19px;
+    position:sticky;
+}
+
+.mnavul>li>a {
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    color: rgb(253, 152, 0);
+    text-shadow: 0.8px 0.4px 1px black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    width: 100%;
+    float: left;
+    border:1px solid red;
+  
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row {
+    padding-top: 100px;
+}
+
+@media only screen and (max-width:600px) {
+    .row {
+        padding-top: 0px;
+    }
+}
+
+.col-6 {
+    padding: 10px;
+}
+
+.page-header>h3 {
+    font-family: 'Dosis', sans-serif;
+    padding-left: 30px;
+    color: rgb(253, 152, 0);
+    letter-spacing: 3px;
+    font-size: 30px;
+    text-shadow: 1px 2px 1px black;
+}
+
+.introimg {
+    width: 100%;
+    max-width: 210px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.introimg:hover {
+    box-shadow: 0.5px 0.5px 12px black;
+    opacity: 0.91;
+    max-width: 215px;
+    transition: 0.1s;
+}
+
+.introtext {
+    font-family: 'Rancho', cursive;
+    font-size: 28px;
+    background-color: #fff;
+    background-image:  linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+    width:80%;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    transform: rotate(-2deg);
+    box-shadow:0.3px 0.1px 10px rgb(253, 152, 0);
+    padding:5px;
+}
+@media only screen and(max-width:600px){
+    .introtext{
+        width:100%;
+        font-size: 13px;
+    }
+}
+
+.hashtext{
+    transform: rotate(-4deg);
+    font-family: 'Rancho',cursive;
+    text-align:center;
+    font-size: 35px;
+    color:  rgb(253, 152, 0);
+    text-shadow: 1px 0.4px black;
+
+
+}
+
+
+.row1::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row1 {
+    padding-top: 50px;
+}
+
+@media only screen and (max-width:600px) {
+    .row1 {
+        padding-top: 30px;
+    }
+}
+
+.row2::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row2 {
+    padding-top: 0px;
+}
+
+
