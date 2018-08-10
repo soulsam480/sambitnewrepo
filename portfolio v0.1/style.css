@@ -98,8 +98,7 @@
 .b:hover {
     transition: 0.2s;
     transition-property: all;
-    font-size: 40px;
-    letter-spacing: 2px;
+    letter-spacing: 6px;
     opacity: 0.8;
 }
 
@@ -159,8 +158,7 @@
 [class*="col-"] {
     width: 100%;
     float: left;
-    border:1px solid red;
-  
+ 
 }
 
 @media only screen and (min-width: 768px) {
@@ -307,5 +305,12 @@
 .row2 {
     padding-top: 0px;
 }
-
-
+.portimg{
+    width: 100%;
+   padding:10px;
+    border-radius:5px ;
+}
+.portimg:hover{
+    opacity: 0.9;
+    box-shadow:0.5px 0.5px 8px black;
+}
