@@ -16,38 +16,61 @@
     <title>Sambit Sahoo</title>
 </head>
 <!--body starts-->
+
 <body class="conehead ">
     <!--pc nav-->
     <nav class="nav w3-hide-small">
         <ul class="navul">
             <li class="navli">
-               <a style="text-decoration: none;" href="about.html"><b>WHO AM I ?</b></a>
+                <a style="text-decoration: none;" href="about.html">
+                    <b>WHO AM I ?</b>
+                </a>
             </li>
             <li class="navli">
-              <a style="text-decoration: none;" href="portfolio.html"><b>PORTFOLIO</b></a>
+                <a style="text-decoration: none;" href="portfolio.html">
+                    <b>PORTFOLIO</b>
+                </a>
             </li>
             <li class="navli">
-              <a style="text-decoration: none;" href="contact.html"><b>CONTACT ME</b></a>
+                <a style="text-decoration: none;" href="contact.html">
+                    <b>CONTACT ME</b>
+                </a>
             </li>
         </ul>
     </nav>
-<!--mobile nav-->
+    <!--mobile nav-->
     <div>
-        <div id="mnavcontent" >
-          <ul class="mnavul">
-              <!--content of mobile nav menu-->
-              <li onclick="myFunction1()"><i class="fa fa-close" style="float: right; font-size:30px; color:#c91d12"></i></li>
-              <li><a href="about.html"><b>WHO AM I ?</b></a></li>
-              <li><a href=""><b>PORTFOLIO</b></a></li>
-              <li><a href=""><b>CONTACT ME</b></a></li>
-              <br>
-          </ul>
-         
+        <div id="mnavcontent">
+            <ul class="mnavul">
+                <!--content of mobile nav menu-->
+                <li onclick="myFunction1()">
+                    <i class="fa fa-close" style="float: right; font-size:30px; color:#c91d12"></i>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <b>WHO AM I ?</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <b>PORTFOLIO</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <b>CONTACT ME</b>
+                    </a>
+                </li>
+                <br>
+            </ul>
+
         </div>
         <!--hamburger menu-->
-        <a onclick="myFunction()"> <i class="fa fa-bars bars w3-xlarge w3-hide-large w3-hide-medium" style="position: sticky;"></i></a>
+        <a onclick="myFunction()">
+            <i class="fa fa-bars bars w3-xlarge w3-hide-large w3-hide-medium" style="position: sticky;"></i>
+        </a>
     </div>
-<!--pc header-->
+    <!--pc header-->
     <div>
         <h3 class="a w3-hide-small">
             <b>
@@ -58,7 +81,7 @@
 
     </div>
     <div>
-<!--mobile header-->
+        <!--mobile header-->
         <div>
             <h3 class="c w3-hide-large w3-hide-medium">
                 <b>
@@ -68,7 +91,7 @@
             </h3>
 
         </div>
-<!--description of page -->
+        <!--description of page -->
         <ul class="description">
             <li class="des-li">
                 <b>BELIEVER ;</b>
@@ -83,7 +106,7 @@
         </ul>
     </div>
     <!--social media links-->
-    <footer >
+    <footer>
         <ul class="blogsocio">
             <li>
                 <a href=" https://www.facebook.com/sahoo.sambit.7" target="_blank">
@@ -125,16 +148,16 @@
 <script>
     //js for navigation toggle
     function myFunction() {
-        document.getElementById('mnavcontent').style.cssText='height:250px; '
-        
+        document.getElementById('mnavcontent').style.cssText = 'height:250px; '
+
     }
 
-        function myFunction1() {
-        document.getElementById('mnavcontent').style.cssText='height:0px; '
-        
-    }
+    function myFunction1() {
+        document.getElementById('mnavcontent').style.cssText = 'height:0px; '
 
+    }
 </script>
+
 </html>
 <script>
     $(document).ready(function () {

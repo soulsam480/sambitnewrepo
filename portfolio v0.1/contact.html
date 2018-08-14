@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel=" shortcut icon" type="image/png" href="img/icon.png" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis|Quicksand">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Rockwell|Montserrat">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -71,48 +71,141 @@
         </a>
     </div>
 
+    <!--the page header starts here-->
+    <div class="page-header">
+        <h3>
+            <b>CONNTACT ME</b>
+        </h3>
+
+    </div>
+
+
+    <!--the body content starts here-->
+    <div class="row1">
+        <div class="col-6">
+            <div class="main-form">
+                <h3 class="form-intro">
+                    <b> Get In Touch</b>
+                </h3>
+
+                <form  action="insert-user-info.php" method="POST" enctype="multipart/form-data">
+                    <input type="text" id="name" name="name" label="name" placeholder="Your name..">
+
+                    <input type="text" id="email" name="email" label="email" placeholder="Your E-mail ID">
+
+                    <textarea id="subject" label="text" name="subject" placeholder="Say something.." style="height:100px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <div class="col-6">
+            <h3 class="form-intro">
+                <i class="fa fa-map-marker"></i>
+                <b>Find Me</b>
+            </h3>
+            <div class="map">
+                <div id="map" style="width:100%; height: 200px;  border-radius:5px; border:1px solid #ff9900;">
+                </div>
+            </div>
+            <div class="row2">
+                <div class="col-6">
+                    <div>
+                        <p class="contact-last">
+                            <b>soulsam480@gmail.com</b>
+                        </p>
+                        <p class="contact-last">
+                            <b>samtestingbeta@gmail.com</b>
+                        </p>
+                        <p class="contact-last">
+                            <b>+91-8917300318</b>
+                        </p>
+                        <p class="contact-last">
+                            <b>+91-7655064649</b>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-6">
+                    <img src="img/icon.png" alt="sambit sahoo" class="abcd">
+                    <h3 class="contact-last">
+                        <b>Sambit Sahoo</b>
+                    </h3>
+                    <h4 class="contact-last">
+                        <b>IGIT,Sarang</b>
+                    </h4>
+                    <h4 class="contact-last">
+                        <b>Dhenkanal,Odisha</b>
+                    </h4>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 
     <!--social media links-->
-    <footer class="w3-bottom">
-        <ul class="blogsocio">
-            <li>
-                <a href=" https://www.facebook.com/sahoo.sambit.7" target="_blank">
-                    <i class="fa fa-facebook b"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/blazerhcsam" target="_blank">
-                    <i class="fa fa-twitter b"></i>
-                </a>
-            </li>
-            <li>
-                <a href=" https://github.com/soulsam480" target="_blank">
-                    <i class="fa fa-github b"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/sambit.  codes/" target="_blank">
-                    <i class="fa fa-instagram b"></i>
-                </a>
-            </li>
-            <li>
-                <a href=" https://www.linkedin.com/in/sambit-sahoo-5b75b3163/" target="_blank">
-                    <i class="fa fa-linkedin b"></i>
-                </a>
-            </li>
-            <li>
-                <a href=" https://www.sambitsahoo.tk" target="_blank">
-                    <i class="fa fa-globe b"></i>
-                </a>
-            </li>
 
-        </ul>
+    <ul class="blogsocio">
+        <li>
+            <a href=" https://www.facebook.com/sahoo.sambit.7" target="_blank">
+                <i class="fa fa-facebook b"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/blazerhcsam" target="_blank">
+                <i class="fa fa-twitter b"></i>
+            </a>
+        </li>
+        <li>
+            <a href=" https://github.com/soulsam480" target="_blank">
+                <i class="fa fa-github b"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/sambit.  codes/" target="_blank">
+                <i class="fa fa-instagram b"></i>
+            </a>
+        </li>
+        <li>
+            <a href=" https://www.linkedin.com/in/sambit-sahoo-5b75b3163/" target="_blank">
+                <i class="fa fa-linkedin b"></i>
+            </a>
+        </li>
+        <li>
+            <a href=" https://www.sambitsahoo.tk" target="_blank">
+                <i class="fa fa-globe b"></i>
+            </a>
+        </li>
 
-    </footer>
+    </ul>
+
+
 </body>
 
 
 <script>
+    // Initialize and add the map
+    function initMap() {
+        // The location of Uluru
+        var igit = {
+            lat: 20.934176,
+            lng: 85.260515
+        };
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {
+                zoom: 13,
+                center: igit
+            });
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({
+            position: igit,
+            map: map
+        });
+    }
+
     //js for navigation toggle
     function myFunction() {
         document.getElementById('mnavcontent').style.cssText = 'height:250px; '
@@ -123,6 +216,8 @@
         document.getElementById('mnavcontent').style.cssText = 'height:0px; '
 
     }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCChvOgtQrEH_KVYg7Pg9YbNDzugmaTA6o&callback=initMap">
 </script>
 
 </html>
