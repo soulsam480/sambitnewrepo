@@ -1,0 +1,134 @@
+body {
+    background-color: white;
+    overflow-y: hidden;
+}
+
+
+.bgimg-1 {
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.bgimg-1 {
+    background-image: url('img/intro.jpg');
+    min-height: 100%;
+}
+.header {
+    position: sticky;
+    top: 0;
+   
+}
+
+@media only screen and (max-width:600px) {
+    .navul {
+        display: none;
+    }
+}
+
+.navul {
+    list-style-type: none;
+    float: right;
+}
+
+.navul>li {
+    display: inline-block;
+    margin: 0;
+}
+
+.nav-a {
+    text-decoration: none;
+    color: black;
+    font-size:20px;
+    font-family: 'Oxygen', sans-serif;
+    padding-right:10px;
+}
+.nav-b {
+    text-decoration: none;
+    font-size:17px;
+    font-family: 'Roboto', sans-serif;
+    padding-right:10px;
+}
+
+
+.nav-a:hover {
+    color: #2C308E;
+    letter-spacing:2px;
+    transition: 0.3s;
+    font-size:20.5px;
+    text-shadow:0 3px 0.5px solid black;
+
+}
+
+.header-img {
+    width: 48px;
+   
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.mnav-ul {
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    color:white;
+    box-shadow: 2px 2px 9px black;
+    border-radius: 8px;
+    background-color: rgb(112, 112, 112);
+    border-bottom: 0.6px solid white;
+    font-size: 19px;
+    position: sticky;
+}
+.mnav-content{
+    top:-22;
+    height: 0;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    width: 100%;
+}
+.intro-text{
+    text-align: center;
+    padding-top:100px;
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+.intro-head{
+    font-size:120px;
+    padding:0;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing:8px;
+}
+.intro-head:hover{
+    letter-spacing:5px;
+    transition:0.5s;
+}
+@media only screen and (max-width:600px){
+    .intro-text{
+        display: none;
+    }
+}
+.intro-text-mobile{
+    text-align: center;
+    padding-top:100px;
+}
+.intro-head-m{
+    font-size:55px;
+    font-family: 'Oxygen', sans-serif;
+    padding: 0;
+}
+@media only screen and (min-width:1024px){
+    .intro-text-mobile
+    {
+        display: none;
+    }
+}
+@keyframes intro-text { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
