@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,58 +9,102 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Drishya 360°-Photography Club Of IGIT Sarang</title>
 </head>
-<body  class="bgimg-1">
-    <div class="header">
-      <a href="index.html">  <img src="assets/img/logo.png" alt="Drishya" class="header-img"></a>
-        <ul class="navul">
-            <li><a href="#" class="nav-a">ABOUT</a></li>
-            <li><a href="#" class="nav-a">PHOTOGRAPHS</a></li>
-            <li><a href="#" class="nav-a">MEMBERS</a></li>
-            <li><a href="#" class="nav-a">WORKS</a></li>
-           
-        </ul>
-        <!--hamburger menu-->
-        <a onclick="myFunction()">
+
+<body onload="myFunction2()" class="bgimg-1">
+    <div id="loader"></div>
+
+    <div id="myDiv" style="display: none">
+        <div class="header">
+            <a href="index.html">
+                <img src="assets/img/logo.png" alt="Drishya" class="header-img">
+            </a>
+            <ul class="navul">
+                <li>
+                    <a href="about.html" class="nav-a">ABOUT</a>
+                </li>
+                <li>
+                    <a href="photo.html" class="nav-a">PHOTOGRAPHS</a>
+                </li>
+                <li>
+                    <a href="member.html" class="nav-a">MEMBERS</a>
+                </li>
+                <li>
+                    <a href="work.html" class="nav-a">WORKS</a>
+                </li>
+
+            </ul>
+            <!--hamburger menu-->
+            <a onclick="myFunction()">
                 <i class="fa fa-bars bars w3-xlarge w3-hide-large w3-hide-medium" style=" float:right; padding-right:10px; padding-top:10px;"></i>
             </a>
-           
-        <div>
-            <div class="mnav-content"  id="myNav">
-                <ul class="mnav-ul">
-                        <li onclick="myFunction1()"><i class="fa fa-close" style="float:right;padding-right:8px;"></i></li>
-                        <li><a href="#" class="nav-b">ABOUT</a></li>
-                        <li><a href="#" class="nav-b">PHOTOGRAPHS</a></li>
-                        <li><a href="#" class="nav-b">MEMBERS</a></li>
-                        <li><a href="#" class="nav-b">WORKS</a></li>
-                </ul>
+
+            <div>
+                <div class="mnav-content" id="myNav">
+                    <ul class="mnav-ul">
+                        <li onclick="myFunction1()">
+                            <i class="fa fa-close" style="float:right;padding-right:8px;"></i>
+                        </li>
+                        <li>
+                            <a href="about.html" class="nav-b">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="photo.html" class="nav-b">PHOTOGRAPHS</a>
+                        </li>
+                        <li>
+                            <a href="member.html" class="nav-b">MEMBERS</a>
+                        </li>
+                        <li>
+                            <a href="work.html" class="nav-b">WORKS</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="intro-text">
+        <div class="intro-text">
             <h1 class="intro-head">DRISHYA 360°</h1>
             <h1 style=" font-family: 'Oxygen', sans-serif;">The Photography Club Of IGIT Sarang</h1>
-      
+
         </div>
         <div class="intro-text-mobile">
-                <h1 class="intro-head-m">DRISHYA 360°</h1>
-                <h4 style=" font-family: 'Oxygen', sans-serif;">The Photography Club Of IGIT Sarang</h4>
-          
-            </div>
-    
+            <h1 class="intro-head-m">DRISHYA 360°</h1>
+            <h4 style=" font-family: 'Oxygen', sans-serif;">The Photography Club Of IGIT Sarang</h4>
+
+        </div>
+    </div>
+
     <script>
-  //js for navigation toggle
-  function myFunction() {
-        document.getElementById('myNav').style.cssText = 'height:250px; '
+        //js for navigation toggle
+        function myFunction() {
+            document.getElementById('myNav').style.cssText = 'height:250px; '
 
-    };
+        };
 
-    function myFunction1() {
-        document.getElementById('myNav').style.cssText = 'height:0px; '
+        function myFunction1() {
+            document.getElementById('myNav').style.cssText = 'height:0px; '
 
-    };
+        };
+        var myVar;
+
+        function myFunction2() {
+            myVar = setTimeout(showPage, 2000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+        
     </script>
 </body>
 
 </html>
+<script>
+    $(document).ready(function () {
+        $('body').find(
+            'img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]'
+        ).remove();
+    });
+</script>

@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>ABOUT US -DRISHYA 360°</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body onload="myFunction2()">
+    <div id="loader"></div>
+
+    <div  id="myDiv" style="display: none"  >
+            <div class="header">
+                    <a href="index.html">
+                        <img src="assets/img/logo.png" alt="Drishya" class="header-img">
+                    </a>
+                    <ul class="navul">
+                        <li>
+                            <a href="about.html" class="nav-a">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="photo.html" class="nav-a">PHOTOGRAPHS</a>
+                        </li>
+                        <li>
+                            <a href="member.html" class="nav-a">MEMBERS</a>
+                        </li>
+                        <li>
+                            <a href="work.html" class="nav-a">WORKS</a>
+                        </li>
+            
+                    </ul>
+                    <!--hamburger menu-->
+                    <a onclick="myFunction()">
+                        <i class="fa fa-bars bars w3-xlarge w3-hide-large w3-hide-medium" style=" float:right; padding-right:10px; padding-top:10px;"></i>
+                    </a>
+            
+                    <div>
+                        <div class="mnav-content" id="myNav">
+                            <ul class="mnav-ul">
+                                <li onclick="myFunction1()">
+                                    <i class="fa fa-close" style="float:right;padding-right:8px;"></i>
+                                </li>
+                                <li>
+                                    <a href="about.html" class="nav-b">ABOUT</a>
+                                </li>
+                                <li>
+                                    <a href="photo.html" class="nav-b">PHOTOGRAPHS</a>
+                                </li>
+                                <li>
+                                    <a href="member.html" class="nav-b">MEMBERS</a>
+                                </li>
+                                <li>
+                                    <a href="work.html" class="nav-b">WORKS</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+               
+    </div>
+
+    <script>
+        //js for navigation toggle
+        function myFunction() {
+            document.getElementById('myNav').style.cssText = 'height:250px; '
+
+        };
+
+        function myFunction1() {
+            document.getElementById('myNav').style.cssText = 'height:0px; '
+
+        };
+        var myVar;
+
+        function myFunction2() {
+            myVar = setTimeout(showPage,2000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+</body>
+</html>
