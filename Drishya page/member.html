@@ -1,20 +1,20 @@
 <html>
 
 <head>
-    <title>ABOUT US -DRISHYA 360°</title>
+    <title>MEMBERS -DRISHYA 360°</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/png">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body onload="myFunction2()">
-    <div class="bgimg-2">
+    <div style="min-height: 100%;" class="bgimg-2">
         <!--the loader-->
         <div id="loader"></div>
         <!--the page content in a conytainer-->
@@ -66,23 +66,41 @@
                     </ul>
                 </div>
             </div>
-            <div class="intro-text">
-                <h1 class="intro-head">quote</h1>
-                <h1 style=" font-family: 'Oxygen', sans-serif;">quote</h1>
+            <div class="content">
+                <div class="intro-text">
+                    <h1 class="intro-head">THE TEAM</h1>
+                    <h1 style=" font-family: 'Oxygen', sans-serif; letter-spacing:8px;"> Of High CREATIVE Ratio</h1>
 
-            </div>
-            <div class="intro-text-mobile">
-                <h1 class="intro-head-m">quote</h1>
-                <h4 style=" font-family: 'Oxygen', sans-serif;">quote</h4>
+                </div>
+                <!--mobile text-->
+                <div class="intro-text-mobile">
+                    <h1 class="intro-head-m" style="color:white;">THE TEAM</h1>
+                    <h4 style=" font-family: 'Oxygen', sans-serif; letter-spacing: 2px; color: white;"> Of High CREATIVE Ratio</h4>
+                </div>
+
             </div>
         </div>
     </div>
-    <!--the nav section ends and the body content starts-->
+    <!--the landing  section ends and the body content starts-->
     <div>
-        <div class="about-intro">
-            <h2 class="almuni-intro">LEADERS</h2>
+        <div class="intro">
+            <h1 style=" font-family:'Oswald',sans-serif; letter-spacing: 5px; ">PIONEERS</h1>
+            <h4 style="font-family:'Oxygen',sans-serif;">Creators Of Drishya</h4>
+            <div class="row">
+                <div class="col-3 ">
+                    <img src="assets/img/mimg/me.jpg" alt="erwubilrvuyrfvuyfruy" class="mem-img" id="mem-img" onmousemove="mHover()" onmouseout="mOut()">
+                </div>
+                <div class="col-3">
+                    <img src="https://fakeimg.pl/300/" alt="" class="mem-img">
+                </div>
+                <div class="col-3">
+                    <img src="https://fakeimg.pl/300/" alt="" class="mem-img">
+                </div>
+                <div class="col-3">
+                    <img src="https://fakeimg.pl/300/" alt="" class="mem-img">
+                </div>
+            </div>
         </div>
-
     </div>
 
     <script>
@@ -107,20 +125,33 @@
             document.getElementById("myDiv").style.display = "block";
         }
 
-
-        // Change style of navbar on scroll 
+        // When the user scrolls the page, execute
         window.onscroll = function () {
             myFunction3()
         };
+        // Get the header
+        var header = document.getElementById("dnav");
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+        // Add the sticky class to the header when you reach its scroll position.Remove "sticky when you leave the scroll position
 
         function myFunction3() {
-            var navbar = document.getElementById("dnav");
-
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                navbar.classList.add = "sticky";
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
             } else {
-                navbar.classList.add = navbar.className.replace("nav");
+                header.classList.remove("sticky");
             }
+        }
+
+        var mem = document.getElementById("mem-img");
+
+        function mHover() {
+            mem.classList.add("mhover");
+
+        }
+
+        function mOut() {
+            mem.classList.remove("mhover");
         }
     </script>
 </body>
