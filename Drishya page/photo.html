@@ -1,71 +1,179 @@
 <html>
+
 <head>
-    <title>ABOUT US -DRISHYA 360°</title>
+    <title>PHOTOGRAPHS -DRISHYA 360°</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/png">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Oxygen|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 <body onload="myFunction2()">
-    <div id="loader"></div>
+    <div style="min-height:100%;">
+        <div id="loader"></div>
 
-    <div  id="myDiv" style="display: none"  >
-            <div class="header">
-                    <a href="index.html">
-                        <img src="assets/img/logo.png" alt="Drishya" class="header-img">
-                    </a>
-                    <ul class="navul">
-                        <li>
-                            <a href="about.html" class="nav-a">ABOUT</a>
+        <div id="myDiv" style="display: none">
+            <div id="dnav" class="nav">
+                <a href="index.html">
+                    <img src="assets/img/logo.png" alt="Drishya" class="header-img">
+                </a>
+                <ul class="navul">
+                    <li>
+                        <a href="about.html" class="nav-a">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="photo.html" class="nav-a">PHOTOGRAPHS</a>
+                    </li>
+                    <li>
+                        <a href="member.html" class="nav-a">PHOTOGRAPHERS</a>
+                    </li>
+                    <li>
+                        <a href="work.html" class="nav-a">WORKS</a>
+                    </li>
+
+                </ul>
+                <!--hamburger menu-->
+                <a onclick="myFunction()">
+                    <i class="fa fa-bars bars w3-xlarge w3-hide-large w3-hide-medium" style=" float:right; padding-right:10px; padding-top:10px;"></i>
+                </a>
+            </div>
+            <div>
+                <div class="mnav-content" id="myNav">
+                    <ul class="mnav-ul">
+                        <li onclick="myFunction1()">
+                            <i class="fa fa-close" style="float:right;padding-right:8px;"></i>
                         </li>
                         <li>
-                            <a href="photo.html" class="nav-a">PHOTOGRAPHS</a>
+                            <a href="about.html" class="nav-b">ABOUT</a>
                         </li>
                         <li>
-                            <a href="member.html" class="nav-a">MEMBERS</a>
+                            <a href="photo.html" class="nav-b">PHOTOGRAPHS</a>
                         </li>
                         <li>
-                            <a href="work.html" class="nav-a">WORKS</a>
+                            <a href="member.html" class="nav-b">PHOTOGRAPHERS</a>
                         </li>
-            
+                        <li>
+                            <a href="work.html" class="nav-b">WORKS</a>
+                        </li>
                     </ul>
-                    <!--hamburger menu-->
-                    <a onclick="myFunction()">
-                        <i class="fa fa-bars bars w3-xlarge w3-hide-large w3-hide-medium" style=" float:right; padding-right:10px; padding-top:10px;"></i>
-                    </a>
-            
-                    <div>
-                        <div class="mnav-content" id="myNav">
-                            <ul class="mnav-ul">
-                                <li onclick="myFunction1()">
-                                    <i class="fa fa-close" style="float:right;padding-right:8px;"></i>
-                                </li>
-                                <li>
-                                    <a href="about.html" class="nav-b">ABOUT</a>
-                                </li>
-                                <li>
-                                    <a href="photo.html" class="nav-b">PHOTOGRAPHS</a>
-                                </li>
-                                <li>
-                                    <a href="member.html" class="nav-b">MEMBERS</a>
-                                </li>
-                                <li>
-                                    <a href="work.html" class="nav-b">WORKS</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="intro-text">
+                    <h1 class="intro-head" style="letter-spacing: 6px;">STORIES CAPTURED</h1>
+                    <h1 style=" font-family: 'Oxygen', sans-serif; letter-spacing:8px;"> SO FAR</h1>
+
+                </div>
+                <!--mobile text-->
+                <div class="intro-text-mobile">
+                    <h1 class="intro-head-m" style="color:black; font-size:45px;">STORIES CAPTURED</h1>
+                    <h4 style=" font-family: 'Oxygen', sans-serif; letter-spacing: 2px; color:black;"> SO FAR
+                    </h4>
                 </div>
 
-               
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <!--the image category starts here-->
+    <div>
+        <ul class="pgnul" id="myBtnContainer">
+            <button class="pagination active" onclick="filterSelection('all')">
+                ALL
+            </button>
+
+            <button class="pagination" onclick="filterSelection('abstract')">ABSTRACT</button>
+
+
+            <button class="pagination" onclick="filterSelection('nature')">NATURE</button>
+
+
+            <button class="pagination" onclick="filterSelection('potrait')">POTRAIT</button>
+
+
+            <button class="pagination" onclick="filterSelection('macro')">MACRO</button>
+
+
+            <button class="pagination">WLDLIFE</button>
+
+        </ul>
     </div>
 
+    <!--the gallery div starts here-->
+
+
+    <div>
+
+        <div class="row4">
+            <div class="column abstract">
+                <img src="assets/img/intro.jpg" alt="NEW ACADEMIC BUILDING OF IGIT. PHOTOGRAPHER - MANAS SAHOO" style="width:100%"
+                    onclick="onClick(this)">
+            </div>
+            <div class="column nature">
+                <img src="https://fakeimg.pl/300/" style="width:100%" onclick="onClick(this)">
+            </div>
+            <div class="column abstract">
+                <img src="https://fakeimg.pl/300/" style="width:100%" onclick="onClick(this)">
+            </div>
+            <div class="column nature">
+                <img src="https://fakeimg.pl/300/" style="width:100%" onclick="onClick(this)">
+            </div>
+            <div class="column abstract">
+                <img src="https://fakeimg.pl/300/" style="width:100%" onclick="onClick(this)">
+            </div>
+            <div class="column nature">
+                <img src="https://fakeimg.pl/300/" style="width:100%" onclick="onClick(this)">
+            </div>
+            <div class="column abstract">
+                <img src="https://fakeimg.pl/300/" style="width:100%" onclick="onClick(this)">
+            </div>
+            <div class="column nature">
+                <img src="https://fakeimg.pl/300/" style="width:100%" onclick="onClick(this)">
+            </div>
+            <div class="column potrait">
+                <img src="https://fakeimg.pl/300/" style="width:100%" onclick="onClick(this)">
+            </div>
+            <div class="column macro">
+                <img src="https://fakeimg.pl/300/" style="width:100%" onclick="onClick(this)">
+            </div>
+            <div class="column potrait">
+                <img src="https://fakeimg.pl/300/" style="width:100%" onclick="onClick(this)">
+            </div>
+            <div class="column macro">
+                <img src="https://fakeimg.pl/300/" style="width:100%" onclick="onClick(this)">
+            </div>
+            <div class="column potrait">
+                <img src="https://fakeimg.pl/300/" style="width:100%" onclick="onClick(this)">
+            </div>
+            <div class="column abstract">
+                <img src="https://fakeimg.pl/300/" style="width:100%" onclick="onClick(this)">
+            </div>
+            <div class="column potrait">
+                <img src="https://fakeimg.pl/300/" style="width:100%" onclick="onClick(this)">
+            </div>
+            <div class="column macro">
+                <img src="https://fakeimg.pl/300/" style="width:100%" onclick="onClick(this)">
+            </div>
+        </div>
+    </div>
+
+    <!--the modal for full images on click-->
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal" style="background-color:rgba(219, 219, 219, 0.884);" onclick="this.style.display='none'">
+        <div class="w3-modal-content w3-animate-left w3-center w3-transparent" style="padding:0;">
+            <img id="img01" class="w3-image mem-img1">
+            <p id="caption" class=" modal-caption " style=" color:black; font-size: 20px; font-family: 'Oswald',sans-serif;"></p>
+        </div>
+    </div>
     <script>
         //js for navigation toggle
         function myFunction() {
@@ -80,13 +188,93 @@
         var myVar;
 
         function myFunction2() {
-            myVar = setTimeout(showPage,2000);
+            myVar = setTimeout(showPage, 2000);
         }
 
         function showPage() {
             document.getElementById("loader").style.display = "none";
             document.getElementById("myDiv").style.display = "block";
         }
+        // When the user scrolls the page, execute
+        window.onscroll = function () {
+            myFunction3()
+        };
+        // Get the header
+        var header = document.getElementById("dnav");
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+        // Add the sticky class to the header when you reach its scroll position.Remove "sticky when you leave the scroll position
+
+        function myFunction3() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+        //THE FILTER CODE
+        filterSelection("all") // Execute the function and show all columns
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        // Show filtered elements
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("pagination");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
     </script>
 </body>
+
 </html>
+<script>
+    $(document).ready(function () {
+        $('body').find(
+            'img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]'
+        ).remove();
+    });
+</script>

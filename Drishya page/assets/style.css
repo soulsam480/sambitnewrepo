@@ -45,6 +45,11 @@ body {
   width: 100%;
   z-index: 1;
 }
+@media only screen and (max-width: 600px) {
+  .sticky {
+    padding: 10px;
+  }
+}
 
 @keyframes sticky {
   from {
@@ -273,7 +278,7 @@ body {
   }
 }
 
-.row::after {
+.row:after {
   content: "";
   clear: both;
   display: table;
@@ -291,6 +296,19 @@ body {
   background-position: center;
   transition: 0.3s;
 }
+.mem-img1 {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  background-size: 100%;
+  background-position: center;
+  transition: 0.3s;
+}
+@media only screen and (max-width: 600px) {
+  .mem-img1 {
+    padding-top: 50px;
+  }
+}
 .mhover {
   color: black;
   padding: 8px;
@@ -303,4 +321,98 @@ body {
 
 .modal-caption {
   padding-left: 10px;
+}
+
+.row4 {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 20px 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  display: none; /* Hide all elements by default */
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.column > img {
+  border-radius: 5px;
+}
+
+.column > img:hover {
+  opacity: 0.9;
+}
+.pagination {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+}
+.pagination:hover {
+  background-color: rgba(224, 224, 224, 0.911);
+  outline: none;
+  border-radius: 10px;
+  transition: 0.15s;
+}
+a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .pagination {
+    font-size: 15px;
+
+    padding: 5px;
+  }
+  .pgnul {
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+}
+.pgnul {
+  text-align: center;
+  padding: 0;
+}
+
+.show {
+  display: block;
+}
+
+.pagination.active {
+  background-color: #666;
+  color: white;
+  border-radius: 10px;
 }

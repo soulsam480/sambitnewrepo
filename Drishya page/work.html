@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <title>ABOUT US -DRISHYA 360°</title>
     <meta charset="utf-8">
@@ -15,55 +16,55 @@
 <body onload="myFunction2()">
     <div id="loader"></div>
 
-    <div  id="myDiv" style="display: none"  >
-            <div class="header">
-                    <a href="index.html">
-                        <img src="assets/img/logo.png" alt="Drishya" class="header-img">
-                    </a>
-                    <ul class="navul">
-                        <li>
-                            <a href="about.html" class="nav-a">ABOUT</a>
-                        </li>
-                        <li>
-                            <a href="photo.html" class="nav-a">PHOTOGRAPHS</a>
-                        </li>
-                        <li>
-                            <a href="member.html" class="nav-a">MEMBERS</a>
-                        </li>
-                        <li>
-                            <a href="work.html" class="nav-a">WORKS</a>
-                        </li>
-            
-                    </ul>
-                    <!--hamburger menu-->
-                    <a onclick="myFunction()">
-                        <i class="fa fa-bars bars w3-xlarge w3-hide-large w3-hide-medium" style=" float:right; padding-right:10px; padding-top:10px;"></i>
-                    </a>
-            
-                    <div>
-                        <div class="mnav-content" id="myNav">
-                            <ul class="mnav-ul">
-                                <li onclick="myFunction1()">
-                                    <i class="fa fa-close" style="float:right;padding-right:8px;"></i>
-                                </li>
-                                <li>
-                                    <a href="about.html" class="nav-b">ABOUT</a>
-                                </li>
-                                <li>
-                                    <a href="photo.html" class="nav-b">PHOTOGRAPHS</a>
-                                </li>
-                                <li>
-                                    <a href="member.html" class="nav-b">MEMBERS</a>
-                                </li>
-                                <li>
-                                    <a href="work.html" class="nav-b">WORKS</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    <div id="myDiv" style="display: none">
+        <div class="header">
+            <a href="index.html">
+                <img src="assets/img/logo.png" alt="Drishya" class="header-img">
+            </a>
+            <ul class="navul">
+                <li>
+                    <a href="about.html" class="nav-a">ABOUT</a>
+                </li>
+                <li>
+                    <a href="photo.html" class="nav-a">PHOTOGRAPHS</a>
+                </li>
+                <li>
+                    <a href="member.html" class="nav-a">PHOTOGRAPHERS</a>
+                </li>
+                <li>
+                    <a href="work.html" class="nav-a">WORKS</a>
+                </li>
 
-               
+            </ul>
+            <!--hamburger menu-->
+            <a onclick="myFunction()">
+                <i class="fa fa-bars bars w3-xlarge w3-hide-large w3-hide-medium" style=" float:right; padding-right:10px; padding-top:10px;"></i>
+            </a>
+
+            <div>
+                <div class="mnav-content" id="myNav">
+                    <ul class="mnav-ul">
+                        <li onclick="myFunction1()">
+                            <i class="fa fa-close" style="float:right;padding-right:8px;"></i>
+                        </li>
+                        <li>
+                            <a href="about.html" class="nav-b">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="photo.html" class="nav-b">PHOTOGRAPHS</a>
+                        </li>
+                        <li>
+                            <a href="member.html" class="nav-b">PHOTOGRAPHERS</a>
+                        </li>
+                        <li>
+                            <a href="work.html" class="nav-b">WORKS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
     <script>
@@ -80,7 +81,7 @@
         var myVar;
 
         function myFunction2() {
-            myVar = setTimeout(showPage,2000);
+            myVar = setTimeout(showPage, 2000);
         }
 
         function showPage() {
@@ -89,4 +90,12 @@
         }
     </script>
 </body>
+
 </html>
+<script>
+    $(document).ready(function () {
+        $('body').find(
+            'img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]'
+        ).remove();
+    });
+</script>
