@@ -14,32 +14,34 @@
 </head>
 
 <body onload="myFunction2()">
-    <div id="loader"></div>
+    <div style="min-height:100%;">
+        <div id="loader"></div>
 
-    <div id="myDiv" style="display: none">
-        <div class="header">
-            <a href="index.html">
-                <img src="assets/img/logo.png" alt="Drishya" class="header-img">
-            </a>
-            <ul class="navul">
-                <li>
-                    <a href="about.html" class="nav-a">ABOUT</a>
-                </li>
-                <li>
-                    <a href="photo.html" class="nav-a">PHOTOGRAPHS</a>
-                </li>
-                <li>
-                    <a href="member.html" class="nav-a">PHOTOGRAPHERS</a>
-                </li>
-                <li>
-                    <a href="work.html" class="nav-a">WORKS</a>
-                </li>
+        <div id="myDiv" style="display: none">
+            <div id="dnav" class="nav">
+                <a href="index.html">
+                    <img src="assets/img/logo.png" alt="Drishya" class="header-img">
+                </a>
+                <ul class="navul">
+                    <li>
+                        <a href="about.html" class="nav-a">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="photo.html" class="nav-a">PHOTOGRAPHS</a>
+                    </li>
+                    <li>
+                        <a href="member.html" class="nav-a">PHOTOGRAPHERS</a>
+                    </li>
+                    <li>
+                        <a href="work.html" class="nav-a">WORKS</a>
+                    </li>
 
-            </ul>
-            <!--hamburger menu-->
-            <a onclick="myFunction()">
-                <i class="fa fa-bars bars w3-xlarge w3-hide-large w3-hide-medium" style=" float:right; padding-right:10px; padding-top:10px;"></i>
-            </a>
+                </ul>
+                <!--hamburger menu-->
+                <a onclick="myFunction()">
+                    <i class="fa fa-bars bars w3-xlarge w3-hide-large w3-hide-medium" style=" float:right; padding-right:10px; padding-top:10px;"></i>
+                </a>
+            </div>
 
             <div>
                 <div class="mnav-content" id="myNav">
@@ -62,12 +64,45 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="content">
+                <div class="intro-text">
+                    <h1 class="intro-head" style="letter-spacing: 6px;">WHO ARE WE ?</h1>
+                    <h1 style=" font-family: 'Oxygen', sans-serif; letter-spacing:8px;"> ABOUT US</h1>
+
+                </div>
+                <!--mobile text-->
+                <div class="intro-text-mobile">
+                    <h1 class="intro-head-m" style="color:black; font-size:45px;">WHO ARE WE ?</h1>
+                    <h4 style=" font-family: 'Oxygen', sans-serif; letter-spacing: 2px; color:black;">ABOUT US
+                    </h4>
+                </div>
+            </div>
         </div>
 
-
     </div>
+    <!--the loading section ends-->
+    <!--the about section starts-->
 
     <script>
+        //sticky nav bar
+        // When the user scrolls the page, execute
+        window.onscroll = function () {
+            myFunction3()
+        };
+        // Get the header
+        var header = document.getElementById("dnav");
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+        // Add the sticky class to the header when you reach its scroll position.Remove "sticky when you leave the scroll position
+
+        function myFunction3() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
         //js for navigation toggle
         function myFunction() {
             document.getElementById('myNav').style.cssText = 'height:250px; '
@@ -78,6 +113,7 @@
             document.getElementById('myNav').style.cssText = 'height:0px; '
 
         };
+        //the loader
         var myVar;
 
         function myFunction2() {
