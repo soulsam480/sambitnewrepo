@@ -14,7 +14,7 @@
 </head>
 
 <body onload="myFunction2()">
-    <div style="min-height:100%;">
+    <div style="min-height:100%;" class="bgimg-2">
         <div id="loader"></div>
 
         <div id="myDiv" style="display: none">
@@ -64,7 +64,7 @@
                     </ul>
                 </div>
             </div>
-
+            <!--desktop text-->
             <div class="content">
                 <div class="intro-text">
                     <h1 class="intro-head" style="letter-spacing: 6px;">WHO ARE WE ?</h1>
@@ -82,9 +82,144 @@
 
     </div>
     <!--the loading section ends-->
-    <!--the about section starts-->
+    <!--the about section intro starts-->
+    <div class="row">
+        <div class="about-next" style="padding-top:0;">
+            <h1 class="inext-header">
+                DRISHYA 360°
+            </h1>
+        </div>
+        <div class="col-6" style="padding:10px;">
+            <div>
+                <img src="assets/img/about.jpg" alt="about us" style="width: 100%; border-radius:5px; margin:auto;">
+            </div>
+
+        </div>
+        <div class="col-6" style="padding:10px;">
+            <p style="text-align:center;">
+                Reprehenderit sint consectetur laboris incididunt excepteur reprehenderit pariatur esse aute fugiat
+                cillum. Amet voluptate nostrud ullamco et adipisicing. Nisi deserunt minim magna consectetur mollit
+                anim qui. Ut ut amet ut anim officia quis et aliqua. Laboris proident dolor adipisicing consectetur
+                incididunt.
+
+            </p>
+        </div>
+    </div>
+    <!--the achievements-->
+    <div class="about-next">
+        <h1 class="inext-header">
+            ACHIEVEMENTS
+        </h1>
+        <div class="achv">
+            <h6 class="inext-header" style="font-size:22px;"> >>ACH1</h6>
+            <p style="font-family:'Oxygen',sans-serif; padding-left:25px;">the achievements-- go here</p>
+        </div>
+        <div class="achv">
+            <h6 class="inext-header" style="font-size:22px;"> >>ACH1</h6>
+            <p style="font-family:'Oxygen',sans-serif; padding-left:25px;">the achievements-- go here</p>
+        </div>
+        <div class="achv">
+            <h6 class="inext-header" style="font-size:22px;"> >>ACH1</h6>
+            <p style="font-family:'Oxygen',sans-serif; padding-left:25px;">the achievements-- go here</p>
+        </div>
+
+
+    </div>
+
+    <!--the timeline section starts-->
+    <div class="about-next">
+        <h1 class="inext-header">
+            HISTORY AT A GLANCE
+        </h1>
+        <h4 style="font-family: 'Oxygen',sans-serif;">DRISHYA ON A TIMELINE</h4>
+        <img src="assets/img/timeline.png" alt="timeline" style=" margin:auto; width:100%;">
+    </div>
+    <!--contact section starts-->
+    <div class="contact-end">
+        <div class="row">
+            <h2 class="inext-header " style="text-align:center;">
+                GET IN TOUCH
+            </h2>
+            <!--the bottom nav-->
+            <div class="col-3 w3-center">
+                <a href="index.html"><img src="assets/img/logo.png" style="width:50px ;" alt="last"></a>
+                <ul class="contact-ul" style="padding:0;">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="photo.html">PHOTOGRAPHS</a></li>
+                    <li><a href="member.html">PHOTOGRAPHERS</a></li>
+                    <li><a href="work.html">WORKS</a></li>
+                </ul>
+            </div>
+            <!--social icons and email-->
+            <div class="col-3 w3-center">
+
+                <ul class="contact-ul">
+
+                    <li> <i class="fa fa-phone"> </i> +91-8917300318</li>
+                    <li> <i class="fa fa-phone"> </i> +91-8917300318</li>
+                    <li> <i class="fa fa-inbox"> </i> E-mail: ABCD@ABCD.COM</li>
+                    <li> <i class="fa fa-inbox"> </i> E-mail: ABCD@ABCD.COM</li>
+                </ul>
+                <ul class="blogsocio">
+                    <li><a href=" " target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fa fa-instagram"></i></a></li>
+
+                </ul>
+            </div>
+            <!--the address -->
+            <div class="col-3 adress">
+                <ul style="list-style-type:none; padding:0;">
+                    <li style="font-family:'Oswald',sans-serif; padding:0; font-size:20px;">DRISHYA 360°</li>
+                    <li style="font-family:'Oswald',sans-serif; padding:0; font-size:15px;">INDIRA GANDHI INSTITUTE OF
+                        TECHNOLOGY</li>
+                    <li style="font-family:'Oswald',sans-serif; padding:0; font-size:15px;">SARANG,DHENKANAL</li>
+                    <li style="font-family:'Oswald',sans-serif; padding:0; font-size:15px;">ODISHA</li>
+                </ul>
+            </div>
+            <!--the map will go here-->
+            <div class="col-3" style="padding:10px; font-family: 'Oswald',sans-serif; text-align: center;">THE MAP WILL
+                COME HERE SHORTLY</div>
+
+        </div>
+        <!--credits-->
+        <div style="font-family: 'Oswald',sans-serif;text-align: center; font-size:15px; padding-top: 10px; color:rgb(167, 167, 167)">
+            © DRISHYA 360° 2018-19 ALL RIGHTS RESERVED
+            <br>
+            DEVELOPER: <a href="https://sambitsahoo.tk">SAMBIT SAHOO</a> <br>
+
+        </div>
+
+    </div>
 
     <script>
+
+        window.onscroll = function () {
+            myFunction3()
+        };
+
+        var header = document.getElementById(" dnav");
+
+
+        function myFunction3() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else { header.classList.remove("sticky"); }
+        }
+
+        function myFunction() { document.getElementById('myNav').style.cssText = 'height:250px; ' };
+        function myFunction1() { document.getElementById('myNav').style.cssText = 'height:0px; ' };
+
+        var myVar;
+
+        function myFunction2() {
+            myVar = setTimeout(showPage, 2000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
         //sticky nav bar
         // When the user scrolls the page, execute
         window.onscroll = function () {
@@ -102,27 +237,6 @@
             } else {
                 header.classList.remove("sticky");
             }
-        }
-        //js for navigation toggle
-        function myFunction() {
-            document.getElementById('myNav').style.cssText = 'height:250px; '
-
-        };
-
-        function myFunction1() {
-            document.getElementById('myNav').style.cssText = 'height:0px; '
-
-        };
-        //the loader
-        var myVar;
-
-        function myFunction2() {
-            myVar = setTimeout(showPage, 2000);
-        }
-
-        function showPage() {
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("myDiv").style.display = "block";
         }
     </script>
 </body>
