@@ -1,0 +1,58 @@
+/*the color schemes used in this page
+rgb(8, 184, 8) green
+background color black  #353839;
+*/
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro|Oswald");
+body,
+html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  background-color: #353839;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  border-bottom: 1px solid white;
+}
+.dnavul {
+  list-style-type: none;
+  padding-right: 15px;
+  float: right;
+  letter-spacing: 1px;
+}
+.dnavul li a {
+  text-decoration: none;
+  color: white;
+}
+.dnavul li {
+  display: inline-block;
+  padding: 4px;
+}
+.dnavul li:hover {
+  border-radius: 30px;
+  background-color: rgb(99, 99, 99);
+}
+
+.input {
+  width: 500px;
+  border-radius: 30px;
+  height: 25px;
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  padding-left: 10px;
+  letter-spacing: 2px;
+  border: 2px solid rgb(8, 184, 8);
+}
+
+.search {
+  padding-top: 90px;
+  padding-left: 30px;
+}

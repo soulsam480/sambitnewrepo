@@ -57,7 +57,6 @@ body {
 .sticky {
   position: fixed;
   background-color: rgb(212, 212, 212);
-
   box-shadow: 0px 0.5px 10px black;
   top: 0;
   width: 100%;
