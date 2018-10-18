@@ -14,33 +14,34 @@
 </head>
 
 <body onload="myFunction2()">
-    <div id="loader"></div>
+    <div style="min-height:100%;" class="bgimg-2">
+        <div id="loader"></div>
 
-    <div id="myDiv" style="display: none">
-        <div class="header">
-            <a href="index.html">
-                <img src="assets/img/logo.png" alt="Drishya" class="header-img">
-            </a>
-            <ul class="navul">
-                <li>
-                    <a href="about.html" class="nav-a">ABOUT</a>
-                </li>
-                <li>
-                    <a href="photo.html" class="nav-a">PHOTOGRAPHS</a>
-                </li>
-                <li>
-                    <a href="member.html" class="nav-a">PHOTOGRAPHERS</a>
-                </li>
-                <li>
-                    <a href="work.html" class="nav-a">WORKS</a>
-                </li>
+        <div id="myDiv" style="display: none">
+            <div id="dnav" class="nav">
+                <a href="index.html">
+                    <img src="assets/img/logo.png" alt="Drishya" class="header-img">
+                </a>
+                <ul class="navul">
+                    <li>
+                        <a href="about.html" class="nav-a">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="photo.html" class="nav-a">PHOTOGRAPHS</a>
+                    </li>
+                    <li>
+                        <a href="member.html" class="nav-a">PHOTOGRAPHERS</a>
+                    </li>
+                    <li>
+                        <a href="work.html" class="nav-a">WORKS</a>
+                    </li>
 
-            </ul>
-            <!--hamburger menu-->
-            <a onclick="myFunction()">
-                <i class="fa fa-bars bars w3-xlarge w3-hide-large w3-hide-medium" style=" float:right; padding-right:10px; padding-top:10px;"></i>
-            </a>
-
+                </ul>
+                <!--hamburger menu-->
+                <a onclick="myFunction()">
+                    <i class="fa fa-bars bars w3-xlarge w3-hide-large w3-hide-medium" style=" float:right; padding-right:10px; padding-top:10px;"></i>
+                </a>
+            </div>
             <div>
                 <div class="mnav-content" id="myNav">
                     <ul class="mnav-ul">
@@ -62,10 +63,82 @@
                     </ul>
                 </div>
             </div>
+            <!--the title sectionn starts-->
+            <div class="content">
+                <div class="intro-text">
+                    <h1 class="intro-head" style="letter-spacing: 6px;">WE DID IT !</h1>
+                    <h1 style=" font-family: 'Oxygen', sans-serif; letter-spacing:8px;"> SOME OF OUR WORKS</h1>
+
+                </div>
+                <!--mobile text-->
+                <div class="intro-text-mobile">
+                    <h1 class="intro-head-m" style="color:black; font-size:45px;">WE DID IT !</h1>
+                    <h4 style=" font-family: 'Oxygen', sans-serif; letter-spacing: 2px; color:black;"> SOME OF OUR
+                        WORKS
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--the content starts-->
+    <!--the events section-->
+    <div class="work-intro">
+        <h1 style="text-align:center; font-family: 'Oswald',sans-serif; letter-spacing: 4px;">EVENTS</h1>
+
+        <div class="achv">
+            <h6 class="inext-header" style="font-size:22px;"> EVENTS</h6>
+            <p style="font-family:'Oxygen',sans-serif; padding-left:15px;">the events go here</p>
+        </div>
+        <div class="achv">
+            <h6 class="inext-header" style="font-size:22px;"> EVENTS</h6>
+            <p style="font-family:'Oxygen',sans-serif; padding-left:15px;">the events go here</p>
+        </div>
+        <div class="achv">
+            <h6 class="inext-header" style="font-size:22px;"> EVENTS</h6>
+            <p style="font-family:'Oxygen',sans-serif; padding-left:15px;">the events go here</p>
         </div>
 
+    </div>
+    <!--the photowalks section-->
+    <div class="work-intro">
+        <h1 style="text-align:center; font-family: 'Oswald',sans-serif; letter-spacing: 4px;">PHOTOWALKS</h1>
+
+        <div class="achv">
+            <h6 class="inext-header" style="font-size:22px;"> PHOTOWALK1</h6>
+            <p style="font-family:'Oxygen',sans-serif; padding-left:15px;">the PHOTOWALKS go here</p>
+        </div>
+        <div class="achv">
+            <h6 class="inext-header" style="font-size:22px;"> PHOTOWALK 2</h6>
+            <p style="font-family:'Oxygen',sans-serif; padding-left:15px;">the PHOTOWALKS go here</p>
+        </div>
+        <div class="achv">
+            <h6 class="inext-header" style="font-size:22px;"> PHOTOWALK 3</h6>
+            <p style="font-family:'Oxygen',sans-serif; padding-left:15px;">the PHOTOWALKS go here</p>
+        </div>
 
     </div>
+
+    <!--THE WORKSHOP SECTION STARTS-->
+    <div class="work-intro">
+        <h1 style="text-align:center; font-family: 'Oswald',sans-serif; letter-spacing: 4px;">WORKSHOPS</h1>
+
+        <div class="achv">
+            <h6 class="inext-header" style="font-size:22px;"> WORKSHOP 1</h6>
+            <p style="font-family:'Oxygen',sans-serif; padding-left:15px;">the WORKSHOP go here</p>
+        </div>
+        <div class="achv">
+            <h6 class="inext-header" style="font-size:22px;"> WORKSHOP 2</h6>
+            <p style="font-family:'Oxygen',sans-serif; padding-left:15px;">the WORKSHOP go here</p>
+        </div>
+        <div class="achv">
+            <h6 class="inext-header" style="font-size:22px;"> WORKSHOP 3</h6>
+            <p style="font-family:'Oxygen',sans-serif; padding-left:15px;">the WORKSHOP go here</p>
+        </div>
+
+    </div>
+
+
+
 
     <script>
         //js for navigation toggle
@@ -87,6 +160,25 @@
         function showPage() {
             document.getElementById("loader").style.display = "none";
             document.getElementById("myDiv").style.display = "block";
+        }
+
+        //sticky nav bar
+        // When the user scrolls the page, execute
+        window.onscroll = function () {
+            myFunction3()
+        };
+        // Get the header
+        var header = document.getElementById("dnav");
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+        // Add the sticky class to the header when you reach its scroll position.Remove "sticky when you leave the scroll position
+
+        function myFunction3() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
         }
     </script>
 </body>

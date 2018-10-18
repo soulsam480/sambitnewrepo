@@ -492,3 +492,8 @@ a {
 .blogsocio li > a > i {
   color: #666666;
 }
+/* end of social code*/
+
+.work-intro {
+  padding-top: 30px;
+}
