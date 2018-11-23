@@ -2,16 +2,23 @@ body {
   margin: 0;
   padding: 0;
 }
-
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #c0e0e7;
+  }
+  .content{
+    height:500px;
+  }
+}
 .content {
   max-width: 800px;
-  height: 600px;
+  overflow-y: hidden;
   margin: auto;
   background-color: #c0e0e7;
 }
 .head {
-  font-family: "Cabin", sans-serif;
   padding: 10px;
+  font-family: "Cabin", sans-serif;
 }
 .header {
   display: inline-block;
@@ -54,7 +61,7 @@ body {
   color: #0d677e;
 }
 /* end of social code*/
-
+/*the media query for mobile starts here*/
 @media only screen and (max-width: 600px) {
   .header {
     font-size: 25px;
@@ -72,7 +79,24 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
   }
+  .home-intro {
+    padding: 60px 0 0 20px;
+  }
+  .home-intro-head {
+    font-size: 70px;
+        letter-spacing: 3px;
+
+  }
+  .home-text {
+    font-size: 23px;
+    letter-spacing: 2px;
+  }
+  .footer-pc{
+    display: none;
+  }
+  
 }
+/*media query for pc starts here*/
 @media only screen and (min-width: 600px) {
   .nav {
     position: absolute;
@@ -80,4 +104,36 @@ body {
     margin: 30px 0 0 0;
     transform: translate(-50%, -50%);
   }
+  .home-intro {
+    padding: 80px 0 0 20px;
+  }
+  .home-intro-head {
+    font-size: 90px;
+    letter-spacing: 5px;
+  }
+  .home-text {
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+  .content {
+    height: 695px;
+  }
+  .credits {
+    position: relative;
+    bottom: -260px;
+  }
+  .footer-mobile{
+    display: none;
+  }
+}
+.home-intro {
+  font-family: "Sedgwick Ave", cursive;
+  color: #0d677e;
+}
+
+.credits {
+  font-family: "Sedgwick Ave", cursive;
+  color: #0d677e;
+  text-align: center;
+  font-size: 10px;
 }
