@@ -81,6 +81,7 @@ body {
   }
   .home-intro {
     padding: 60px 0 0 20px;
+    text-align: center;
   }
   .home-intro-head {
     font-size: 70px;
@@ -94,6 +95,17 @@ body {
   .footer-pc{
     display: none;
   }
+  .about{
+  padding: 20px 0 0 0;
+}
+.about-text{
+ font-size: 15px;
+  padding: 0 30px 0 30px;
+}
+.img-s{
+ max-width: 180px;
+
+}
   
 }
 /*media query for pc starts here*/
@@ -105,10 +117,11 @@ body {
     transform: translate(-50%, -50%);
   }
   .home-intro {
-    padding: 80px 0 0 20px;
+    padding: 110px 0 0 20px;
+    text-align: center;
   }
   .home-intro-head {
-    font-size: 90px;
+    font-size: 100px;
     letter-spacing: 5px;
   }
   .home-text {
@@ -120,11 +133,23 @@ body {
   }
   .credits {
     position: relative;
-    bottom: -260px;
+    bottom: -240px;
   }
   .footer-mobile{
     display: none;
   }
+  .about{
+  padding: 40px 0 0 0;
+}
+.about-text{
+  padding: 0 100px 0 100px;
+   font-size: 20px;
+  
+}
+.img-s{
+ max-width: 220px;
+
+}
 }
 .home-intro {
   font-family: "Sedgwick Ave", cursive;
@@ -136,4 +161,17 @@ body {
   color: #0d677e;
   text-align: center;
   font-size: 10px;
+}
+.about{
+  text-align: center;
+ 
+}
+.img-s{
+ border:2px solid #0d677e;
+  border-radius: 50%;
+}
+.about-text{
+  color: #0d677e;
+   font-family: "Cabin", sans-serif;
+  
 }
