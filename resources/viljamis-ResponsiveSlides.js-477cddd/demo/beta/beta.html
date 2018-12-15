@@ -10,49 +10,29 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="responsiveslides.min.js"></script>
     <script>
-        // You can also use "$(window).load(function() {"
-        $(function () {
+    $(function () {
 
-         
-             // Slideshow 4
-            $("#slider4").responsiveSlides({
-                auto: true,
-                pager: false,
-                nav: true,
-                speed: 400,
-                namespace: "callbacks",
-                before: function () {
-                    $('.events').append("<li>before event fired.</li>");
-                },
-                after: function () {
-                    $('.events').append("<li>after event fired.</li>");
-                }
-            });
-
+        // Slideshow 1
+        $("#slider1").responsiveSlides({
+          maxwidth: 800,
+          speed: 800
         });
 
+       
+
+      });
     </script>
   </head>
   <body>
   
     <div id="wrapper">
-<!-- Slideshow 4 -->
-<div class="callbacks_container">
-    <ul class="rslides" id="slider4">
-        <li>
-            <img src="images/1.jpg"  alt="dqdqad" >
-            <p class="caption">This is a caption</p>
-        </li>
-        <li>
-            <img src="images/2.jpg"  alt="dqdqdq" >
-            <p class="caption">This is another caption</p>
-        </li>
-        <li>
-            <img src="images/3.jpg"  alt="dqdqdqdq">
-            <p class="caption">The third caption</p>
-        </li>
-    </ul>
-</div>
+<!-- Slideshow 1 -->
+<ul class="rslides" id="slider1">
+    <li><img src="images/1.jpg" alt=""></li>
+    <li><img src="images/2.jpg" alt=""></li>
+    <li><img src="images/3.jpg" alt=""></li>
+</ul>
+
 </div>
     </div>
  

@@ -9,12 +9,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="responsiveslides.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+
+            // Slideshow 1
+            $("#slider1").responsiveSlides({
+                maxwidth: 800,
+                speed: 800,
+                random:true
+            });
+
+
+
+        });
+    </script>
     <style>
    @media only screen and (max-width: 600px) {
+ 
+  .content{
+    height:100%;
+  }
+}
+@media only screen and (min-width: 600px) {
  
   .content{
     height:100%;
@@ -57,42 +78,103 @@
             </ul>
 
 
-            <hr style="margin:0; height:5px;">
+            <hr style="margin:0; height:5px; border: 0; border-top: 1px solid #eee;">
         </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"> <img src="assets/arr.png" alt="arrow" style="width:30px;"> </button>
 <!--the gallery-->
+<div id="wrapper">
+    <!-- Slideshow 1 -->
+    <ul class="rslides" id="slider1">
+        <li><img src="images/1.jpg" alt="" style="border-radius:5px;"></li>
+        <li><img src="images/2.jpg" alt="" style="border-radius:5px;"></li>
+        <li><img src="images/3.jpg" alt="" style="border-radius:5px;"></li>
+        <li><img src="images/4.jpg" alt="" style="border-radius:5px;"></li>
+
+    </ul>
+
+</div>
+
           <div class="row">
               <div class="column">
                   <img src="assets/beta.JPG" alt="">
+                  <p id="caption" style=" margin:0">mbsjvy</p>
               </div>
                 <div class="column">
                     <img src="assets/beta.JPG" alt="">
+                    <p id="caption" style=" margin:0">mbsjvy</p>
                 </div>
 
                 <div class="column">
                     <img src="assets/beta.JPG" alt="">
+                    <p id="caption" style=" margin:0">mbsjvy</p>
                 </div>
 
                 <div class="column">
                     <img src="assets/beta.JPG" alt="">
+                    <p id="caption" style=" margin:0">mbsjvy</p>
                 </div>
 
                 <div class="column">
                     <img src="assets/beta.JPG" alt="">
+                    <p id="caption" style=" margin:0">mbsjvy</p>
                 </div>
 
                 <div class="column">
                     <img src="assets/beta.JPG" alt="">
+                    <p id="caption" style=" margin:0">mbsjvy</p>
                 </div>
-
-
-
+                <div class="column">
+                    <img src="assets/beta.JPG" alt="">
+                    <p id="caption" style=" margin:0">mbsjvy</p>
+                </div>
+                <div class="column">
+                    <img src="assets/beta.JPG" alt="">
+                    <p id="caption" style=" margin:0">mbsjvy</p>
+                </div>
+                
+                <div class="column">
+                    <img src="assets/beta.JPG" alt="">
+                    <p id="caption" style=" margin:0">mbsjvy</p>
+                </div>
+                
+                <div class="column">
+                    <img src="assets/beta.JPG" alt="">
+                    <p id="caption" style=" margin:0">mbsjvy</p>
+                </div>
+                
+                <div class="column">
+                    <img src="assets/beta.JPG" alt="">
+                    <p id="caption" style=" margin:0">mbsjvy</p>
+                </div>
+                
+                <div class="column">
+                    <img src="assets/beta.JPG" alt="">
+                    <p id="caption" style=" margin:0">mbsjvy</p>
+                </div>
           </div>
 
 
     </div>
 
 </body>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
 
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 </html>
 <script>
     $(document).ready(function () {
