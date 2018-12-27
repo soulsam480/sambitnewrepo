@@ -8,14 +8,28 @@
     <link rel=" shortcut icon" type="image/png" href="assets/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Sedgwick+Ave" rel="stylesheet">
     <script src="script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style>img[alt="www.000webhost.com"]{display:none}</style>
 </head>
+<style>
+   @media only screen and (max-width: 600px) {
+ 
+  .content{
+    height:100%;
+  }
+}
+  @media only screen and (min-width: 600px) {
+ #intro-pc{
+     padding-top: 50px;
+ }
+ .row1{
+padding-top:30px;
+ }
+}
+</style>
 
 <body>
 
@@ -45,24 +59,86 @@
                     </li>
                 </ul>
             </div>
-
             <ul class="nav">
                 <li><a style="text-decoration:none;" href="about.html">ABOUT</a> </li>
                 <li><a style="text-decoration:none;" href="gallery.html">GALLERY</a></li>
                 <li class="active_c"><a style="text-decoration:none;" href="contact.html">CONTACT ME</a></li>
             </ul>
-
-
-            <hr style="margin:0; height:5px;">
+            <hr style="margin:0; height:5px;     border: 0;
+    border-top: 1px solid #eee;">
         </div>
+<!--the contact contet starts here-->
+<div class="contact-intro" id="intro-pc" style="text-align:center;">
+            <h3 style="margin:0;font-weight:normal;">Let's meet and have a cup of coffee :p</h3>
 
-
-
-
+</div>
+<div class="row1">
+    <div class="column1">
+        <div class="contact-intro">
+            <h3 style="margin:0;font-weight:normal; text-align: center;"> <i class="fa fa-comments"></i> </h3>
+        </div>
+        <div style="font-family:'Cabin', sans-serif; color: #0d677e;   padding: 10px 0 0 10px;letter-spacing: 1.5px; text-align: center;">
+            <p style="margin:0;  padding: 0 0 0 0 ;"> <i class="fa fa-phone"></i> +91-8917300318 </p>
+            <p style="margin:0;  padding: 5px 0 0 ;"> <i class="fa fa-envelope"></i> soulsam480@gmail.com</p>
+        </div>
     </div>
-
+    <div class="column1">
+        <div class="contact-intro">
+            <h3 style="margin:0;font-weight:normal; text-align: center;"> <i class="fa fa-map-marker"></i> </h3>
+        </div>
+        <!--the map-->
+        <div class="map" style="padding-top: 10px;">
+            <div id="map" style="width:100%; height: 200px;  border-radius:5px; ">
+            </div>
+        </div>
+    </div>
+   
+</div>
+    <div class="footer-pc">
+        <div class="credits">
+            <p style="padding:0; margin:0;">
+               Handcrafted in India <br>
+                Thank you! :p
+    
+            </p>
+        </div>
+    </div>
+    </div>
+    <!-- it ends here-->
+    <footer class="footer-mobile" style="padding-top:40px;">
+        <div class="credits">
+            <p style="padding:0; margin:0;">
+               Handcrafted in India <br>
+                Thank you! :p
+    
+            </p>
+        </div>
+    
+        </div>
+    </footer>
 </body>
-
+<script>
+    // Initialize and add the map
+    function initMap() {
+        // The location of Uluru
+        var igit = {
+            lat: 20.934176,
+            lng: 85.260515
+        };
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {
+                zoom: 13,
+                center: igit
+            });
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({
+            position: igit,
+            map: map
+        });
+    }</script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCChvOgtQrEH_KVYg7Pg9YbNDzugmaTA6o&callback=initMap">
+    </script>
 </html>
 <script>
     $(document).ready(function () {

@@ -2,15 +2,15 @@ body {
   margin: 0;
   padding: 0;
 }
-a{
+a {
   color: inherit;
 }
 @media only screen and (max-width: 600px) {
   body {
     background-color: #c0e0e7;
   }
-  .content{
-    height:500px;
+  .content {
+    height: 500px;
   }
 }
 .content {
@@ -33,7 +33,7 @@ a{
   padding-left: 0;
   margin: 0;
   font-size: 16px;
-      letter-spacing: 1px;
+  letter-spacing: 1px;
   display: inline-block;
 }
 .nav > li {
@@ -83,7 +83,6 @@ a{
     order: 2;
     -ms-flex-pack: center;
     justify-content: center;
-
   }
   .home-intro {
     padding: 60px 0 0 20px;
@@ -91,28 +90,26 @@ a{
   }
   .home-intro-head {
     font-size: 70px;
-        letter-spacing: 3px;
-
+    letter-spacing: 3px;
   }
   .home-text {
     font-size: 23px;
     letter-spacing: 2px;
   }
-  .footer-pc{
+  .footer-pc {
     display: none;
   }
-  .about{
-  padding: 20px 0 0 0;
-}
-.about-text{
- font-size: 15px;
-  padding: 0 30px 0 30px;
-}
-.img-s{
- max-width: 180px;
+  .about {
+    padding: 20px 0 0 0;
+  }
+  .about-text {
+    font-size: 15px;
+    padding: 0 30px 0 30px;
+  }
+  .img-s {
+    max-width: 180px;
+  }
 
-}
-  
 }
 /*media query for pc starts here*/
 @media only screen and (min-width: 600px) {
@@ -141,21 +138,23 @@ a{
     position: relative;
     bottom: -240px;
   }
-  .footer-mobile{
+  .footer-mobile {
     display: none;
   }
-  .about{
-  padding: 40px 0 0 0;
-}
-.about-text{
-  padding: 0 100px 0 100px;
-   font-size: 20px;
-  
-}
-.img-s{
- max-width: 220px;
+  .about {
+    padding: 40px 0 0 0;
+  }
+  .about-text {
+    padding: 0 100px 0 100px;
+    font-size: 20px;
+  }
+  .img-s {
+    max-width: 220px;
+  }
+  .row1{
+    padding:40px 0 0 0;
 
-}
+  }
 }
 .home-intro {
   font-family: "Sedgwick Ave", cursive;
@@ -167,21 +166,19 @@ a{
   color: #0d677e;
   text-align: center;
   font-size: 10px;
+  letter-spacing: 1px;
 }
-.about{
+.about {
   text-align: center;
- 
 }
-.img-s{
- border:2px solid #0d677e;
+.img-s {
+  border: 2px solid #0d677e;
   border-radius: 50%;
 }
-.about-text{
+.about-text {
   color: #0d677e;
-   font-family: "Cabin", sans-serif;
-  
+  font-family: "Cabin", sans-serif;
 }
-
 
 /*css grid*/
 * {
@@ -239,7 +236,6 @@ a{
   display: table;
 }
 
-
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -254,13 +250,12 @@ a{
   flex: 33.33%;
   max-width: 33.33%;
   padding: 0 4px;
-
 }
 
 .column img {
   margin-top: 8px;
   vertical-align: middle;
-  width:100%;
+  width: 100%;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -270,7 +265,6 @@ a{
     flex: 50%;
     max-width: 50%;
   }
- 
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -278,15 +272,14 @@ a{
   .column {
     -ms-flex: 100%;
     flex: 100%;
-    max-width:100%;
+    max-width: 100%;
   }
-
 }
 
 .column > img {
   border-radius: 5px;
 }
-.g-intro{
+.g-intro {
   text-align: center;
   display: none;
   font-family: "Sedgwick Ave", cursive;
@@ -311,8 +304,8 @@ a{
 #myBtn:hover {
   background-color: #555;
 }
-#caption{
-   font-family: "Cabin", sans-serif;
+#caption {
+  font-family: "Cabin", sans-serif;
   color: #0d677e;
   text-align: center;
   font-size: 18px;
@@ -321,26 +314,23 @@ a{
 }
 /*the slider code*/
 
-
 #wrapper {
   padding: 10px;
-  }
-
-
+}
 
 .rslides {
   margin: 0 auto 40px;
-  }
-
-
+}
 
 .rslides_tabs {
   list-style: none;
   padding: 0;
-  background: rgba(0,0,0,.25);
-  box-shadow: 0 0 1px rgba(255,255,255,.3), inset 0 0 5px rgba(0,0,0,1.0);
-  -moz-box-shadow: 0 0 1px rgba(255,255,255,.3), inset 0 0 5px rgba(0,0,0,1.0);
-  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.3), inset 0 0 5px rgba(0,0,0,1.0);
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.3), inset 0 0 5px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 0 5px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.3),
+    inset 0 0 5px rgba(0, 0, 0, 1);
   font-size: 18px;
   list-style: none;
   margin: 0 auto 50px;
@@ -348,13 +338,13 @@ a{
   padding: 10px 0;
   text-align: center;
   width: 100%;
-  }
+}
 
 .rslides_tabs li {
   display: inline;
   float: none;
   margin-right: 1px;
-  }
+}
 
 .rslides_tabs a {
   width: auto;
@@ -363,45 +353,106 @@ a{
   height: auto;
   background: transparent;
   display: inline;
-  }
+}
 
 .rslides_tabs li:first-child {
   margin-left: 0;
-  }
+}
 
 .rslides_tabs .rslides_here a {
-  background: rgba(255,255,255,.1);
+  background: rgba(255, 255, 255, 0.1);
   color: #fff;
   font-weight: bold;
-  }
+}
 .active_g::before {
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    margin: 0 auto; /* This will center the border. */
-    width:80%; /* Change this to whatever width you want. */
-    border-top: 2px dashed  #0d677e;; 
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 80%; /* Change this to whatever width you want. */
+  border-top: 2px dashed #0d677e;
 }
 .active_a::before {
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    margin: 0 auto; /* This will center the border. */
-    width:80%; /* Change this to whatever width you want. */
-    padding-top: 1px; /* This creates some space between the element and the border. */
-    border-top: 2px dashed  #0d677e;; 
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 80%; /* Change this to whatever width you want. */
+  padding-top: 1px; /* This creates some space between the element and the border. */
+  border-top: 2px dashed #0d677e;
 }
 .active_c::before {
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    margin: 0 auto; /* This will center the border. */
-    width:80%; /* Change this to whatever width you want. */
-    padding-top: 1px; /* This creates some space between the element and the border. */
-    border-top: 2px dashed  #0d677e;; 
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 80%; /* Change this to whatever width you want. */
+  padding-top: 0; /* This creates some space between the element and the border. */
+  border-top: 2px dashed #0d677e;
 }
-.g_intro{
-    font-family: "Cabin", sans-serif;
+.g_intro {
+  font-family: "Cabin", sans-serif;
   color: #0d677e;
   text-align: center;
   font-size: 20px;
- padding: 10 0 0 0;
+  padding: 10px 0 0 0;
   letter-spacing: 1.5px;
+}
+.contact-intro {
+  font-family: "Cabin", sans-serif;
+  color: #0d677e;
+  padding: 10px 0 0 10px;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+  font-weight: inherit;
+}
+#map{
+
+  margin: 0 auto; 
+}
+
+/*the flex code for the contact page*/
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+.row1 {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 5px 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column1 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column1 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column1 {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column1 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
