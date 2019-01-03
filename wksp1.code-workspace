@@ -6,5 +6,8 @@
     {
       "path": "F:\\sambit's new repository\\JavaScript30-master"
     }
-  ]
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "sambitnewrepo"
+  }
 }
