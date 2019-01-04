@@ -1,61 +1,13 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>js clock</title>
-    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<style>
-    .clock{
-        display: block;
-        text-align: center;
-        margin: auto;
-        font-family: 'Orbitron', sans-serif;
-        letter-spacing: 2px;
-    }
-    .clock p{
-        display: inline-block;
-        padding:10px;
-        font-size:50px;
-    }
-</style>
-<body>
-
-    <div class="clock">
-<div>
-        <p id="hour"></p>
-        <p id="minute"></p>
-        <p id="second"></p>
-        <h1 id="day"></h1>
-</div>
-    </div>
-    
-
-<script>
-         const secondspot = document.getElementById("second");
-         const minutesspot = document.getElementById("minute");
-         const hoursspot = document.getElementById("hour");
-         const dayspot = document.getElementById("day");
-
-  
-            function setDate() {
-
-        const now = new Date();
-        const seconds = now.getSeconds();
-        secondspot.innerHTML=seconds;
-
-        const minutes = now.getMinutes();
-        minutesspot.innerHTML = minutes;
-        const hours = now.getHours();
-        hoursspot.innerHTML = hours;
-        const days = now.getDay();
-        dayspot.innerHTML = days;
-}
-
-        setInterval(setDate, 1000);
-</script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>practice nav</title>
+  </head>
+  <body>
+    <h2>the nav to the all wes bos practice tutorials are given here</h2>
+    <a href="clock.html"> clock page</a>
+  </body>
 </html>
