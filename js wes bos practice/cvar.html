@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>css variable practice</title>
     <style>
-        :root{
-            --zoom: transform: scale(5);
-        }
+      :root {
+        --zoom: 1;
+      }
       html,
       body {
         padding: 0;
@@ -17,24 +17,43 @@
         font-size: 30px;
       }
       .controls {
-        display: block;
-        text-align: center;
+        position: absolute;
+        right: 0;
         padding: 30px 0 0 0;
       }
-      img{
-
+      img {
+        transform: scale(var(--zoom));
+        padding: 100px 0 0 100px;
+        width: 100px;
       }
     </style>
   </head>
   <body>
     <div class="controls">
       <label for="zoom">zoom:</label>
-      <input type="range" name="zoom" id="zoom" min="10" max="200" value="10" />
+      <input type="range" name="zoom" id="zoom" min="1" max="5" value="1" />
     </div>
 
     <img
       src="https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2013/10/chrome-hacked-story-300x300.jpg"
       alt=""
     />
+
+    <script>
+      const inputs = document.querySelectorAll(".controls input");
+
+      function handleUpdate() {
+        document.documentElement.style.setProperty(
+          `--${this.name}`,
+          this.value
+        );
+        console.log(this.data);
+      }
+
+      inputs.forEach(input => input.addEventListener("change", handleUpdate));
+      inputs.forEach(input =>
+        input.addEventListener("mousemove", handleUpdate)
+      );
+    </script>
   </body>
 </html>
