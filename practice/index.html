@@ -1,15 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /* Paste this css to your style sheet file or under head tag */
+    /* This only works with JavaScript, 
+if it's not present, don't show loader */
+    .no-js #loader {
+      display: none;
+    }
+
+    .js #loader {
+      display: block;
+      position: absolute;
+      left: 100px;
+      top: 0;
+    }
+
+    .se-pre-con {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url(images/loader1.gif) center no-repeat #fff;
+    }
+  </style>
 </head>
+
 <body>
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScI77j2EI7UIDN2_zmJ4nl5_JIL8ClkuwkUMl26eVvpraOmmQ/viewform?embedded=true" width="auto" height="auto" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
- <script>
-   
+  <div class="se-pre-con"></div>
+  <div>
+    cjhvchdvchevc
+    <br>
+    nfskbjvb
+  </div>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+<script>
+  //paste this code under the head tag or in a separate js file.
+  // Wait for window load
+  $(window).load(function () {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+  });
 </script>
 
-</body>
 </html>

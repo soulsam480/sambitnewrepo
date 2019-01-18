@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>E-Cell IGIT Sarang</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato|Oswald|Roboto|Staatliches|Open+Sans" rel="stylesheet" type="text/css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+  <style>
+    img[alt="www.000webhost.com"] {
+      display: none
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="bgimg-1">
+    <div class="intro">
+      <h1 class="caption" style="font-weight:100;">WELCOME </h1>
+      <h1 class="title">
+        <b id="main"></b>
+      </h1>
+      <h1 style="color:white; font-weight:100; white-space: nowrap;" class="intro-clg">INDIRA GANDHI INSTITUTE OF
+        TECHNOLOGY <br>
+        SARANG
+      </h1>
+      <!--the social site code-->
+      <div>
+        <ul class="blogsocio">
+          <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li><a href=" #" target="_blank"><i class="fa fa-github b"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fa fa-linkedin b"></i></a></li>
+        </ul>
+      </div>
+      <!--the social site code end-->
+    </div>
+  </div>
+  <!--the nav starts here-->
+  <nav id="navbar">
+    <ul class="navbar">
+      <li>HOME</li>
+      <li>ABOUT US</li>
+      <li>WHAT WE DO?</li>
+      <li>TEAM</li>
+      <li>E-SUMMIT</li>
+      <li>RESOURCES</li>
+      <li>CONTACT</li>
+    </ul>
+    <div id="nav-toggle" onclick="myFuctio1()">
+      &#9776; </div>
+    <div>
+      <!--thw mobile nav-->
+      <ul class="mobile-nav" id="mnavcontent">
+        <li style="float:right; padding-right: 10px;" onclick="myFuction2()">&#9932;</li>
+        <li>HOME</li>
+        <li>ABOUT US</li>
+        <li>WHAT WE DO?</li>
+        <li>TEAM</li>
+        <li>E-SUMMIT</li>
+        <li>RESOURCES</li>
+        <li style="padding-bottom:20px;">CONTACT</li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <div style="height:1000px;">
+
+  </div>
+</body>
+<script>
+
+  //the text code 
+  var title = ['WE ARE', 'THE', 'ENTREPRENEURSHIP CELL'];
+
+  var i = 0;  // the index of the current item to show
+
+  setInterval(function () {            // setInterval makes it run repeatedly
+    document
+      .getElementById('main')
+      .innerHTML = title[i++];    // get the item and increment
+    if (i == title.length) i = 0;   // reset to first element if you've reached the end
+  }, 2000);
+
+  //nav bar
+  window.onscroll = function () { myFunction() };
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  //the navigation for mobile code
+
+  var mnav = document.getElementById('nav-toggle');
+  function myFuctio1() {
+    document.getElementById('mnavcontent').style.display = "block";
+    mnav.style.display = "none";
+  }
+
+  function myFuction2() {
+    document.getElementById('mnavcontent').style.display = 'none';
+    mnav.style.display = "block";
+
+  }
+
+
+
+</script>
+
+</html>

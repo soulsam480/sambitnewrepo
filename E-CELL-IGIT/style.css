@@ -1,0 +1,158 @@
+body,html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+html,body{
+  scroll-behavior: smooth;
+}
+h1,h2,h3,h4{
+  padding: 0;
+  margin:0;
+}
+
+/* the template code starts here */
+.bgimg-1 {
+  position: relative;
+  background-attachment:fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.bgimg-1 {
+  background-image: url("images/conf.jpeg");
+ min-height: 100%;
+}
+
+.intro{
+  font-family: 'Open Sans',sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.title{
+font-size: 90px;
+white-space: nowrap;
+color: #3498db;
+font-weight:900;
+
+}
+
+/*media query for mobile starts here*/
+@media only screen and (max-width:600px){
+.title{
+font-size: 25px;
+}
+.caption{
+font-size: 21px;
+}
+.intro-clg{
+font-size: 15px;
+}
+.navbar{
+  display: none;
+}
+}
+/*media query for pc starts here*/
+@media only screen and (min-width:600px){
+  .caption{
+    font-size:40px;
+    letter-spacing: 2px;
+  }
+  .intro-clg{
+  font-size:19px;
+  letter-spacing: 2px;
+}
+#nav-toggle{
+  display:none;
+}
+.mobile-nav{
+  display: none;
+}
+}
+.caption{
+color: white;
+}
+ 
+.navbar >li{
+  display: inline-block;
+  padding: 15px 10px 15px 10px;
+  font-size: 15px;
+  font-family: 'Lato',sans-serif;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+.navbar >li:hover{
+  background-color: white;
+  color: #3498db;
+  font-weight: bold;
+}
+
+
+.navbar{
+  color: white;
+  background-color: #3498db;
+  margin: 0;
+  padding:0;
+  text-align: center;
+  position: relative;
+
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/*the social code*/
+.blogsocio {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 0;
+}
+
+.blogsocio li {
+  display: inline-block;
+  padding-left: 7px;
+  font-size: 20px;
+}
+
+.blogsocio li > a {
+  text-decoration: none;
+}
+
+.blogsocio li > a > i {
+  color: #3498db;
+}
+/* end of social code*/
+.mobile-nav{
+  display:none;
+  margin:0;
+  color: white;
+  background-color: #3498db;
+  text-decoration: none;
+  border-bottom: 2px solid black ;
+  border-bottom-right-radius:10px;
+  border-bottom-left-radius:10px;
+
+}
+.mobile-nav >li{
+  list-style-type: none;
+  padding:10px 0 10px 15px;
+  font-size: 18px;
+  font-family: 'Lato',sans-serif;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+#nav-toggle{
+  padding: 10px;
+  font-size:29px;
+  background-color:#3498db; 
+  color: white;
+  font-weight:bolder;
+ 
+}
