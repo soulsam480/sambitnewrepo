@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Animated Scrolling Page Effect - Template Monster Demo</title>
+  <meta name="author" content="Jake Rocheleau">
+  <link rel="shortcut icon" href="http://static.tmimgcdn.com/img/favicon.ico">
+  <link rel="icon" href="http://static.tmimgcdn.com/img/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1>Animated Scroll Effects</h1>
+    
+    <p class="desc">Continue scrolling down to see the magic.</p>
+    
+    <p class="desc">Animated blocks use CSS classes to setup direction and flow of each item.</p>
+    
+    <br><br><br><br><br><br><br><br><br><br>
+    
+    <div class="animateblock centerleft">
+      <img src="img/macbook-laptop.png" alt="macbook icon"><!-- https://www.iconfinder.com/icons/289610/computer_device_laptop_mac_mac_os_macbook_netbook_notebook_workplace_icon -->
+    </div>
+    
+    <br><br><br><br>
+    
+    <div class="animateblock btm">
+      <img src="img/apple-glow-logo.png" alt="Apple logo"><! https://www.iconfinder.com/icons/33666/apple_mac_icon -->
+    </div>
+    
+    <br><br><br><br>
+    
+    <div class="animateblock top">
+      <p>testing a little bit of text moving in from the top</p>
+    </div>
+    
+    <br><br><br><br>
+    
+    <br><br><br><br>
+    
+    <div class="animateblock left">
+      <img src="img/ipod-dock.png" alt="white ipod dock"><!-- https://www.iconfinder.com/icons/34331/apple_dock_ipod_icon -->
+    </div>
+    
+    <div class="animateblock right">
+      <img src="img/white-iphone.png" alt="white iphone"><!-- https://www.iconfinder.com/icons/208953/iphone_white_icon -->
+    </div>
+    
+    <br><br><br><br>
+    
+    <div class="animateblock size">
+      <img src="img/hot-air-balloons.png" alt="colorful balloons"><!-- https://www.iconfinder.com/icons/82288/baloon_travel_icon -->
+    </div>
+    
+    <br><br><br><br>
+  </div>
+<script type="text/javascript">
+$(function(){
+  var $elems = $('.animateblock');
+  var winheight = $(window).height();
+  var fullheight = $(document).height();
+  
+  $(window).scroll(function(){
+    animate_elems();
+  });
+  
+  function animate_elems() {
+    wintop = $(window).scrollTop(); // calculate distance from top of window
+ 
+    // loop through each item to check when it animates
+    $elems.each(function(){
+      $elm = $(this);
+      
+      if($elm.hasClass('animated')) { return true; } // if already animated skip to the next item
+      
+      topcoords = $elm.offset().top; // element's distance from top of page in pixels
+      
+      if(wintop > (topcoords - (winheight*.75))) {
+        // animate when top of the window is 3/4 above the element
+        $elm.addClass('animated');
+      }
+    });
+  } // end animate_elems()
+});
+</script>
+</body>
+</html>
