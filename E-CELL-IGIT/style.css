@@ -3,12 +3,16 @@ body,html{
   padding: 0;
   height: 100%;
 }
+* {
+  box-sizing: border-box;
+}
 html,body{
   scroll-behavior: smooth;
 }
-h1,h2,h3,h4{
+ h1, h2, h3, h4, h5, h6{
   padding: 0;
   margin:0;
+  font-weight: 500;
 }
 
 a{
@@ -77,6 +81,10 @@ font-size: 15px;
 .mobile-nav{
   display: none;
 }
+.ab-text{
+  padding:0 100px 0 100px;
+ line-height:24px;
+} 
 }
 .caption{
 color: white;
@@ -183,54 +191,51 @@ color: white;
   width: 80px;
 }
 
-/*the flex code for responsive page*/
-.row:after {
+
+.row::after {
   content: "";
   clear: both;
   display: table;
 }
 
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 7px 4px;
-  justify-content: center;
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red ;
 }
 
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-  border: solid red 1px;
-}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
+#about{
+  font-family: 'Oswald',sans-serif;
+  text-align: center;
 }
-.aos-item{
-  position: relative;
+.ab-text{
+  font-family: 'Roboto' ,sans-serif;
+  font-size: 17px;
+}
+@media only screen and (max-width:600px){
+  .ab-text{
+    padding:10px 20px 0 20px;
+    margin: 0; 
+    line-height:1.5;
+   }
 }

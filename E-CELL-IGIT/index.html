@@ -7,11 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>E-Cell IGIT Sarang</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animate/style.css">
+  <script src="animate/script.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato|Oswald|Roboto|Staatliches|Open+Sans" rel="stylesheet" type="text/css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
   <style>
     img[alt="www.000webhost.com"] {
       display: none
@@ -54,7 +54,7 @@
       <li><a href="#about">ABOUT US</a></li>
       <li><a href="#whatwedo">WHAT WE DO?</a></li>
       <li><a href="">TEAM</a></li>
-      <li><a href="">E-SUMMIT</a></li>
+      <li><a href="">HES</a></li>
       <li><a href="">RESOURCES</a></li>
       <li><a href="">CONTACT</a></li>
     </ul>
@@ -69,7 +69,7 @@
         <li><a href="#about">ABOUT US</a></li>
         <li><a href="#whatwedo">WHAT WE DO?</a></li>
         <li><a href="">TEAM</a></li>
-        <li><a href="">E-SUMMIT</a></li>
+        <li><a href="">HES</a></li>
         <li><a href="">RESOURCES</a></li>
         <li style="padding-bottom:20px;"><a href="">CONTACT</a></li>
       </ul>
@@ -78,32 +78,35 @@
   </nav>
   <!--the about text area-->
   <div style="height:500px;" id="about">
-    <div class="row">
-      <div class="column aos-item" data-aos="fade-right">
-        <h1>vsdjkvbsdjvbsvj</h1>
-        <img src="images/ipod-dock.png" alt="">
-
-
-
-      </div>
-      <div class="column">
-
-      </div>
-      <div class="column">
-        <h1>beta text</h1>
-
-      </div>
-
-    </div>
+   <h3 style="font-size:30px; padding: 40px 0 0 0;">
+    E-Cell IGIT Sarang
+   </h3>
+   <p style="font-weight:200;" class="ab-text">
+      IGIT start-up cell was first introduced two years ago. Since then it has conducted 2 workshops in this college where many well
+      known & successful entrepreneurs have come to share their success stories with the aspiring students.
+      For the first time in the history of IGIT & horizon, start-up cell is going to introduce a new aspect of learning & 
+     challenging your mind by organizing the E-SUMMIT, where many successful entrepreneurs will share their success story 
+     with the students along with a Q&A session & a panel discussion in the end.
+   </p>
   </div>
   <!--about ends here-->
   <div id="whatwedo" style="height:500px;">
-    <div>
-      <h1 class="aos-item" data-aos="fade-up-left">cdvsjdv</h1>
-    </div>
+   <div class="row">
+     <div class="col-3">
+
+     </div>
+     <div class="col-3">
+
+      </div>
+      <div class="col-3">
+
+        </div>
+        <div class="col-3">
+
+          </div>
+   </div>
   </div>
 </body>
-<script src="plugins/aos.js"></script>
 <script>
 
   //the text code 
@@ -146,7 +149,33 @@
   }
   //the scroll aniamtion code
 
-
+  $(function(){
+  var $elems = $('.animateblock');
+  var winheight = $(window).height();
+  var fullheight = $(document).height();
+  
+  $(window).scroll(function(){
+    animate_elems();
+  });
+  
+  function animate_elems() {
+    wintop = $(window).scrollTop(); // calculate distance from top of window
+ 
+    // loop through each item to check when it animates
+    $elems.each(function(){
+      $elm = $(this);
+      
+      if($elm.hasClass('animated')) { return true; } // if already animated skip to the next item
+      
+      topcoords = $elm.offset().top; // element's distance from top of page in pixels
+      
+      if(wintop > (topcoords - (winheight*.75))) {
+        // animate when top of the window is 3/4 above the element
+        $elm.addClass('animated');
+      }
+    });
+  } // end animate_elems()
+});
 
 </script>
 
