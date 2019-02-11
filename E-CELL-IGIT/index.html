@@ -1,182 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>E-Cell IGIT Sarang</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animate/style.css" />
+    <script src="animate/script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Oswald|Roboto|Staatliches|Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      img[alt="www.000webhost.com"] {
+        display: none;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>E-Cell IGIT Sarang</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="animate/style.css">
-  <script src="animate/script.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Lato|Oswald|Roboto|Staatliches|Open+Sans" rel="stylesheet" type="text/css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    img[alt="www.000webhost.com"] {
-      display: none
-    }
-  </style>
-</head>
-
-<body>
-
-  <div class="bgimg-1" id="home">
-    <div class="intro">
-      <h1 class="caption" style="font-weight:100;">WELCOME </h1>
-      <h1 class="title">
-        <b id="main"></b>
-      </h1>
-      <h1 style="color:white; font-weight:100; white-space: nowrap;" class="intro-clg">INDIRA GANDHI INSTITUTE OF
-        TECHNOLOGY <br>
-        SARANG
-      </h1>
-      <!--the social site code-->
-      <div>
-        <ul class="blogsocio">
-          <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
-          <li><a href="#" target="_blank"><i class="fa fa-linkedin b"></i></a></li>
-        </ul>
+  <body>
+    <div class="bgimg-1" id="home">
+      <div class="intro">
+        <h1 class="caption" style="font-weight:100;">WELCOME</h1>
+        <h1 class="title">
+          <b id="main"></b>
+        </h1>
+        <h1
+          style="color:white; font-weight:100; white-space: nowrap;"
+          class="intro-clg"
+        >
+          INDIRA GANDHI INSTITUTE OF TECHNOLOGY <br />
+          SARANG
+        </h1>
+        <!--the social site code-->
+        <div>
+          <ul class="blogsocio">
+            <li>
+              <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><i class="fa fa-linkedin b"></i></a>
+            </li>
+          </ul>
+        </div>
+        <!--the social site code end-->
       </div>
-      <!--the social site code end-->
+      <div class="arrow">
+        <a href="#about"
+          ><img src="images/scroll-down-ani.gif" alt="arrow down" />
+        </a>
+      </div>
     </div>
-    <div class=arrow>
-      <a href="#about"><img src="images/scroll-down-ani.gif" alt="arrow down">
-      </a>
-    </div>
-  </div>
-  <!--the nav starts here-->
-  <nav id="navbar">
-    <ul class="navbar">
-      <li><a href="#home">HOME</a></li>
-      <li><a href="#about">ABOUT US</a></li>
-      <li><a href="#whatwedo">WHAT WE DO?</a></li>
-      <li><a href="">TEAM</a></li>
-      <li><a href="">HES</a></li>
-      <li><a href="">RESOURCES</a></li>
-      <li><a href="">CONTACT</a></li>
-    </ul>
-    <div id="nav-toggle" class="navtoggle">
-      <span onclick="myFuction1()">&#9776;</span>
-    </div>
-    <div>
-      <!--thw mobile nav-->
-      <ul class="mobile-nav" id="mnavcontent">
-        <li style="float:right; padding-right: 10px;" onclick="myFuction2()">&#9932;</li>
+    <!--the nav starts here-->
+    <nav id="navbar">
+      <ul class="navbar">
         <li><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT US</a></li>
         <li><a href="#whatwedo">WHAT WE DO?</a></li>
-        <li><a href="">TEAM</a></li>
         <li><a href="">HES</a></li>
+        <li><a href="">TEAM</a></li>
         <li><a href="">RESOURCES</a></li>
-        <li style="padding-bottom:20px;"><a href="">CONTACT</a></li>
+        <li><a href="">CONTACT</a></li>
       </ul>
-    </div>
-
-  </nav>
-  <!--the about text area-->
-  <div style="height:500px;" id="about">
-   <h3 style="font-size:30px; padding: 40px 0 0 0;">
-    E-Cell IGIT Sarang
-   </h3>
-   <p style="font-weight:200;" class="ab-text">
-      IGIT start-up cell was first introduced two years ago. Since then it has conducted 2 workshops in this college where many well
-      known & successful entrepreneurs have come to share their success stories with the aspiring students.
-      For the first time in the history of IGIT & horizon, start-up cell is going to introduce a new aspect of learning & 
-     challenging your mind by organizing the E-SUMMIT, where many successful entrepreneurs will share their success story 
-     with the students along with a Q&A session & a panel discussion in the end.
-   </p>
-  </div>
-  <!--about ends here-->
-  <div id="whatwedo" style="height:500px;">
-   <div class="row">
-     <div class="col-3">
-
-     </div>
-     <div class="col-3">
-
+      <div id="nav-toggle" class="navtoggle">
+        <span onclick="myFuction1()">&#9776;</span>
       </div>
-      <div class="col-3">
-
+      <div>
+        <!--thw mobile nav-->
+        <ul class="mobile-nav" id="mnavcontent">
+          <li style="float:right; padding-right: 10px;" onclick="myFuction2()">
+            &#9932;
+          </li>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT US</a></li>
+          <li><a href="#whatwedo">WHAT WE DO?</a></li>
+          <li><a href="">HES</a></li>
+          <li><a href="">TEAM</a></li>
+          <li><a href="">RESOURCES</a></li>
+          <li style="padding-bottom:20px;"><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--the about text area-->
+    <div id="about">
+      <h3 style="font-size:30px; padding: 40px 0 0 0;">
+        E-Cell IGIT Sarang
+      </h3>
+      <p style="font-weight:200;" class="ab-text">
+        IGIT start-up cell was first introduced two years ago. Since then it has
+        conducted 2 workshops in this college where many well known & successful
+        entrepreneurs have come to share their success stories with the aspiring
+        students. For the first time in the history of IGIT & horizon, start-up
+        cell is going to introduce a new aspect of learning & challenging your
+        mind by organizing the E-SUMMIT, where many successful entrepreneurs
+        will share their success story with the students along with a Q&A
+        session & a panel discussion in the end.
+      </p>
+    </div>
+    <!--about ends here-->
+    <div id="whatwedo" style="height:500px;">
+      <h3 style="font-size:30px; padding: 40px 0 0 0;">
+        Our Initiatives and Events
+      </h3>
+      <!--the image gallery row starts here-->
+      <div class="row whatwedo" style="padding:20px 0 0 0 ;">
+        <div class="col-3 ">
+          <img
+     
+            src="images/conf.jpeg"
+            alt=""
+            style="  display: block; margin-left: auto;margin-right: auto; width:350px;"
+          />
         </div>
         <div class="col-3">
-
+          <img
+            src="images/conf.jpeg"
+            alt=""
+            style="  display: block; margin-left: auto;margin-right: auto; width:350px;"
+          />
+        </div>
+        <div class="col-3">
+          <img
+            src="images/conf.jpeg"
+            alt=""
+            style="  display: block; margin-left: auto;margin-right: auto; width:350px; "
+          />
+        </div>
+        <div class="col-3">
+          <img
+            src="images/conf.jpeg"
+            alt=""
+            style="  display: block; margin-left: auto;margin-right: auto; width:350px;"
+          />
+        </div>
+      </div>
+      <div class="row whatwedo">
+          <div class="col-3">
+            <img
+              src="images/conf.jpeg"
+              alt=""
+              style="  display: block; margin-left: auto;margin-right: auto; width:350px;"
+            />
           </div>
-   </div>
-  </div>
-</body>
-<script>
+          <div class="col-3">
+            <img
+              src="images/conf.jpeg"
+              alt=""
+              style="  display: block; margin-left: auto;margin-right: auto; width:350px;"
+            />
+          </div>
+          <div class="col-3">
+            <img
+              src="images/conf.jpeg"
+              alt=""
+              style="  display: block; margin-left: auto;margin-right: auto; width:350px;"
+            />
+          </div>
+          <div class="col-3">
+            <img
+              src="images/conf.jpeg"
+              alt=""
+              style="  display: block; margin-left: auto;margin-right: auto; width:350px;"
+            />
+          </div>
+        </div>
+    </div>
+  </body>
+  <script>
+    //the text code
+    var title = ["WE ARE", "THE", "ENTREPRENEURSHIP CELL"];
 
-  //the text code 
-  var title = ['WE ARE', 'THE', 'ENTREPRENEURSHIP CELL'];
+    var i = 0; // the index of the current item to show
 
-  var i = 0;  // the index of the current item to show
+    setInterval(function() {
+      // setInterval makes it run repeatedly
+      document.getElementById("main").innerHTML = title[i++]; // get the item and increment
+      if (i == title.length) i = 0; // reset to first element if you've reached the end
+    }, 2000);
 
-  setInterval(function () {            // setInterval makes it run repeatedly
-    document
-      .getElementById('main')
-      .innerHTML = title[i++];    // get the item and increment
-    if (i == title.length) i = 0;   // reset to first element if you've reached the end
-  }, 2000);
+    //nav bar
+    window.onscroll = function() {
+      myFunction();
+    };
 
-  //nav bar
-  window.onscroll = function () { myFunction() };
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
 
-  var navbar = document.getElementById("navbar");
-  var sticky = navbar.offsetTop;
-
-  function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
-  //the navigation for mobile code
-
-  var mnav = document.getElementById('nav-toggle');
-  function myFuction1() {
-    document.getElementById('mnavcontent').style.display = "block";
-    mnav.style.display = "none";
-  }
-
-  function myFuction2() {
-    document.getElementById('mnavcontent').style.display = 'none';
-    mnav.style.display = "block";
-
-  }
-  //the scroll aniamtion code
-
-  $(function(){
-  var $elems = $('.animateblock');
-  var winheight = $(window).height();
-  var fullheight = $(document).height();
-  
-  $(window).scroll(function(){
-    animate_elems();
-  });
-  
-  function animate_elems() {
-    wintop = $(window).scrollTop(); // calculate distance from top of window
- 
-    // loop through each item to check when it animates
-    $elems.each(function(){
-      $elm = $(this);
-      
-      if($elm.hasClass('animated')) { return true; } // if already animated skip to the next item
-      
-      topcoords = $elm.offset().top; // element's distance from top of page in pixels
-      
-      if(wintop > (topcoords - (winheight*.75))) {
-        // animate when top of the window is 3/4 above the element
-        $elm.addClass('animated');
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
       }
+    }
+    //the navigation for mobile code
+
+    var mnav = document.getElementById("nav-toggle");
+    function myFuction1() {
+      document.getElementById("mnavcontent").style.display = "block";
+      mnav.style.display = "none";
+    }
+
+    function myFuction2() {
+      document.getElementById("mnavcontent").style.display = "none";
+      mnav.style.display = "block";
+    }
+    //the scroll aniamtion code
+
+    $(function() {
+      var $elems = $(".animateblock");
+      var winheight = $(window).height();
+      var fullheight = $(document).height();
+
+      $(window).scroll(function() {
+        animate_elems();
+      });
+
+      function animate_elems() {
+        wintop = $(window).scrollTop(); // calculate distance from top of window
+
+        // loop through each item to check when it animates
+        $elems.each(function() {
+          $elm = $(this);
+
+          if ($elm.hasClass("animated")) {
+            return true;
+          } // if already animated skip to the next item
+
+          topcoords = $elm.offset().top; // element's distance from top of page in pixels
+
+          if (wintop > topcoords - winheight * 0.75) {
+            // animate when top of the window is 3/4 above the element
+            $elm.addClass("animated");
+          }
+        });
+      } // end animate_elems()
     });
-  } // end animate_elems()
-});
-
-</script>
-
+  </script>
 </html>

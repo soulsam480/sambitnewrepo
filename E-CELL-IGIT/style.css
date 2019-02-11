@@ -200,7 +200,6 @@ color: white;
 
 [class*="col-"] {
   float: left;
-  padding: 15px;
   border: 1px solid red ;
 }
 
@@ -238,4 +237,9 @@ color: white;
     margin: 0; 
     line-height:1.5;
    }
+}
+#whatwedo{
+padding: 40px 0 0 0 ;
+font-family: 'Oswald', sans-serif;
+text-align: center;
 }
