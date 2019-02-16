@@ -196,11 +196,12 @@ color: white;
   content: "";
   clear: both;
   display: table;
+  padding: 0 0 1px 0;
 }
 
 [class*="col-"] {
   float: left;
-  border: 1px solid red ;
+  padding:1px 0 1px 0;
 }
 
 .col-1 {width: 8.33%;}
@@ -242,4 +243,8 @@ color: white;
 padding: 40px 0 0 0 ;
 font-family: 'Oswald', sans-serif;
 text-align: center;
+}
+#hes{
+  font-family: 'Oswald',sans-serif;
+  text-align: center;
 }
