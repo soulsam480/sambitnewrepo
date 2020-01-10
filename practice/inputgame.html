@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Input Game</title>
+    <style>
+      body {
+        background-color: #e7e7e7d5;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+      }
+      /* necessary to give position: relative to parent. */
+      input[type="text"] {
+        font-size: 20px;
+        color: black;
+        height: 40px;
+        width: 80%;
+        box-sizing: border-box;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        border: none !important;
+        padding: 0 10px;
+      }
+      :focus {
+        outline: none !important;
+        border: 1px white;
+      }
+
+      .btn {
+        padding: 10px 30px 10px 30px;
+        border: 1px;
+        border-radius: 5px;
+        background-color: white;
+        font-weight: bold;
+        font-size: 20px;
+      }
+     
+
+      .darkmode {
+        background-color: #252525;
+        color: white;
+      }
+      .darkmode button {
+        background-color: white;
+        color: black;
+      }
+    </style>
+
+    <style>
+      /* The CSS code for the toggle switch*/
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+      }
+
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      input:checked + .slider {
+        background-color: #333333;
+      }
+
+      input:focus + .slider {
+        box-shadow: 0 0 1px #333333;
+      }
+
+      input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 34px;
+      }
+
+      .slider.round:before {
+        border-radius: 50%;
+        content: '☾';
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>input game</h1>
+    <label class="switch">
+      <input type="checkbox" onclick="dToggle()"/>
+      <span class="slider round"></span>
+    </label>
+    <br>
+     <br>
+    <div id="game">
+      <div>
+        <input type="text" name="name1" id="name1" class="effect-6" />
+      </div>
+      <br />
+      <br />
+      <input type="text" name="name1" id="name2" class="effect-6" />
+      <br />
+      <br />
+      <button class="btn" onclick="gameFunc()">
+        CLICK!!
+      </button>
+      <p id="output"></p>
+    
+    </div>
+  </body>
+  <script>
+    const gameFunc = () => {
+      var nameArray = [];
+
+      var oname = document.getElementById("name1").value;
+
+      var sname = document.getElementById("name2").value;
+      nameArray.push(sname, oname);
+      var result = oname + sname;
+      console.log(result);
+      nameArray.push(result);
+      console.log(nameArray);
+      const namePrint = (name, index) => {
+        console.log(index + "::" + name + "<br>");
+        document.getElementById("output").innerHTML +=
+          index + "::" + name + "<br>";
+      };
+      nameArray.forEach(namePrint);
+    };
+    const body = document.body;
+    function dToggle() {
+      body.classList.toggle("darkmode");
+    }
+  </script>
+</html>

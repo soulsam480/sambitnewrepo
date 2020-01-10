@@ -1,0 +1,170 @@
+/*
+External CSS file-- Lifestyle Store
+*/
+@font-face {
+  font-family: Ocean Rush Demo ;
+  src: url('assets/Ocean\ Rush\ DEMO.otf');
+}
+body {
+  font-family: 'Ocean Rush Demo';
+}
+.bg-image {
+  text-align: center;
+  background-image: url('assets/bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+background-repeat: no-repeat;
+  height: 100vh;
+}
+#footer {
+  padding: 10px 0;
+  background-color: #101010;
+  color: #9d9d9d;
+  bottom: 0;
+  width: 100%;
+}
+footer {
+  padding: 10px 0;
+  background-color: #101010;
+  color: #9d9d9d;
+  bottom: 0;
+  width: 100%;
+}
+.navbar-dark .navbar-toggler {
+  border: none;
+}
+.navbar-dark .navbar-toggler:focus {
+  border: none !important;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0 1rem 0 1rem;
+  }
+}
+.banner-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  white-space: nowrap;
+  margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .banner-content .header {
+    font-size: 100px;
+  }
+  .banner-content .desc {
+    font-size: 40px;
+  }
+  .c-row {
+    padding: 10px 0 0 0;
+  }
+}
+@media (max-width: 768px) {
+  .banner-content .header {
+    font-size: 60px;
+  }
+  .banner-content .desc {
+    font-size: 25px;
+  }
+  .card {
+    margin: 10px 0 10px 0;
+  }
+}
+.bg-dark {
+  background-color: #000000fd !important;
+}
+.ban-button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgb(209, 10, 10);
+  border: solid white;
+  border-right: 2px;
+  border-left: 2px;
+  color: white;
+  width: 125px;
+  text-align: center;
+  font-size: 20px;
+  padding: 2px 10px 2px 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.ban-button:hover {
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  font-size: 20px;
+}
+.card-body {
+  text-align: left !important;
+  float: right;
+}
+
+.c-body {
+  padding: 0px !important;
+  margin: auto;
+}
+.banner-image {
+  margin: auto;
+  width: 900px;  
+}
+@media (max-width:768px){
+  .banner-image{
+    width: 400px;;
+  }
+  .bn-intro{
+    font-size: 28px !important;
+  }
+}
+.cc-nav {
+  color: white;
+}
+.cc-nav:hover {
+  background-color: rgba(255, 255, 255, 0.397);
+}
+.navbar {
+  z-index: 1000;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+.navbar-dark .navbar-brand {
+  color: white;
+}
+.bn-intro{
+  font-size: 38px;
+}
+@media (min-width:768px){
+  .ab-content{
+    padding:0 80px 0 80px !important;
+  }
+}
+.card-body{
+  text-align: left !important;
+ 
+}
+.c-img{
+  padding: 1rem !important;
+  width: 200px;
+}
+
+
+.c-body{
+ padding: 0px !important;
+}
+.c-card{
+  color: white;
+  background-color:rgba(54, 54, 54, 0.534) !important;
+  border: 2px solid white;
+  letter-spacing: 1.5px;
+}
+.card-text{
+  font-size: 15px;
+}
