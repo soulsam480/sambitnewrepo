@@ -5,6 +5,10 @@ External CSS file-- Lifestyle Store
   font-family: Ocean Rush Demo ;
   src: url('assets/Ocean\ Rush\ DEMO.otf');
 }
+@font-face {
+  font-family: Monospace ;
+  src: url('assets/Monospace.ttf');
+}
 body {
   font-family: 'Ocean Rush Demo';
 }
