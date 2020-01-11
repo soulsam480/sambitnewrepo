@@ -11,7 +11,7 @@ body {
 .bg-image {
   text-align: center;
   background-image: url('assets/bg.jpg');
-  background-attachment: fixed;
+  background-attachment: fixed !important;
   background-position: center;
   background-size: cover;
 background-repeat: no-repeat;
