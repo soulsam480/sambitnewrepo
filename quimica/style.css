@@ -117,7 +117,7 @@ footer {
 }
 @media (max-width:768px){
   .banner-image{
-    width: 400px;;
+    width: 355px;
   }
   .bn-intro{
     font-size: 28px !important;
@@ -167,4 +167,11 @@ footer {
 }
 .card-text{
   font-size: 15px;
+}
+.rule-ul{
+  list-style-type:square;
+  font-family: monospace,sans-serif;
+  font-size: 20px;
+  padding-inline-start: 20px;
+
 }
