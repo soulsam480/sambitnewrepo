@@ -18,14 +18,28 @@
     <link rel="stylesheet" href="style.css" />
 
     <style>
-        .bg-image {
-            height: unset !important;
+        @media (max-width:768px) {
+            body:before {
+                content: "";
+                display: block;
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -10;
+                background: url('assets/bg.jpg') no-repeat center center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
         }
     </style>
 </head>
 
-<body class="bg-image">
-    <div >
+<body>
+    <div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/qbeta.png" alt="" style="margin:auto; width:100px">
@@ -53,7 +67,7 @@
                 </ul>
             </div>
         </nav>
-        <h1 style="padding: 40px 0 0 0; font-size: 50px; color: white;" >TEAM QUIMICA</h1>
+        <h1 style="padding: 40px 0 0 0; font-size: 50px; color: white;">TEAM QUIMICA</h1>
         </h1>
         <div class="container-fluid text-center">
             <div class="row">
@@ -65,7 +79,7 @@
                             <h5 class="card-title text-center">Binayak P. Singh</h5>
                             <p class="card-text text-center">
                                 Chief-Coordinator
-                                </p>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -77,7 +91,7 @@
                             <h5 class="card-title text-center">Saloni Misra</h5>
                             <p class="card-text text-center">
                                 Co-chief Coordinator
-                                </p>
+                            </p>
 
                         </div>
                     </div>
@@ -89,8 +103,8 @@
                         <div class="card-body">
                             <h5 class="card-title text-center">K. Mohan Rao</h5>
                             <p class="card-text text-center">
-                               Managerial Admin
-                                </p>
+                                Managerial Admin
+                            </p>
 
                         </div>
                     </div>
@@ -131,7 +145,7 @@
                             <h5 class="card-title text-center">Deepti Dalei</h5>
                             <p class="card-text text-center">
                                 Co-Exec. Admin
-                                </p>
+                            </p>
 
                         </div>
                     </div>
@@ -157,7 +171,7 @@
                             <h5 class="card-title text-center">Pragyan panda</h5>
                             <p class="card-text text-center">
                                 Public Relations
-                                </p>
+                            </p>
 
                         </div>
                     </div>
@@ -170,7 +184,7 @@
                             <h5 class="card-title text-center">Suman Sourav</h5>
                             <p class="card-text text-center">
                                 Sponsorship Head
-                                </p>
+                            </p>
 
                         </div>
                     </div>
@@ -183,7 +197,7 @@
                             <h5 class="card-title text-center">Pragnya Dash</h5>
                             <p class="card-text text-center">
                                 Sponsorship Head
-                                </p>
+                            </p>
 
                         </div>
                     </div>
@@ -198,7 +212,7 @@
                             <h5 class="card-title text-center">Jiban J. Sahoo</h5>
                             <p class="card-text text-center">
                                 Chief Event Coordinator
-                                </p>
+                            </p>
 
                         </div>
                     </div>
@@ -211,7 +225,7 @@
                             <h5 class="card-title text-center">Saaraa Mohanty</h5>
                             <p class="card-text text-center">
                                 Chief Event Coordinator
-                                </p>
+                            </p>
 
                         </div>
                     </div>
@@ -224,7 +238,7 @@
                             <h5 class="card-title text-center">Bijikanta Priyadarshy</h5>
                             <p class="card-text text-center">
                                 Technical Event Coordinator
-                                </p>
+                            </p>
 
                         </div>
                     </div>
@@ -237,7 +251,7 @@
                             <h5 class="card-title text-center">Sahil Mohapatra</h5>
                             <p class="card-text text-center">
                                 Drafting Head
-                                </p>
+                            </p>
 
                         </div>
                     </div>
@@ -250,7 +264,7 @@
                             <h5 class="card-title text-center">Nisha Rai</h5>
                             <p class="card-text text-center">
                                 Drafting Head
-                                </p>
+                            </p>
 
                         </div>
                     </div>
@@ -265,7 +279,7 @@
                             <h5 class="card-title text-center">Ajay Barik</h5>
                             <p class="card-text text-center">
                                 Deco. Head
-                                </p>
+                            </p>
 
                         </div>
                     </div>
@@ -278,7 +292,7 @@
                             <h5 class="card-title text-center">Priyanka Sahoo</h5>
                             <p class="card-text text-center">
                                 Deco Head
-                                </p>
+                            </p>
 
                         </div>
                     </div>
@@ -304,7 +318,7 @@
                             <h5 class="card-title text-center">Soumyashree Priyadarsinee</h5>
                             <p class="card-text text-center">
                                 Hospitality Head
-                                </p>
+                            </p>
 
                         </div>
                     </div>
@@ -317,7 +331,7 @@
                             <h5 class="card-title text-center">Siddhant Dash</h5>
                             <p class="card-text text-center">
                                 Arena Head
-                                </p>
+                            </p>
 
                         </div>
                     </div>
@@ -332,7 +346,7 @@
                             <h5 class="card-title text-center">Arya</h5>
                             <p class="card-text text-center">
                                 Hospitality Head
-                                </p>
+                            </p>
 
                         </div>
                     </div>
@@ -345,7 +359,7 @@
                             <h5 class="card-title text-center">Rohan P Singh</h5>
                             <p class="card-text text-center">
                                 Cultural Head
-                                </p>
+                            </p>
 
                         </div>
                     </div>
@@ -371,7 +385,7 @@
                             <h5 class="card-title text-center">Aditya pattnaik</h5>
                             <p class="card-text text-center">
                                 Logistics Head
-                                </p>
+                            </p>
 
                         </div>
                     </div>
@@ -384,7 +398,7 @@
                             <h5 class="card-title text-center">Khyati Behera</h5>
                             <p class="card-text text-center">
                                 Logistics Head
-                                </p>
+                            </p>
 
                         </div>
                     </div>
