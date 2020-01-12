@@ -191,7 +191,7 @@ footer {
 }
 .rule-ul{
   list-style-type:square;
-  font-family: monospace,sans-serif;
+  font-family: monospace;
   font-size: 20px;
   padding-inline-start: 20px;
 
