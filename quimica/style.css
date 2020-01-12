@@ -9,12 +9,29 @@ External CSS file-- Lifestyle Store
   font-family: Monospace ;
   src: url('assets/Monospace.ttf');
 }
+@media (max-width:768px) {
+  body:before {
+      content: "";
+      display: block;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -10;
+      background: url('assets/bg.webp') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+}   
 body {
   font-family: 'Ocean Rush Demo';
 }
 .bg-image {
   text-align: center;
-  background-image: url('assets/bg.jpg');
+  background-image: url('assets/bg.webp');
   background-attachment: fixed !important;
   background-position: center;
   background-size: cover;
