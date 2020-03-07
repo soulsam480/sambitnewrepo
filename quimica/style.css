@@ -140,6 +140,9 @@ footer {
   .bn-intro{
     font-size: 28px !important;
   }
+  .bn-intro2{
+    font-size: 20px;
+  }
 }
 .cc-nav {
   color: white;
