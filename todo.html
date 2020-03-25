@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="dns-prefetch preconnect" href="https://fonts.gstatic.com">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo js</title>
+    <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            background-color: rgb(12, 22, 21);
+            font-family: 'Sen', sans-serif !important;
+        }
+
+        body {}
+
+        .wrap {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+        }
+
+        .todo {
+            width: 250px;
+            height: 30px;
+            border: 1px solid white;
+            color: white;
+            font-size: 20px;
+            border-radius: 0px;
+            padding-left: 2px;
+        }
+
+        input[type=text]:focus {
+            outline: none !important;
+        }
+
+        .btn {
+            border: none !important;
+            padding: 5px 20px;
+            font-size: 20px;
+            background-color: chartreuse;
+            border-radius: 0px;
+            outline: none !important;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgba(128, 255, 0, 0.753);
+
+        }
+
+        .list {
+            text-align: left !important;
+            list-style-type: none;
+            font-size: 20px;
+        }
+
+        .main {
+            margin-top: 20px;
+            color: black;
+            width: 298px;
+            height: 20px;
+            padding: 0px 5px;
+        }
+
+        .main p {
+            display: inline-block;
+
+            color: white;
+        }
+
+        .main span {
+            display: inline-block !important;
+            color: white;
+            float: right;
+            padding: 5px 10px;
+            background-color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="">
+            <input type="text" class="todo" id="todo" onkeyup="valTrans()" maxlength=""
+                placeholder="what are your plans ?" autofocus>
+            <button type="submit" onclick="toDo()" class="btn">+</button>
+        </div>
+        <br>
+        <h3 style="text-align: center;">Your To Do List</h3>
+        <ul id="list" class="list">
+        </ul>
+
+    </div>
+</body>
+<script>
+
+    const todo = document.getElementById('todo')
+    var ab = document.getElementById('list')
+    console.log(ab)
+    function valTrans() {
+        const result = document.getElementById('res')
+        result.innerHTML = todo.value
+    }
+    todo.addEventListener("keyup", function (event) {
+        if (event.key === "Enter") {
+            toDo()
+        }
+    });
+
+    function createNode(element) {
+        return document.createElement(element); // Create the type of element you pass in the parameters
+    }
+
+    function append(parent, el) {
+        return parent.appendChild(el); // Append the second parameter(element) to the first one
+    }
+    function toDo() {
+        if (todo.value == '') {
+            alert("please enter a todo")
+        }
+
+        else {
+            let li = createNode("li")
+            p = createNode('p')
+            span = createNode('span')
+
+            li.setAttribute('class', 'main')
+            p.innerHTML = todo.value;
+            span.innerHTML = 'x'
+            span.setAttribute('onclick', 'this.parentNode.remove()')
+            append(li, p)
+            append(li, span)
+            ab.appendChild(li)
+            todo.value = ''
+            res.innerHTML = ''
+        }
+    }
+</script>
+
+</html>
