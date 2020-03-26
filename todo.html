@@ -92,8 +92,7 @@
 <body>
     <div class="wrap">
         <div class="">
-            <input type="text" class="todo" id="todo" onkeyup="valTrans()" maxlength=""
-                placeholder="what are your plans ?" autofocus>
+            <input type="text" class="todo" id="todo" maxlength="23" placeholder="what are your plans ?" autofocus>
             <button type="submit" onclick="toDo()" class="btn">+</button>
         </div>
         <br>
@@ -107,11 +106,7 @@
 
     const todo = document.getElementById('todo')
     var ab = document.getElementById('list')
-    console.log(ab)
-    function valTrans() {
-        const result = document.getElementById('res')
-        result.innerHTML = todo.value
-    }
+   
     todo.addEventListener("keyup", function (event) {
         if (event.key === "Enter") {
             toDo()
